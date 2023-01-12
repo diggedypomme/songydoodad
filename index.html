@@ -64,7 +64,7 @@
 		right: 55px;
 		top: 4px;
 		text-align: center;"> Edit</div>
-		<div id="songinfo_edit-button" onclick="hideallmenus('suggestionholder')" style="
+		<div id="songinfo_edit-button2" onclick="hideallmenus('suggestionholder')" style="
 		border-style: outset;
 		width: auto;
 		position: absolute;
@@ -89,13 +89,7 @@
 		right: 21px;
 		top: 4px;
 		text-align: center;">X</div>
-		<div id="songinfo_show-button" onclick="document.getElementById('iframeholder').style.display='block'" style="
-		border-style: outset;
-		width: 45px;
-		position: absolute;
-		right: 55px;
-		top: 4px;
-		text-align: center;"> Show</div>
+		<div id="songinfo_show-button" onclick="document.getElementById('iframeholder').style.display='block'" > Show</div>
 		<div id="songinfo_edit-button" onclick="document.getElementById('editholder').style.display='block';document.getElementById('iframeholder').style.display='none'" style="
 		border-style: outset;
 		width: 45px;
@@ -153,8 +147,7 @@
 
 		Enable Editing | Disable editing | status
 		<BR>
-		Wipe changes back to user
-		<br>
+
 
 
 		<button onclick="ask_for_conf('remove_saved_user')"> Wipe changes back to user</button><br>
@@ -169,7 +162,7 @@
 		upload user <br>
 		create user <BR>
 		clone to user <BR>
-		superpomme local or whatever<BR>
+
 
 
 	</div>
@@ -215,38 +208,14 @@
 
 		<div id="songedit_x-button" onclick="document.getElementById('editholder').style.display='none'">X</div>
 
-		<div id="songedit_s-button" onclick="hideallmenus('suggestionholder')" style="
-		border-style: outset;
-		width: auto;
-		position: absolute;
-		right: 61px;
-		top: 4px;
-		text-align: center;">Suggest</div>
+		<div id="songedit_s-button" onclick="hideallmenus('suggestionholder')" >Suggest</div>
 
-		<div id="songedit_wipe-button" onclick="document.getElementById('iframeholder').style.display='block'" style="
-		border-style: outset;
-		width: 55px;
-		position: absolute;
-		left: 70px;
-		bottom: 4px;
-		text-align: center;"> Wipe</div>
-		<div id="songedit_show-button" onclick="hideallmenus('iframeholder');play_this_song()" style="
-		border-style: outset;
-		width: 75px;
-		position: absolute;
-		left: 40%;
-		bottom: 4px;
-		text-align: center;"> Watch</div>
+		<div id="songedit_wipe-button" onclick="document.getElementById('iframeholder').style.display='block'"> Wipe</div>
+		<div id="songedit_show-button" onclick="hideallmenus('iframeholder');play_this_song()" > Watch</div>
 
 
 
-		<div id="songedit_edit-button" onclick="save_song()" style="
-		border-style: outset;
-		width: 75px;
-		position: absolute;
-		right: 30px;
-		bottom: 4px;
-		text-align: center;"> Apply</div>
+		<div id="songedit_edit-button" onclick="save_song()" > Apply</div>
 
 
 

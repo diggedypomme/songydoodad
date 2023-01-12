@@ -1,3 +1,10 @@
+ 
+  #todo {
+
+    width:"you need to check for duplicates in the below and remove them then sort by area and name them logically";
+}
+ 
+ 
  html, body {
      height: 100%;
      margin: 0;
@@ -334,14 +341,7 @@
     top: 4px;
     text-align: center;
 }
- #songedit_s-button{
-    border-style: outset;
-    width: auto;
-    position: absolute;
-    right: 61px;
-    top: 4px;
-    text-align: center;
-}
+
  #suggestion_country_select{
     width: max-content;
 }

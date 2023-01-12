@@ -1,3 +1,12 @@
+
+
+
+
+//
+//this needs sorting and annotating
+//
+
+
 let map = L.map('map').setView([47, 9.6], 4);
 //const map = L.map('map').fitWorld();
 
@@ -870,21 +879,6 @@ function hideallmenus(thenshow = "", exception = "") {
     }
 
 }
-//
-//function bosstunes_menu(ShowHide="unset")
-//{
-//	console.log("ShowHide")
-//	console.log(ShowHide)
-//	if ShowHide="show"
-//	{
-//	document.getElementById("bosstunes_menu").style.display="block"
-//	}
-//	else{
-//	document.getElementById("bosstunes_menu").style.display="none"	
-//	}
-//	
-//}
-
 
 function reload_map() {
     map.remove()
