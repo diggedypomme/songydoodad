@@ -1,118 +1,432 @@
-	
-	
-	
-	
-
-		html, body {
-			height: 100%;
-			margin: 0;
-		}
-		.leaflet-container {
-			height: 400px;
-			width: 600px;
-			max-width: 100%;
-			max-height: 100%;
-		}
-
-	
-	 
-	
-      select {
-        width: 140px;
-        height: 35px;
-        padding: 4px;
-        border-radius: 4px;
-        box-shadow: 2px 2px 8px #999;
-        background: #eee;
-        border: none;
-        outline: none;
-        display: inline-block;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        cursor: pointer;
-      }
-      label {
-        position: relative;
-      }
-      label:after {
-        content: '<>';
-        font: 11px "Consolas", monospace;
-        color: #666;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        transform: rotate(90deg);
-        right: 8px;
-        top: 2px;
-        padding: 0 0 2px;
-        border-bottom: 1px solid #ddd;
-        position: absolute;
-        pointer-events: none;
-      }
-      label:before {
-        content: '';
-        right: 6px;
-        top: 0px;
-        width: 20px;
-        height: 20px;
-        background: #eee;
-        position: absolute;
-        pointer-events: none;
-        display: block;
-      }
-	  
-	  
-	        newlabel {
-        display: inline-block;
-        width: 40%;
-		overflow:hidden;
-		font-size: 3vw;
-		font-size: min(max(16px, 2vw), 18px);
-      }
-	  
-	        inputdiv {
-        margin-bottom: 10px;
-		font-size: 2vw;
-		
-      }
-	
-	  	        input {
- 
-		
-    
-    font-size: min(max(16px, 2vw), 12px);
-      }
-	  
-	  
-	  
-	  @font-face {
-  font-family: "scripto";
-  src: url("Scripto-2OR2v.ttf");
-  
+ html, body {
+     height: 100%;
+     margin: 0;
+}
+ .leaflet-container {
+     height: 400px;
+     width: 600px;
+     max-width: 100%;
+     max-height: 100%;
+}
+ select {
+     width: 140px;
+     height: 35px;
+     padding: 4px;
+     border-radius: 4px;
+     box-shadow: 2px 2px 8px #999;
+     background: #eee;
+     border: none;
+     outline: none;
+     display: inline-block;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     cursor: pointer;
+}
+ label {
+     position: relative;
+}
+ label:after {
+     content: '<>';
+     font: 11px "Consolas", monospace;
+     color: #666;
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     transform: rotate(90deg);
+     right: 8px;
+     top: 2px;
+     padding: 0 0 2px;
+     border-bottom: 1px solid #ddd;
+     position: absolute;
+     pointer-events: none;
+}
+ label:before {
+     content: '';
+     right: 6px;
+     top: 0px;
+     width: 20px;
+     height: 20px;
+     background: #eee;
+     position: absolute;
+     pointer-events: none;
+     display: block;
+}
+ newlabel {
+     display: inline-block;
+     width: 40%;
+     overflow:hidden;
+     font-size: 3vw;
+     font-size: min(max(16px, 2vw), 18px);
+}
+ inputdiv {
+     margin-bottom: 10px;
+     font-size: 2vw;
+}
+ input {
+     font-size: min(max(16px, 2vw), 12px);
+}
+ @font-face {
+     font-family: "scripto";
+     src: url("Scripto-2OR2v.ttf");
+}
+ .bosstunes_title {
+     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+ #map {
+     width: 800px;
+     height: 100%;
+    width:100% 
+}
+ .info {
+     padding: 6px 8px;
+     font: 14px/16px Arial, Helvetica, sans-serif;
+     background: white;
+     background: rgba(255,255,255,0.8);
+     box-shadow: 0 0 15px rgba(0,0,0,0.2);
+     border-radius: 5px;
+}
+ .info h4 {
+     margin: 0 0 5px;
+     color: #777;
+}
+ .legend {
+     text-align: left;
+     line-height: 18px;
+     color: #555;
+}
+ .legend i {
+     width: 18px;
+     height: 18px;
+     float: left;
+     margin-right: 8px;
+     opacity: 0.7;
 }
 
 
-.bosstunes_title
-{
-    
- 
-    text-shadow:
-    -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-    -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+
+
+
+
+
+
+
+
+
+
+ #bosstunes {
+    position: absolute;
+    top:1%;
+    left: 10%;
+    color: #7b7575;
+    font-size: 35px;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    //height: 500;
+    display: block;
+    font: 33px/35px scripto, sans-serif;
+    font-size: min(max(27px, 4vw), 60px)
+}
+ #discord{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    color: #7b7575;
+    font-size: 35px;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    //height: 500;
+    display: block;
+    font: 33px/35px Arial, Helvetica, sans-serif;
+    font-size: 12px;
     
 }
-	  
-	  
-	  
-  
+ #iframeholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+     z-index: 1000;
+     max-width: 500px;
+    //height: 500;
+    display:none;
+    aspect-ratio: 1 / 1;
+    
+}
+ #x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    text-align: center;
+}
+ #songinfo_edit-button{
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 55px;
+    top: 4px;
+    text-align: center;
+}
+ #songinfo_edit-button{
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 115px;
+    top: 4px;
+    text-align: center;
+}
+ #song_iframe{
+}
+ #songinfo{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+     z-index: 1000;
+     max-width: 500px;
+    height: 200;
+    display:none;
+    
+}
+ #trackinfo_info{
+}
+ #songinfo_x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    text-align: center;
+}
+ #songinfo_show-button{
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 55px;
+    top: 4px;
+    text-align: center;
+}
+ #songinfo_edit-button{
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 110px;
+    top: 4px;
+    text-align: center;
+}
+ #bosstunes_diff{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 500px;
+    height: 200;
+    display: none;
+    
+}
+ #diff{
+    height: 80%;
+    width: 100%;
+    background-color:white;
+    overflow-y:scroll;
+    color:black;
+     
+}
+ #songedit_x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    text-align: center;
+}
+ #bosstunes_menu{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 500px;
+    height: 200;
+    display: none;
+    
+}
+ #trackinfo_info{
+}
+ #bosstunes_x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 10%;
+    top: 4px;
+    text-align: center;
+}
+ #bosstunes_edit-button{
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 5%;
+    transform: translate(-50%,00%);
+    bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+ #usernames{
+}
+ #suggestionholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+     z-index: 1000;
+     max-width: 500px;
+    //height: 500;
+    display:none;
+    aspect-ratio: 1 / 1;
+    
+}
+ #suggestionholder_x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    text-align: center;
+}
+ #songedit_s-button{
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 61px;
+    top: 4px;
+    text-align: center;
+}
+ #suggestion_country_select{
+    width: max-content;
+}
+ #suggestion_style_select{
+    width: max-content;
+}
+ #suggestion_output{
+     border-style: solid;
+    height: 100%;
+    overflow: scroll;
+    font-size: 15px;
+    background-color: #a7cbda;
+    color: #423838;
+    border-radius: 25px;
+     padding: 10px 10px 10px 10px;
+    
+}
+ #editholder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+     z-index: 1000;
+     max-width: 500px;
+    //height: 500;
+    display:none;
+    aspect-ratio: 1 / 1;
+    overflow-y:hidden;
+    
+}
+ #songedit_x-button{
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+    text-align: center;
+}
+ #songedit_s-button{
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 61px;
+    top: 4px;
+    text-align: center;
+}
+ #songedit_wipe-button{
+    border-style: outset;
+    width: 55px;
+    position: absolute;
+    left: 70px;
+    bottom: 4px;
+    text-align: center;
+}
+ #songedit_show-button{
+    border-style: outset;
+    width: 75px;
+    position: absolute;
+    left: 40%;
+    bottom: 4px;
+    text-align: center;
+}
+ #songedit_edit-button{
+    border-style: outset;
+    width: 75px;
+    position: absolute;
+    right: 30px;
+    bottom: 4px;
+    text-align: center;
+}
 
-	
-	
-	
-	
-	
-	#map { width: 800px; height: 100%;width:100% }
-.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
-.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+ #songedit_suggestion-button{
+    border-style: outset;
+    width: 125px;
+    position: absolute;
+    left: 40%;
+    top: 413px;
+    text-align: center;
+    
+}
+'
