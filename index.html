@@ -1,0 +1,1796 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+	<base target="_top">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>SongyDoodad. My favourite songs from each country</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+	
+	
+	<!--Saved profiles-->
+   <script src="profiles/superpomme.js" ></script>
+   <script src="profiles/SynkkaMaan.js" ></script>
+
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+
+
+
+
+
+
+<script>//https://www.w3docs.com/tools/code-editor/2714 dropdown menu</script>
+
+    <style>
+	
+      select {
+        width: 140px;
+        height: 35px;
+        padding: 4px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px #999;
+        background: #eee;
+        border: none;
+        outline: none;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        cursor: pointer;
+      }
+      label {
+        position: relative;
+      }
+      label:after {
+        content: '<>';
+        font: 11px "Consolas", monospace;
+        color: #666;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+        right: 8px;
+        top: 2px;
+        padding: 0 0 2px;
+        border-bottom: 1px solid #ddd;
+        position: absolute;
+        pointer-events: none;
+      }
+      label:before {
+        content: '';
+        right: 6px;
+        top: 0px;
+        width: 20px;
+        height: 20px;
+        background: #eee;
+        position: absolute;
+        pointer-events: none;
+        display: block;
+      }
+	  
+	  
+	        newlabel {
+        display: inline-block;
+        width: 40%;
+		overflow:hidden;
+		font-size: 3vw;
+		font-size: min(max(16px, 2vw), 18px);
+      }
+	  
+	        inputdiv {
+        margin-bottom: 10px;
+		font-size: 2vw;
+		
+      }
+	
+	  	        input {
+ 
+		
+    
+    font-size: min(max(16px, 2vw), 12px);
+      }
+	  
+	  
+	  
+	  @font-face {
+  font-family: "scripto";
+  src: url("Scripto-2OR2v.ttf");
+  
+}
+
+
+.bosstunes_title
+{
+    
+ 
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+    
+}
+	  
+	  
+	  
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+	<style>#map { width: 800px; height: 100%;width:100% }
+.info { padding: 6px 8px; font: 14px/16px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; } .info h4 { margin: 0 0 5px; color: #777; }
+.legend { text-align: left; line-height: 18px; color: #555; } .legend i { width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }</style>
+</head>
+<body>
+
+<div id='map'></div>
+
+<script type="text/javascript" src="world.geojson.js"></script>
+<script type="text/javascript" src="chroma.min.js"></script>
+
+<script type="text/javascript">
+
+//https://www.fontspace.com/scripto-font-f84791 font from here
+
+	let map = L.map('map').setView([47, 9.6], 4);
+	//const map = L.map('map').fitWorld();
+	
+	map.createPane('labels');
+	map.getPane('labels').style.zIndex = 650;
+	
+		// Layers in this pane are non-interactive and do not obscure mouse/touch events
+	map.getPane('labels').style.pointerEvents = 'none';
+	
+	
+	
+	
+
+
+	let cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>,  <a href="https://gka.github.io/chroma.js/">chromaJS</a> ';
+
+
+
+
+
+
+
+
+	let positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+		attribution: cartodbAttribution,
+		//noWrap: true
+	}).addTo(map);
+	
+	//blue background
+//L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+//    subdomains: ['a','b','c']
+//}).addTo( map );	
+	
+	
+	
+	let positronLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+		attribution: cartodbAttribution,
+		pane: 'labels',
+		
+		noWrap: true
+		        //maxZoom: '4'
+	}).addTo(map);
+
+
+
+
+
+
+
+	// control that shows state info on hover
+	let info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+
+
+
+
+
+
+
+	info.update = function (props) {
+		//console.log(props)
+		
+		try{
+		//console.log(newsongs[props.ISO_A2]["Band"])
+		
+			const contents = props ? `<b>${props.name}</b><br />
+		
+		${props.ISO_A2}
+		<BR>
+		<BR><b>Band            :</b>${newsongs[props.ISO_A2]["Band"]}
+		<BR><b>Track           :</b>${newsongs[props.ISO_A2]["Track"]}
+		<BR><b>Style         :  </b>${newsongs[props.ISO_A2]["MusicStyle"]}
+	
+		<BR><b> Rating : </b>${newsongs[props.ISO_A2]["Rating"]}
+     	<BR><BR>Honourable mentions :${newsongs[props.ISO_A2]["Honourable"]}
+		<BR>		
+		
+		` : 'Hover over a country';
+		
+		
+		this._div.innerHTML = `<h4>My favourite track</h4>${contents}`;
+		
+		
+		}
+		catch{
+		//console.log("not found")
+		
+		
+				const contents = props ? `<b>${props.name}</b><br />
+		
+		${props.ISO_A2}
+		<BR>
+		<BR><b>Track not set</b>
+		
+		
+		` : 'Hover over a country';
+		
+		
+		this._div.innerHTML = `<h4>My favourite track</h4>${contents}`;
+			
+		
+		
+		
+		
+		
+		
+		}
+		
+		
+		
+	
+		
+		
+		
+		
+		
+		
+	};
+
+	info.addTo(map);
+
+
+
+
+
+
+
+
+
+
+
+
+	// get color depending on population density value
+	function getColor(d) {
+	
+		//this needs to do it automatically based on a base colour
+		
+		//return chroma("green")
+		
+		
+		//if (d>0){
+		//	return chroma('blue').saturate(d/10).hex()
+		//}
+		return d > 9 ? '#00acfa' :
+			d > 8  ? '#2bb8f8' :
+			d > 7  ? '#42bcf4' :
+			d > 5  ? '#5bc5f5' :
+			d > 3   ? '#7ccdf2' :
+			d > 2   ? '#95d6f4' :
+			d > 1   ? '#bae3f5' : '#ffe9e0';
+	}
+
+	function style(feature) {
+		
+		rating=-1
+		try{
+		//console.log(newsongs[feature.properties.ISO_A2]["Rating"])
+		rating=newsongs[feature.properties.ISO_A2]["Rating"]
+		}
+		catch{
+			//console.log("missing")
+		}
+		
+		
+		return {
+			weight: 4,
+			opacity: 1,
+			color: 'white',
+			//dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(rating)
+		};
+	}
+	
+		function removestyle(feature) {
+		
+		rating=-1
+		try{
+		//console.log(newsongs[feature.properties.ISO_A2]["Rating"])
+		rating=2
+		}
+		catch{
+			//console.log("missing")
+		}
+		
+		
+		return {
+			weight: 4,
+			opacity: 1,
+			color: 'white',
+			//dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(rating)
+		};
+	}
+
+	function highlightFeature(e) {
+		const layer = e.target;
+
+		layer.setStyle({
+			weight: 2,
+			color: 'blue',
+			dashArray: '',
+			fillOpacity: 0.7
+		});
+
+		layer.bringToFront();
+
+		info.update(layer.feature.properties);
+	}
+
+	/* global statesData */
+	//const geojson = L.geoJson(statesData, {
+	//	style,
+	//	onEachFeature
+	//}).addTo(map);
+
+	function resetHighlight(e) {
+		//console.log(e.target)
+		//console.log(e.target)
+		//console.log(e.target)
+		//console.log(e.target)
+
+		geojson.resetStyle(e.target);
+		info.update();
+	}
+
+	function zoomToFeature(e) {
+		//map.fitBounds(e.target.getBounds());
+		
+		console.log("--------------------")
+		console.log(e.target)
+		const layer = e.target;
+		console.log(layer.feature.properties)
+		
+		
+		try{
+			console.log(newsongs[layer.feature.properties.ISO_A2]["link"])
+			let yt_link=newsongs[layer.feature.properties.ISO_A2]["link"]
+			yt_link=yt_link.replace("https://youtu.be/","")
+			console.log(yt_link)
+			console.log("--------------------")
+			preview_track(yt_link)
+			
+			document.getElementById("songinfo").style.display="block"
+			document.getElementById("trackinfo_info").innerHTML=`
+			<BR><b>Country            :</b>`+newsongs[layer.feature.properties.ISO_A2]["CountryName"]+`
+			<BR><b>Band            :</b>`+newsongs[layer.feature.properties.ISO_A2]["Band"]+`
+			<BR><b>Track           :</b>`+newsongs[layer.feature.properties.ISO_A2]["Track"]+`
+			`
+			
+			document.getElementById("country_select").value=layer.feature.properties.ISO_A2;
+			change_edit_to()
+		}
+		catch{
+			
+			hideallmenus("editholder")
+			//change_edit_to(layer.feature.properties.ISO_A2)
+			document.getElementById("country_select").value=layer.feature.properties.ISO_A2
+			change_edit_to(layer.feature.properties.ISO_A2)
+			}
+		
+		
+		
+	}
+
+	function onEachFeature(feature, layer) {
+		
+		layer.on({
+			mouseover: highlightFeature,
+			mouseout: resetHighlight,
+			click: zoomToFeature
+		});
+	}
+	
+let current_youtube=""	
+	
+function preview_track(youtube_link){
+	
+	console.log("ran preview track")
+	document.getElementById('iframeholder').style.display='block'
+	document.getElementById('song_iframe').src='https://www.youtube.com/embed/'+youtube_link
+}
+
+
+
+
+	const legend = L.control({position: 'bottomright'});
+
+	//legend.onAdd = function (map) {
+	//
+	//	const div = L.DomUtil.create('div', 'info legend');
+	//	const grades = [0, 10, 20, 50, 100, 200, 500, 1000];
+	//	const labels = [];
+	//	let from, to;
+	//
+	//	for (let i = 0; i < grades.length; i++) {
+	//		from = grades[i];
+	//		to = grades[i + 1];
+	//
+	//		labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
+	//	}
+	//
+	//	div.innerHTML = labels.join('<br>');
+	//	return div;
+	//};
+	//
+	//legend.addTo(map);
+	//
+	//
+	//
+	//
+	//
+	//const legend2 = L.control({position: 'bottomleft'});
+	//
+	//legend2.onAdd = function (map) {
+	//
+	//	const div = L.DomUtil.create('div', 'info legend');
+	//	const grades = [0, 10, 20, 50, 100, 200, 500, 1000];
+	//	const labels = [];
+	//	let from, to;
+	//
+	//	for (let i = 0; i < grades.length; i++) {
+	//		from = grades[i];
+	//		to = grades[i + 1];
+	//
+	//		labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
+	//	}
+	//
+	//	div.innerHTML = labels.join('<br>');
+	//	return div;
+	//};
+	//
+	//legend2.addTo(map);
+
+
+
+
+
+let compared_dict={}
+function do_a_diff() 
+{
+
+
+let local_keys     =             Object.keys(newsongs)
+let default_keys=             Object.keys(song_user_superpomme)
+let combined_keys = [...new Set([...local_keys, ...default_keys])].sort()
+
+ 
+
+
+let compared_dict_countup=0
+while ( compared_dict_countup<combined_keys.length)
+{
+
+                compared_dict[combined_keys[compared_dict_countup]]="none"
+
+
+                if (local_keys.includes(combined_keys[compared_dict_countup])==true && default_keys.includes(combined_keys[compared_dict_countup])==false)
+
+                {
+                                compared_dict[combined_keys[compared_dict_countup]]="local_keys"
+                }
+
+                if (default_keys.includes(combined_keys[compared_dict_countup])==true && local_keys.includes(combined_keys[compared_dict_countup])==false)
+                {
+                                compared_dict[combined_keys[compared_dict_countup]]="default_keys"
+                }             
+				
+                if (local_keys.includes(combined_keys[compared_dict_countup])==true && default_keys.includes(combined_keys[compared_dict_countup])==true)
+
+                {
+					//console.log([newsongs[combined_keys[compared_dict_countup]],song_user_superpomme[combined_keys[compared_dict_countup]]])
+
+					if ( JSON.stringify(newsongs[combined_keys[compared_dict_countup]])==JSON.stringify(song_user_superpomme[combined_keys[compared_dict_countup]]))
+
+					{
+					compared_dict[combined_keys[compared_dict_countup]]="same"
+				
+					}
+
+					else
+					{
+									compared_dict[combined_keys[compared_dict_countup]]="diff"
+					}
+                }             
+  compared_dict_countup=compared_dict_countup+1
+}
+
+console.log(compared_dict)
+
+
+
+
+
+}
+
+
+function set_diff()
+{
+do_a_diff() 
+//let difftext=output_diff( )
+document.getElementById("bosstunes_menu").style.display="none"
+document.getElementById("bosstunes_diff").style.display="block"
+document.getElementById("diff").innerHTML=output_diff( )
+}
+
+
+
+
+
+
+function output_diff( )
+{
+console.log("outputting diff")
+	//none,
+	//left,
+	//right,
+
+	let difftext=""
+	
+	let diffcountup=0
+	while (diffcountup< Object.keys(compared_dict).length)
+	{
+		
+		
+		
+		
+		if (compared_dict[Object.keys(compared_dict)[diffcountup]] != "same"){
+		
+			console.log("looping")
+			difftext=difftext+output_diff_line(Object.keys(compared_dict)[diffcountup] )
+		}
+		
+		
+		diffcountup=diffcountup+1
+		
+		
+		
+		
+	}
+	console.log(difftext)
+	return difftext
+
+}
+
+
+
+
+
+function output_diff_line(countrycode, )
+{
+//none,
+//left,
+//right,
+
+let linesetup=`<div id="another_line"
+style="
+border-style: solid;
+    width: 97%;
+	border-radius: 10px
+"
+
+ > 
+  <center>`+country_name_dict[countrycode]+`</center><BR> 
+ <div style=
+  "display: inline-block;
+  width: 45%;
+  height: 180px;
+  overflow:hidden;
+  white-space: nowrap;
+  border: 1px solid black;">`+ output_diff_element("left",countrycode)+` </div>
+ <div style=
+  "display: inline-block;
+  width: 45%;
+  overflow:hidden;
+  height: 180px;
+  white-space: nowrap;
+  border: 1px solid black;">`+ output_diff_element("right",countrycode)+` </div>  
+ 
+ </div>`
+
+return (linesetup)
+}
+
+
+
+function output_diff_element(element_to_show,countrycode)
+{
+
+
+	diffdict_value=compared_dict[countrycode]
+
+	console.log(diffdict_value)
+	console.log(compared_dict)
+
+
+
+	nonedict={ // If I don't do it this way, the alignment is messed up
+    "Not set": "None",
+    ".": "",
+    "..": " ",
+    "...": "",
+    "....": "",
+    ".....": "",
+    "......":"" ,
+    ".......": ""
+	}
+
+
+
+
+	if (diffdict_value=="diff"){
+	
+		if (element_to_show=="left")
+		{
+			return (return_formatted_songdict(newsongs[countrycode]))
+		}
+		else if (element_to_show=="right")
+		{
+			return (return_formatted_songdict(song_user_superpomme[countrycode]))
+		}
+	}
+	else if (diffdict_value=="local_keys"){
+	
+		if (element_to_show=="left")
+		{
+			return (return_formatted_songdict(newsongs[countrycode]))
+		}
+		else if (element_to_show=="right")
+		{
+			return (return_formatted_songdict(nonedict))
+		}
+	}
+	else if (diffdict_value=="default_keys"){
+	
+		if (element_to_show=="left")
+		{
+			return (return_formatted_songdict(nonedict))
+		}
+		else if (element_to_show=="right")
+		{
+			return (return_formatted_songdict(song_user_superpomme[countrycode]))
+		}
+	}
+	
+}
+
+
+
+function return_formatted_songdict(dict_to_replace)
+{
+	//print(dict_to_replace)
+	
+	let formatted_dict=""
+	for (const [key, value] of Object.entries(dict_to_replace)) {
+	  formatted_dict=formatted_dict+`${key}: ${value} <BR> `;
+	}
+	
+	
+	//return JSON.stringify(dict_to_replace)
+	return formatted_dict
+
+
+}
+
+
+
+function set_up_user_dropdown()
+{
+document.getElementById("usernames").innerHTML=
+
+`<option value="Superpomme">Superpomme</option>
+<option value="SynkkäMaan">SynkkäMaan</option>
+<option value="Temp">Temp</option>`
+
+}
+
+
+
+
+
+
+
+		setTimeout(() => {
+		set_up_user_dropdown()	
+		document.getElementById("usernames").value=localStorage.getItem("current_username")
+	}, 500);
+		
+set_up_user_dropdown()
+
+function change_user(changeto)
+{
+console.log("changing user")
+localStorage.setItem("current_username",changeto)
+location.reload();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+<div id="bosstunes" class="bosstunes_title"
+style="
+    position: absolute;
+    top:1%;
+    left: 10%;
+    color: #7b7575;
+    font-size: 35px;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    //height: 500;
+    display: block;
+    font: 33px/35px scripto,  sans-serif;
+    font-size: min(max(27px, 4vw), 60px)
+" onclick="hideallmenus('bosstunes_menu')"
+
+
+> 
+Songydoodad
+</div>
+<div id="discord"
+style="
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    color: #7b7575;
+    font-size: 35px;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1000;
+    max-width: 500px;
+    //height: 500;
+    display: block;
+    font: 33px/35px Arial, Helvetica, sans-serif;
+    font-size: 12px;
+" onclick="window.open('https://discord.gg/yeFk8dUutj')"
+
+> 
+Discord Hub
+</div>
+
+
+
+
+
+
+
+<div id="iframeholder"
+style="
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+	    z-index: 1000;
+		 max-width: 500px;
+  //height: 500;
+  display:none;
+   aspect-ratio: 1 / 1;
+"
+
+> 
+Track
+<div id="x-button"
+onclick="document.getElementById('iframeholder').style.display='none'"
+style="
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+	text-align: center;"
+>X</div>
+<div id="songinfo_edit-button"
+onclick="hideallmenus('editholder')"
+style="
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 55px;
+    top: 4px;
+	text-align: center;"
+> Edit</div>
+<div id="songinfo_edit-button"
+onclick="hideallmenus('suggestionholder')"
+style="
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 115px;
+    top: 4px;
+	text-align: center;"
+> Suggest</div>
+
+<iframe id="song_iframe" width="100%" height="415"
+src="">
+</iframe>
+
+
+</div>
+
+
+
+<div id="songinfo"
+style="
+    position: absolute;
+
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+	    z-index: 1000;
+		 max-width: 500px;
+  height: 200;
+  display:none;
+"
+
+> 
+<div id="trackinfo_info"></div>
+<div id="songinfo_x-button"
+onclick="document.getElementById('songinfo').style.display='none'"
+style="
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+	text-align: center;"
+>X</div>
+<div id="songinfo_show-button"
+onclick="document.getElementById('iframeholder').style.display='block'"
+style="
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 55px;
+    top: 4px;
+	text-align: center;"
+> Show</div>
+<div id="songinfo_edit-button"
+onclick="document.getElementById('editholder').style.display='block';document.getElementById('iframeholder').style.display='none'"
+style="
+    border-style: outset;
+    width: 45px;
+    position: absolute;
+    right: 110px;
+    top: 4px;
+	text-align: center;"
+> Edit</div>
+
+
+
+
+</div>
+
+
+<div id="bosstunes_diff"
+style="
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 500px;
+    height: 200;
+    display: none;
+"
+
+
+
+
+
+
+> 
+<center>
+<h1 onclick="do_a_diff() ">Compare saved values</h1>
+</center>
+<BR>
+<div id="diff"
+style="
+		height: 80%;
+		width: 100%;
+		background-color:white;
+		overflow-y:scroll;
+		color:black;
+	  "
+
+
+>
+hi
+</div>
+
+<div id="songedit_x-button"
+onclick="document.getElementById('bosstunes_diff').style.display='none'"
+style="
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+	text-align: center;"
+>X</div>
+
+
+</div>
+
+
+<div id="bosstunes_menu"
+style="
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 500px;
+    height: 200;
+    display: none;
+"
+
+> 
+<div id="trackinfo_info"></div>
+<div id="bosstunes_x-button"
+onclick="bosstunes_menu('hide')"
+style="
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 10%;
+    top: 4px;
+	text-align: center;"
+>X</div>
+
+
+<div id="bosstunes_edit-button"
+onclick="hideallmenus('editholder')"
+style="
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 5%;
+	transform: translate(-50%,00%);
+    bottom: 40px;
+	font-size: 25px;
+	text-align: center;"
+	
+> Enable Edit mode</div>
+
+<br><br>
+
+
+
+
+<center> <select name="usernames" id="usernames" onchange="change_user(document.getElementById('usernames').value)" id="username_listing" > <option value="Superpomme">Superpomme</option>   </select>     </center><br>
+
+
+
+<center > Bio something something </center>
+
+
+Change user - select user<br>
+
+Enable Editing     |        Disable editing   | status
+<BR>
+Wipe changes back to user
+<br>
+
+
+<button onclick= "ask_for_conf('remove_saved_user')"> Wipe changes back to user</button><br>
+<br>
+
+<button onclick= "ask_for_conf('wipe_countries')"> Wipe all countries</button><br>
+<br>
+<button onclick= "download_config()"> download user</button><br>
+<BR>
+<button onclick= "set_diff()"> Check local store against defaults</button><br>
+
+upload user <br>
+create user <BR>
+clone to user <BR>
+superpomme local or whatever<BR>
+
+
+</div>
+
+
+<div id="suggestionholder"
+style="
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+	    z-index: 1000;
+		 max-width: 500px;
+  //height: 500;
+  display:none;
+   aspect-ratio: 1 / 1;
+"
+
+> 
+
+	<div id="suggestionholder_x-button"
+	onclick="document.getElementById('suggestionholder').style.display='none'"
+	style="
+		border-style: outset;
+		width: 20px;
+		position: absolute;
+		right: 21px;
+		top: 4px;
+		text-align: center;"
+	>X</div>
+	
+<div id="songedit_s-button"
+onclick="hideallmenus('editholder')"
+style="
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 61px;
+    top: 4px;
+	text-align: center;"
+>Edit</div>	
+	
+	
+  <BR><BR>
+Choose a Country:
+ 
+ <select name="suggestion_country_select" style="width: max-content;"  id="suggestion_country_select" onchange="change_country()">
+ </select>
+ 
+ <br>
+ <BR>
+Choose style:
+ 
+ <select id="suggestion_style_select"  style="width: max-content;" name="suggestion_style_select" onchange="suggestion_build_suggestions()">
+ </select>
+ <BR><BR>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div id="suggestion_output" style="    
+    border-style: solid;
+    height: 100%;
+    overflow: scroll;
+    font-size: 15px;
+    background-color: #a7cbda;
+    color: #423838;
+    border-radius: 25px;
+	  padding: 10px 10px 10px 10px;
+
+ 
+ "> Select country 
+ 
+
+ 
+ 
+ 
+ 
+ </div>
+ 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="editholder"
+style="
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px;
+	    z-index: 1000;
+		 max-width: 500px;
+  //height: 500;
+  display:none;
+   aspect-ratio: 1 / 1;
+   overflow-y:hidden;
+   
+"
+
+> 
+
+<div id="songedit_x-button"
+onclick="document.getElementById('editholder').style.display='none'"
+style="
+    border-style: outset;
+    width: 20px;
+    position: absolute;
+    right: 21px;
+    top: 4px;
+	text-align: center;"
+>X</div>
+
+<div id="songedit_s-button"
+onclick="hideallmenus('suggestionholder')"
+style="
+    border-style: outset;
+    width: auto;
+    position: absolute;
+    right: 61px;
+    top: 4px;
+	text-align: center;"
+>Suggest</div>
+
+<div id="songedit_wipe-button"
+onclick="document.getElementById('iframeholder').style.display='block'"
+style="
+    border-style: outset;
+    width: 55px;
+    position: absolute;
+    left: 70px;
+    bottom: 4px;
+	text-align: center;"
+> Wipe</div>
+<div id="songedit_show-button"
+onclick="hideallmenus('iframeholder');play_this_song()"
+style="
+    border-style: outset;
+    width: 75px;
+    position: absolute;
+    left: 40%;
+    bottom: 4px;
+	text-align: center;"
+> Watch</div>
+
+
+
+
+
+
+
+
+
+
+<div id="songedit_edit-button"
+onclick="save_song()"
+style="
+    border-style: outset;
+    width: 75px;
+    position: absolute;
+    right: 30px;
+    bottom: 4px;
+	text-align: center;"
+> Apply</div>
+
+
+ 
+ <select id="country_select" onchange="change_edit_to()">
+ 
+      </select>
+
+
+	<Center id="edit_countryname">	Country Name       </center>
+
+      <inputdiv>
+        <newlabel for="Band">Band</newlabel>
+        <input type="text" id="Band" placeholder="" />
+      </inputdiv>
+      <inputdiv>
+        <newlabel for="Track">Track</newlabel>
+        <input type="text" id="Track" name="Track" placeholder="" />
+      </inputdiv>
+      <inputdiv>
+        <newlabel for="MusicStyle">Music Style</newlabel>
+        <input type="text" id="MusicStyle" name="MusicStyle" placeholder="" />
+      </inputdiv>
+      <inputdiv>
+        <newlabel for="link">Youtube link</newlabel>
+        <input type="text" id="link" name="link" placeholder="" />
+      </inputdiv>  
+      <inputdiv>
+        <newlabel for="Honourable">Honourable </newlabel>
+        <input type="text" id="Honourable" name="Honourable" placeholder="" />
+      </inputdiv>  
+      <inputdiv>
+        <newlabel for="Honourable2">Honourable 2</newlabel>
+        <input type="text" id="Honourable2" name="Honourable2" placeholder="" />
+      </inputdiv>  
+      <inputdiv>
+        <newlabel for="Rating">Rating</newlabel>
+        <input type="number" id="Rating" name="Rating" placeholder="" />
+      </inputdiv> 
+
+
+
+<div id="songedit_suggestion-button"
+onclick="hideallmenus('suggestionholder')"
+style="
+     border-style: outset;
+    width: 125px;
+    position: absolute;
+    left: 40%;
+    top: 413px;
+    text-align: center;
+	"
+> Suggestion</div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript" src="suggestion4_stripped.js">
+
+</script>
+<script type="text/javascript" src="artist_origin.js">
+
+</script>
+<script>
+
+
+let country_name_dict={}
+countup=0
+while (countup<statesData.features.length)
+{
+country_name_dict[statesData.features[countup].properties.ISO_A2]=statesData.features[countup].properties.NAME_LONG
+countup=countup+1
+}
+console.log(country_name_dict)
+
+
+//for(var i = 0; i < country_name_dict.length; i++) {
+for(var i = 0; i < Object.keys(country_name_dict).length; i++) {
+    var opt = Object.keys(country_name_dict)[i];
+    //var opt = "hi";
+    var el = document.createElement("option");
+    el.textContent = country_name_dict[Object.keys(country_name_dict)[i]];
+    el.value = opt;
+    document.getElementById("country_select").appendChild(el);
+}
+
+
+
+//document.getElementById("editholder").innerHTML=country_name_dict
+
+function change_edit_to()
+{
+	
+	let countrycode=document.getElementById("country_select").value
+	console.log(countrycode)
+	//document.getElementById("edit_countryname").innerHTML=newsongs[countrycode]["CountryName"]
+	
+	
+	document.getElementById("suggestion_country_select").value //the suggestion ones
+	document.getElementById("country_select").value //the  edit sone
+	
+	try{
+		document.getElementById("suggestion_country_select").value = code_to_country[document.getElementById("country_select").value]
+		change_country()
+	}
+	catch{
+		console.log("country code no match")
+	}
+	
+	document.getElementById("edit_countryname").innerHTML  =  country_name_dict[countrycode]
+	
+	
+	
+	console.log("-----------------------")
+	console.log(newsongs[countrycode])
+	console.log("-----------------------")
+	
+	try{
+	document.getElementById("Band").value=newsongs[countrycode]["Band"]
+	document.getElementById("Track").value=newsongs[countrycode]["Track"]
+	document.getElementById("MusicStyle").value=newsongs[countrycode]["MusicStyle"]
+	document.getElementById("link").value=newsongs[countrycode]["link"]
+	document.getElementById("Honourable").value=newsongs[countrycode]["Honourable"]
+	document.getElementById("Honourable2").value=newsongs[countrycode]["Honourable2"]
+	document.getElementById("Rating").value=newsongs[countrycode]["Rating"]
+	}
+	catch{
+	document.getElementById("Band").value=""
+	document.getElementById("Track").value=""
+	document.getElementById("MusicStyle").value=""
+	document.getElementById("link").value=""
+	document.getElementById("Honourable").value=""
+	document.getElementById("Honourable2").value=""
+	document.getElementById("Rating").value=""	
+		
+		
+	}
+	
+	
+	
+}
+
+function bosstunes_menu(inputname)
+{
+	
+	console.log("bosstunes")
+	console.log(inputname)
+	if (inputname=="show")
+	{
+	document.getElementById("bosstunes_menu").style.display="block"
+	}
+	else{
+	document.getElementById("bosstunes_menu").style.display="none"	
+	}
+	
+	
+	
+}
+
+function download_config()
+{
+	
+console.log(newsongs)
+downloadToFile(JSON.stringify(newsongs, null, 2), 'my-new-file.txt', 'text/plain');			
+}
+
+
+//https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js
+const downloadToFile = (content, filename, contentType) => {
+  const a = document.createElement('a');
+  const file = new Blob([content], {type: contentType});
+  
+  a.href= URL.createObjectURL(file);
+  a.download = filename;
+  a.click();
+
+	URL.revokeObjectURL(a.href);
+};
+
+
+let active_user="temp"
+let editmode="enabled"
+
+function localstorage(SaveLoad)
+{
+	console.log(SaveLoad)
+	
+	//console.log(newsongs)
+	if (SaveLoad=="save")
+	{
+	//localStorage.setItem("song_user_"+active_user, "");
+	//localStorage.setItem("song_user_"+active_user, JSON.stringify(newsongs));
+	localStorage.setItem("song_user_temp", JSON.stringify(newsongs));
+	}
+	
+	else if (SaveLoad=="load")
+	{
+		
+	newsongs=JSON.parse(localStorage.getItem("song_user_temp"))	
+	console.log("loaded")	
+		
+	}
+	else if (SaveLoad=="removeuser")
+	{
+		localStorage.removeItem('song_user_temp');
+	//newsongs=JSON.parse(localStorage.getItem("song_user_superpomme"))	
+	console.log("removed")	
+		
+	}	
+	
+	
+	
+}
+
+//if (localStorage.getItem("song_user_superpomme") != null){
+//	
+//localstorage("load") //this needs moving later but whatever)
+//}
+//else{
+//	newsongs=song_user_superpomme
+//	localstorage("save")
+//}
+
+
+
+
+
+
+
+
+let Stored_userdict=
+{
+	"Superpomme":{
+		"user":"Superpomme",
+		"profile":"superpomme.js",
+		"variable_name":"song_user_superpomme"
+	},
+	"SynkkäMaan":{
+		"user":"SynkkäMaan",
+		"profile":"SynkkaMaan.js",
+		"variable_name":"song_user_SynkkaMaan"
+	}
+
+}
+
+
+
+
+
+
+//checking to see if you have a username set
+if (localStorage.getItem("current_username") != null){
+	
+console.log("current_username is SET")
+console.log("current_username is "+localStorage.getItem("current_username"))
+
+let current_user_name=localStorage.getItem("current_username")
+console.log(current_user_name)
+
+if (localStorage.getItem("current_username")=="Temp"){
+console.log("it was temp")
+
+
+  if (localStorage.getItem("song_user_temp") != null)
+	{
+		localstorage("load")
+	}
+	else{
+		newsongs=window["song_user_superpomme"]
+		localstorage("save")
+
+	}
+
+
+
+}
+else{
+
+
+
+
+variablename=Stored_userdict[localStorage.getItem("current_username")]["variable_name"]
+console.log(variablename)
+console.log(window)
+console.log(window[variablename])
+newsongs=window[variablename]
+}
+
+//localstorage("save")
+
+
+
+}
+else{
+console.log("current_username is UNSET")
+localStorage.setItem("current_username","Superpomme")
+variablename=Stored_userdict[localStorage.getItem("current_username")]["variable_name"]
+console.log(variablename)
+console.log(window)
+console.log(window[variablename])
+newsongs=window[variablename]
+}
+
+
+
+	var geojson = L.geoJson(statesData, {
+		style,
+		onEachFeature
+	}).addTo(map);
+
+
+
+
+function save_song()
+{
+	
+	
+	let countrycode=document.getElementById("country_select").value
+	console.log(countrycode)
+	
+	if ( countrycode  in newsongs  ){
+		
+	}
+	else{
+		newsongs[countrycode]={}
+	}
+	newsongs[countrycode]["CountryName"]=country_name_dict[document.getElementById("country_select").value]
+	
+	//console.log("-----------------------")
+	//console.log(newsongs[countrycode])
+	//console.log("-----------------------")
+	
+	newsongs[countrycode]["Band"]				=		document.getElementById("Band").value 		 
+	newsongs[countrycode]["Track"]				=		document.getElementById("Track").value	 
+	newsongs[countrycode]["MusicStyle"]			=		document.getElementById("MusicStyle").value
+	newsongs[countrycode]["link"]				=		document.getElementById("link").value	 
+	newsongs[countrycode]["Honourable"]			=		document.getElementById("Honourable").value
+	newsongs[countrycode]["Honourable2"]		=		document.getElementById("Honourable2").value
+	newsongs[countrycode]["Rating"]				=		document.getElementById("Rating").value	 
+	
+	
+	if (newsongs[countrycode]["Band"]		    ==  ""    
+	&& newsongs[countrycode]["Track"]		    ==  "" 
+	&& newsongs[countrycode]["MusicStyle"]	    ==  "" 
+	&& newsongs[countrycode]["link"]		    ==  "" 
+	&& newsongs[countrycode]["Honourable"]	    ==  "" 
+	&& newsongs[countrycode]["Honourable2"]     ==  "" 
+	&& newsongs[countrycode]["Rating"]		    ==  ""  )
+	
+	{
+		delete(newsongs[countrycode])
+	
+	}
+	
+	
+	
+	
+	localstorage("save")
+}
+
+function ask_for_conf(menu_in_question)
+{
+	
+	
+	if (menu_in_question=="wipe_countries"){
+	//"wipe_countries"
+  let text = "Are you definitely sure? this will wipe all the countries then save!";
+  if (confirm(text) == true) {
+    console.log("You pressed OK!")
+	newsongs={}
+	newsongs={"ACTIVE":"yes"}
+	localstorage("save")
+	
+  } else {
+    
+	 console.log("You cancelled!")
+  }	
+	
+}
+	else if (menu_in_question=="remove_saved_user"){
+	//"wipe_countries"
+  let text = "Are you definitely sure? this will remove local changes to user";
+  if (confirm(text) == true) {
+    console.log("You pressed OK!")
+	
+	localstorage("removeuser")
+	//localstorage("load")
+	//localstorage("save")
+  } else {
+    
+	 console.log("You cancelled!")
+  }	
+	
+}
+
+}
+
+
+
+
+
+
+
+
+function play_this_song(){
+	
+	
+	preview_track(document.getElementById("link").value.replace("https://youtu.be/",""))
+}
+
+
+
+
+function hideallmenus(thenshow="",exception="")
+{
+	document.getElementById('iframeholder').style.display='none';
+	document.getElementById('editholder').style.display='none'
+	document.getElementById('bosstunes_menu').style.display='none'
+	document.getElementById('suggestionholder').style.display='none'
+
+	if (thenshow.length>0)
+	{
+		document.getElementById(thenshow).style.display='block'
+	}
+	
+}
+//
+//function bosstunes_menu(ShowHide="unset")
+//{
+//	console.log("ShowHide")
+//	console.log(ShowHide)
+//	if ShowHide="show"
+//	{
+//	document.getElementById("bosstunes_menu").style.display="block"
+//	}
+//	else{
+//	document.getElementById("bosstunes_menu").style.display="none"	
+//	}
+//	
+//}
+
+
+function reload_map(){
+	map.remove()
+	
+		 map = L.map('map').setView([47, 9.6], 4);
+	//const map = L.map('map').fitWorld();
+	
+	map.createPane('labels');
+	map.getPane('labels').style.zIndex = 650;
+	
+		// Layers in this pane are non-interactive and do not obscure mouse/touch events
+	map.getPane('labels').style.pointerEvents = 'none';
+	
+	
+	
+	
+
+
+	 cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributosrs, &copy; <a href="https://carto.com/attribution">CARTO</a>';
+
+	 positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+		attribution: cartodbAttribution
+	}).addTo(map);
+	
+	
+	 positronLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+		attribution: cartodbAttribution,
+		pane: 'labels',
+		        //maxZoom: '4'
+	}).addTo(map);
+
+
+
+
+
+// it is currently erroring due to something that happens here
+
+	// control that shows state info on hover
+	 info = L.control();
+
+	info.onAdd = function (map) {
+		this._div = L.DomUtil.create('div', 'info');
+		this.update();
+		return this._div;
+	};
+		 geojson = L.geoJson(statesData, {
+		style,
+		onEachFeature
+	}).addTo(map);
+	
+	
+	
+	
+}
+
+</script>
+</body>
+</html>
