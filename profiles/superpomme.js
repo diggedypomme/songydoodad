@@ -617,5 +617,35 @@
     "Honourable": "",
     "Honourable2": "",
     "Rating": "6"
+  },
+    "EC": {
+    "CountryName": "Ecuador",
+    "Band": "Swing Original Monks",
+    "Track": "Caminito",
+    "MusicStyle": "",
+    "link": "https://youtu.be/vuWVMafrNpQ",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "7"
+  },
+  "AG": {
+    "CountryName": "Antigua and Barbuda",
+    "Band": "Saints Brothers",
+    "Track": "Tighter",
+    "MusicStyle": "",
+    "link": "https://youtu.be/ZZKw4hru6tw",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "7"
+  },
+  "DM": {
+    "CountryName": "Dominica",
+    "Band": "MidnightGroovers",
+    "Track": "Femm' Débatt ",
+    "MusicStyle": "",
+    "link": "https://youtu.be/yLWWrgJxUTw",
+    "Honourable": "Ophélia - Aie Dominique",
+    "Honourable2": "idnight Groovers - Taloun Hault",
+    "Rating": "7"
   }
 }
