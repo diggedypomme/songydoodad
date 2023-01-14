@@ -136,7 +136,7 @@ function getColor(d) {
 }
 
 function style(feature) {
-
+	console.log(feature)
     rating = -1
     try {
         //console.log(newsongs[feature.properties.ISO_A2]["Rating"])
@@ -156,6 +156,48 @@ function style(feature) {
     };
 }
 
+
+function rob_wipe_thenrefresh()
+{
+	rob_wipe_colours()
+	rob_refresh_colours()
+}
+
+
+function rob_wipe_colours()
+{
+	try{
+	window.geojson.remove()
+	}
+	catch{}
+	try{
+	window.geojson2.remove()
+		}
+	catch{}
+	//var geojson = L.geoJson(statesData, {
+	//	style,
+	//	onEachFeature
+	//}).addTo(map);
+	
+}
+var geojson2
+function rob_refresh_colours()
+{
+	//rob_wipe_colours()
+	
+	 geojson2 = L.geoJson(statesData, {
+		style,
+		onEachFeature
+	}).addTo(map);
+	
+}
+
+
+
+
+
+
+
 function removestyle(feature) {
 
     rating = -1
@@ -173,18 +215,20 @@ function removestyle(feature) {
         color: 'white',
         //dashArray: '3',
         fillOpacity: 0.7,
-        fillColor: getColor(rating)
+        fillColor: getColor(-1)
     };
 }
 
 function highlightFeature(e) {
+	console.log(["E IS",e])
     const layer = e.target;
-
+console.log(["layer IS",layer])
     layer.setStyle({
         weight: 2,
         color: 'blue',
         dashArray: '',
-        fillOpacity: 0.7
+        fillOpacity: 0.7,
+		//fillColor: getColor(10)
     });
 
     layer.bringToFront();
@@ -192,18 +236,32 @@ function highlightFeature(e) {
     info.update(layer.feature.properties);
 }
 
-/* global statesData */
-//const geojson = L.geoJson(statesData, {
-//	style,
-//	onEachFeature
-//}).addTo(map);
+
+
+//e isnt what you think. howdo you do it
+function testhighlightFeature(bit) {
+	
+    const layer = bit;
+
+    layer.setStyle({
+        weight: 2,
+        color: 'blue',
+        dashArray: '',
+        fillOpacity: 0.7,
+		fillColor: getColor(10)
+    });
+
+    layer.bringToFront();
+
+    info.update(layer.feature.properties);
+}
 
 function resetHighlight(e) {
     //console.log(e.target)
     //console.log(e.target)
-    //console.log(e.target)
-    //console.log(e.target)
-
+    console.log(e)
+    console.log(e.target)
+	
     geojson.resetStyle(e.target);
     info.update();
 }
@@ -271,25 +329,25 @@ const legend = L.control({
     position: 'bottomright'
 });
 
-//legend.onAdd = function (map) {
-//
-//	const div = L.DomUtil.create('div', 'info legend');
-//	const grades = [0, 10, 20, 50, 100, 200, 500, 1000];
-//	const labels = [];
-//	let from, to;
-//
-//	for (let i = 0; i < grades.length; i++) {
-//		from = grades[i];
-//		to = grades[i + 1];
-//
-//		labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
-//	}
-//
-//	div.innerHTML = labels.join('<br>');
-//	return div;
-//};
-//
-//legend.addTo(map);
+legend.onAdd = function (map) {
+
+	const div = L.DomUtil.create('div', 'info legend');
+	const grades = [0, 1, 2, 5, 6, 7, 8, 9, 10];
+	const labels = [];
+	let from, to;
+
+	for (let i = 0; i < grades.length; i++) {
+		from = grades[i];
+		to = grades[i + 1];
+
+		labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
+	}
+
+	div.innerHTML = labels.join('<br>');
+	return div;
+};
+
+legend.addTo(map);
 //
 //
 //
@@ -549,6 +607,8 @@ function change_user(changeto) {
 }
 
 
+
+// THIS IS THE ONE GOING THROUGH THEM ONE BY ONE
 
 
 let country_name_dict = {}
@@ -817,6 +877,7 @@ function save_song() {
 
 
     localstorage("save")
+	rob_wipe_thenrefresh()
 }
 
 function ask_for_conf(menu_in_question) {

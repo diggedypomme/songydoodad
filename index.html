@@ -53,152 +53,72 @@
 	</div>
 
 	<div id="iframeholder">
-
-
 		Track
 		<div id="x-button" onclick="document.getElementById('iframeholder').style.display='none'">X</div>
-		<div id="songinfo_edit-button" onclick="hideallmenus('editholder')" style="
-		border-style: outset;
-		width: 45px;
-		position: absolute;
-		right: 55px;
-		top: 4px;
-		text-align: center;"> Edit</div>
-		<div id="songinfo_edit-button2" onclick="hideallmenus('suggestionholder')" style="
-		border-style: outset;
-		width: auto;
-		position: absolute;
-		right: 115px;
-		top: 4px;
-		text-align: center;"> Suggest</div>
-
-		<iframe id="song_iframe" width="100%" height="415" src="">
-		</iframe>
-
-
+		<div id="songinfo_edit-button-1" onclick="hideallmenus('editholder')" > Edit</div>
+		<div id="songinfo_edit-button-2" onclick="hideallmenus('suggestionholder')"> Suggest</div>
+		<iframe id="song_iframe" width="100%" height="415" src=""></iframe>
 	</div>
-
-
 
 	<div id="songinfo">
 		<div id="trackinfo_info"></div>
-		<div id="songinfo_x-button" onclick="document.getElementById('songinfo').style.display='none'" style="
-		border-style: outset;
-		width: 20px;
-		position: absolute;
-		right: 21px;
-		top: 4px;
-		text-align: center;">X</div>
+		<div id="songinfo_x-button" onclick="document.getElementById('songinfo').style.display='none'">X</div>
 		<div id="songinfo_show-button" onclick="document.getElementById('iframeholder').style.display='block'" > Show</div>
-		<div id="songinfo_edit-button" onclick="document.getElementById('editholder').style.display='block';document.getElementById('iframeholder').style.display='none'" style="
-		border-style: outset;
-		width: 45px;
-		position: absolute;
-		right: 110px;
-		top: 4px;
-		text-align: center;"> Edit</div>
-
-
-
-
+		<div id="songinfo_edit-button-3" onclick="document.getElementById('editholder').style.display='block';document.getElementById('iframeholder').style.display='none'" > Edit</div>
 	</div>
 
 
 	<div id="bosstunes_diff">
-
-
 		<center>
 			<h1 onclick="do_a_diff() ">Compare saved values</h1>
-		</center>
-		<BR>
-
-		<div id="diff">
-			hi
-		</div>
-
+		</center><BR>
+		<div id="diff">			hi		</div>
 		<div id="songedit_x-button" onclick="document.getElementById('bosstunes_diff').style.display='none'">X</div>
-
-
 	</div>
 
 
 	<div id="bosstunes_menu">
 		<div id="trackinfo_info"></div>
 		<div id="bosstunes_x-button" onclick="bosstunes_menu('hide')">X</div>
-
-
 		<div id="bosstunes_edit-button" onclick="hideallmenus('editholder')"> Enable Edit mode</div>
-
 		<br><br>
 
-
-
-
-		<center> <select name="usernames" id="usernames" onchange="change_user(document.getElementById('usernames').value)" id="username_listing">
-				<option value="Superpomme">Superpomme</option>
-			</select> </center><br>
-
-
+		<center> 
+			<select name="usernames" id="usernames" onchange="change_user(document.getElementById('usernames').value)" id="username_listing">
+			<option value="Superpomme">Superpomme</option>
+			</select> 
+		</center><br>
 
 		<center> Bio something something </center>
-
-
 		Change user - select user<br>
-
-		Enable Editing | Disable editing | status
-		<BR>
-
-
-
+		Enable Editing | Disable editing | status<BR>
 		<button onclick="ask_for_conf('remove_saved_user')"> Wipe changes back to user</button><br>
 		<br>
-
 		<button onclick="ask_for_conf('wipe_countries')"> Wipe all countries</button><br>
 		<br>
 		<button onclick="download_config()"> download user</button><br>
 		<BR>
 		<button onclick="set_diff()"> Check local store against defaults</button><br>
-
 		upload user <br>
 		create user <BR>
 		clone to user <BR>
-
-
-
 	</div>
 
 
 	<div id="suggestionholder">
 
 		<div id="suggestionholder_x-button" onclick="document.getElementById('suggestionholder').style.display='none'">X</div>
-
 		<div id="songedit_s-button" onclick="hideallmenus('editholder')">Edit</div>
-
-
 		<BR><BR>
 		Choose a Country:
-
 		<select name="suggestion_country_select" style="width: max-content;" id="suggestion_country_select" onchange="change_country()">
 		</select>
-
-		<br>
-		<BR>
+		<br><BR>
 		Choose style:
-
 		<select id="suggestion_style_select" style="width: max-content;" name="suggestion_style_select" onchange="suggestion_build_suggestions()">
 		</select>
 		<BR><BR>
-
-
-
-
-
 		<div id="suggestion_output"> Select country </div>
-
-
-
-
-
 	</div>
 
 
@@ -207,23 +127,11 @@
 	<div id="editholder">
 
 		<div id="songedit_x-button" onclick="document.getElementById('editholder').style.display='none'">X</div>
-
 		<div id="songedit_s-button" onclick="hideallmenus('suggestionholder')" >Suggest</div>
-
 		<div id="songedit_wipe-button" onclick="document.getElementById('iframeholder').style.display='block'"> Wipe</div>
 		<div id="songedit_show-button" onclick="hideallmenus('iframeholder');play_this_song()" > Watch</div>
-
-
-
 		<div id="songedit_edit-button" onclick="save_song()" > Apply</div>
-
-
-
-		<select id="country_select" onchange="change_edit_to()">
-
-		</select>
-
-
+		<select id="country_select" onchange="change_edit_to()"></select>
 		<Center id="edit_countryname"> Country Name </center>
 
 		<inputdiv>
@@ -255,18 +163,9 @@
 			<input type="number" id="Rating" name="Rating" placeholder="" />
 		</inputdiv>
 
-
-
-		<div id="songedit_suggestion-button" onclick="hideallmenus('suggestionholder')" style="
-		 border-style: outset;
-		width: 125px;
-		position: absolute;
-		left: 40%;
-		top: 413px;
-		text-align: center;
-		"> Suggestion</div>
-
-
+		<div id="songedit_suggestion-button-4" onclick="hideallmenus('suggestionholder')" > 
+			Suggestion
+		</div>
 	</div>
 
 

@@ -178,7 +178,7 @@
     top: 4px;
     text-align: center;
 }
- #songinfo_edit-button{
+ #songinfo_edit-button-1{
     border-style: outset;
     width: 45px;
     position: absolute;
@@ -186,7 +186,7 @@
     top: 4px;
     text-align: center;
 }
- #songinfo_edit-button{
+ #songinfo_edit-button-2{
     border-style: outset;
     width: auto;
     position: absolute;
@@ -232,7 +232,7 @@
     top: 4px;
     text-align: center;
 }
- #songinfo_edit-button{
+ #songinfo_edit-button-3{
     border-style: outset;
     width: 45px;
     position: absolute;
@@ -420,7 +420,7 @@
     text-align: center;
 }
 
- #songedit_suggestion-button{
+ #songedit_suggestion-button-4{
     border-style: outset;
     width: 125px;
     position: absolute;
