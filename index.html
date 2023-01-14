@@ -92,16 +92,22 @@
 		<center> Bio something something </center>
 		Change user - select user<br>
 		Enable Editing | Disable editing | status<BR>
-		<button onclick="ask_for_conf('remove_saved_user')"> Wipe changes back to user</button><br>
-		<br>
-		<button onclick="ask_for_conf('wipe_countries')"> Wipe all countries</button><br>
-		<br>
-		<button onclick="download_config()"> download user</button><br>
-		<BR>
-		<button onclick="set_diff()"> Check local store against defaults</button><br>
-		upload user <br>
 		create user <BR>
 		clone to user <BR>
+		<button onclick="ask_for_conf('remove_saved_user')"> Revert local save to Superpomme (default)</button><br>
+		<br>
+		<button onclick="ask_for_conf('wipe_countries')"> Wipe all countries to blank (new user)</button><br>
+		<br>
+		<button onclick="download_config()">Download user file</button><br>
+		<BR>
+		<button onclick="set_diff()"> Check current local save against Superpomme (default)</button><br>
+		<br>
+		<input type="file" id="selectFiles" value="Import" />
+		<button id="import" onclick="import_user()">Upload Local Profile</button>
+		 <br>
+		
+		
+
 	</div>
 
 
@@ -151,11 +157,11 @@
 			<input type="text" id="link" name="link" placeholder="" />
 		</inputdiv>
 		<inputdiv>
-			<newlabel for="Honourable">Honourable </newlabel>
+			<newlabel for="Honourable">Honourable mention</newlabel>
 			<input type="text" id="Honourable" name="Honourable" placeholder="" />
 		</inputdiv>
 		<inputdiv>
-			<newlabel for="Honourable2">Honourable 2</newlabel>
+			<newlabel for="Honourable2">Honourable mention 2</newlabel>
 			<input type="text" id="Honourable2" name="Honourable2" placeholder="" />
 		</inputdiv>
 		<inputdiv>

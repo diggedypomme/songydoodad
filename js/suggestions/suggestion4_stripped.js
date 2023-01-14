@@ -31,8 +31,39 @@ function change_country()
 }
 
 
+
+function add_suggestions_from_profiles(chosen_country)
+{
+	console.log("add_suggestions_from_profiles")
+	console.log(chosen_country)
+	console.log(song_recommendations[chosen_country])
+	
+	//console.log(code_to_country(chosen_country)) - was there a country to code one?
+	//song_recommendations[chosen_country]["test"]="hi"
+	
+	
+	
+	
+	
+	
+	song_recommendations[chosen_country]["User Favourites"]=["hello"]
+	
+	
+	console.log(song_recommendations[chosen_country])	
+	
+	//for each profile, for this country, add to new dict
+	
+	
+}
+
+
+
+
+
 function suggestion_build_styles(chosen_country)
 {
+	add_suggestions_from_profiles(chosen_country)
+	
 	document.getElementById("suggestion_style_select").innerHTML=""
 	console.log("suggestion_build_styles : "+chosen_country)
 		for(var i = 0; i < Object.keys(song_recommendations[chosen_country]).length; i++) {

@@ -347,7 +347,9 @@ legend.onAdd = function (map) {
 	return div;
 };
 
-legend.addTo(map);
+//legend.addTo(map);
+
+
 //
 //
 //
@@ -483,30 +485,30 @@ function output_diff_line(countrycode, ) {
     //right,
 
     let linesetup = `<div id="another_line"
-style="
-border-style: solid;
-    width: 97%;
-	border-radius: 10px
-"
+	style="
+	border-style: solid;
+		width: 97%;
+		border-radius: 10px
+	"
 
- > 
-  <center>` + country_name_dict[countrycode] + `</center><BR> 
- <div style=
-  "display: inline-block;
-  width: 45%;
-  height: 180px;
-  overflow:hidden;
-  white-space: nowrap;
-  border: 1px solid black;">` + output_diff_element("left", countrycode) + ` </div>
- <div style=
-  "display: inline-block;
-  width: 45%;
-  overflow:hidden;
-  height: 180px;
-  white-space: nowrap;
-  border: 1px solid black;">` + output_diff_element("right", countrycode) + ` </div>  
- 
- </div>`
+	 > 
+	  <center>` + country_name_dict[countrycode] + `</center><BR> 
+	 <div style=
+	  "display: inline-block;
+	  width: 45%;
+	  height: 180px;
+	  overflow:hidden;
+	  white-space: nowrap;
+	  border: 1px solid black;">` + output_diff_element("left", countrycode) + ` </div>
+	 <div style=
+	  "display: inline-block;
+	  width: 45%;
+	  overflow:hidden;
+	  height: 180px;
+	  white-space: nowrap;
+	  border: 1px solid black;">` + output_diff_element("right", countrycode) + ` </div>  
+	 
+	 </div>`
 
     return (linesetup)
 }
@@ -893,6 +895,7 @@ function ask_for_conf(menu_in_question) {
                 "ACTIVE": "yes"
             }
             localstorage("save")
+			rob_wipe_thenrefresh()
 
         } else {
 
@@ -904,10 +907,12 @@ function ask_for_conf(menu_in_question) {
         let text = "Are you definitely sure? this will remove local changes to user";
         if (confirm(text) == true) {
             console.log("You pressed OK!")
-
+			newsongs = song_user_superpomme
+			
             localstorage("removeuser")
-            //localstorage("load")
-            //localstorage("save")
+			localstorage("save")
+			rob_wipe_thenrefresh()
+
         } else {
 
             console.log("You cancelled!")
@@ -990,4 +995,34 @@ function reload_map() {
 
 
 
+}
+
+function import_user() 
+{
+	//https://jsfiddle.net/Ln37kqc0/
+	
+  var files = document.getElementById('selectFiles').files;
+  console.log(files);
+  if (files.length <= 0) {
+    return false;
+	}
+	 var fr = new FileReader();
+  
+  fr.onload = function(e) { 
+  console.log(e);
+    var result = JSON.parse(e.target.result);
+	
+	
+    var formatted = JSON.stringify(result, null, 2);
+		//document.getElementById('result').value = formatted;
+		console.log(result)
+		//song_user_temp=newsongs
+		newsongs=result
+		localstorage("save")
+		rob_wipe_thenrefresh()
+  }
+  
+  fr.readAsText(files.item(0));
+	
+	
 }
