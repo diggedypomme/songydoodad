@@ -45,9 +45,9 @@ function add_suggestions_from_profiles(chosen_country)
 	
 	
 	
-	
-	song_recommendations[chosen_country]["User Favourites"]=["hello"]
-	
+	if (user_country_check(chosen_country).length > 0){
+		song_recommendations[chosen_country]["User Favourites"]=user_country_check(chosen_country)
+	}
 	
 	console.log(song_recommendations[chosen_country])	
 	
@@ -58,7 +58,77 @@ function add_suggestions_from_profiles(chosen_country)
 
 
 
+function user_country_check(country)
+{
+	
+	
+	let list_of_suggestions=[]
+	
+	let user_counting_up=0
+		while (user_counting_up < Object.keys(Stored_userdict).length)
+		{
+			//console.log(Stored_userdict[user_counting_up])
+			
+			
+			console.log(Stored_userdict)
+			console.log(Object.keys(Stored_userdict)[user_counting_up])
+			console.log(Stored_userdict[Object.keys(Stored_userdict)[user_counting_up]])
+			
+			//this is the user  variable for that profiles store
+			console.log(Stored_userdict[Object.keys(Stored_userdict)[user_counting_up]]["variable_name"])
+			
+			let test_user_variable=Stored_userdict[Object.keys(Stored_userdict)[user_counting_up]]["variable_name"]
+			console.log(test_user_variable)
+			
+			//this is the band list
+			console.log(window[test_user_variable])
+			
+			let this_country_code=country_to_code[country]
+			console.log(this_country_code)
+			
+			
+			
+			
+			if (window[test_user_variable][this_country_code] != undefined)
+			{
+				console.log(" ----------------- THIS IS FOUND ")
+				console.log(window[test_user_variable][this_country_code])
+				let found_dict=window[test_user_variable][this_country_code]
+				
+				adding_list=[
+					found_dict["Band"],
+					found_dict["Track"],
+					"https://www.last.fm/music/"+found_dict['Band']+"/_/"+found_dict['Track']+"",
+					"https://www.youtube.com/results?search_query="+found_dict['Band']+"%20(2)%20"+found_dict['Track']+"",
+					"https://musicbrainz.org/search?query="+found_dict['Band']+"&type=artist",
+					found_dict["link"],
+				]
+				
+				
+				console.log(adding_list)
+				list_of_suggestions.push(adding_list)
+				
+				
+				
+				
+				
+			}
+			
+			
+			//ountry_to_code
+			
+			
+			//console.log(Object.keys(Stored_userdict)[Stored_userdict[user_counting_up]])
+			
+			
+			user_counting_up=user_counting_up+1
+		}
+	console.log(list_of_suggestions)
+	return list_of_suggestions
 
+	
+	
+}
 
 function suggestion_build_styles(chosen_country)
 {
