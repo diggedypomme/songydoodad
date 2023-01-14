@@ -647,5 +647,26 @@
     "Honourable": "Ophélia - Aie Dominique",
     "Honourable2": "idnight Groovers - Taloun Hault",
     "Rating": "7"
+  },
+  "JM": {
+    "CountryName": "Jamaica",
+    "Band": "The Paragons",
+    "Track": "On the beach",
+    "MusicStyle": "Reggae",
+    "link": "https://youtu.be/OZWZNJaKw8E",
+    "Honourable": "There are so many. I will add to suggestions",
+    "Honourable2": "",
+    "Rating": "8"
+  },
+  "CD": {
+    "CountryName": "Democratic Republic of the Congo",
+    "Band": "Grand Kallé & L'African Jazz",
+    "Track": " Table Ronde",
+    "MusicStyle": "",
+    "link": "https://youtu.be/_HfWjAcLSdU",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
   }
+
 }
