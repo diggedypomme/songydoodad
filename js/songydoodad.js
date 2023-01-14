@@ -136,7 +136,7 @@ function getColor(d) {
 }
 
 function style(feature) {
-	console.log(feature)
+	//console.log(feature)
     rating = -1
     try {
         //console.log(newsongs[feature.properties.ISO_A2]["Rating"])
@@ -220,9 +220,9 @@ function removestyle(feature) {
 }
 
 function highlightFeature(e) {
-	console.log(["E IS",e])
+	//console.log(["E IS",e])
     const layer = e.target;
-console.log(["layer IS",layer])
+//console.log(["layer IS",layer])
     layer.setStyle({
         weight: 2,
         color: 'blue',
@@ -259,8 +259,8 @@ function testhighlightFeature(bit) {
 function resetHighlight(e) {
     //console.log(e.target)
     //console.log(e.target)
-    console.log(e)
-    console.log(e.target)
+    //console.log(e)
+    //console.log(e.target)
 	
     geojson.resetStyle(e.target);
     info.update();
@@ -588,7 +588,7 @@ function set_up_user_dropdown() {
 
         `<option value="Superpomme">Superpomme</option>
 <option value="SynkkäMaan">SynkkäMaan</option>
-<option value="Temp">Temp</option>`
+<option value="Temp">Temp (locally stored)</option>`
 
 }
 
@@ -896,6 +896,8 @@ function ask_for_conf(menu_in_question) {
             }
             localstorage("save")
 			rob_wipe_thenrefresh()
+			document.getElementById("usernames").value="Temp"
+			change_user(document.getElementById('usernames').value)
 
         } else {
 
@@ -904,7 +906,7 @@ function ask_for_conf(menu_in_question) {
 
     } else if (menu_in_question == "remove_saved_user") {
         //"wipe_countries"
-        let text = "Are you definitely sure? this will remove local changes to user";
+        let text = "Are you definitely sure? this will change all locally saved songs back to default";
         if (confirm(text) == true) {
             console.log("You pressed OK!")
 			newsongs = song_user_superpomme
@@ -1026,3 +1028,13 @@ function import_user()
 	
 	
 }
+
+function compare_completed(username)
+{
+		console.log(Object.keys(newsongs).length+" / "+statesData["features"].length + " Countries")
+	
+	
+	
+}
+
+compare_completed("Superpomme")
