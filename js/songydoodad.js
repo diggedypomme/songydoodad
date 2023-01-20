@@ -19,7 +19,7 @@ map.getPane('labels').style.pointerEvents = 'none';
 
 
 
-let cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>,  <a href="https://gka.github.io/chroma.js/">chromaJS</a> ';
+let cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://exploratory.io/map">exploratory.io</a>,&copy; <a href="https://carto.com/attribution">CARTO</a>,  <a href="https://gka.github.io/chroma.js/">chromaJS</a> ';
 
 
 
@@ -586,9 +586,10 @@ function return_formatted_songdict(dict_to_replace) {
 function set_up_user_dropdown() {
     document.getElementById("usernames").innerHTML =
 
-        `<option value="Superpomme">Superpomme</option>
-<option value="SynkkäMaan">SynkkäMaan</option>
-<option value="Temp">Temp (locally stored)</option>`
+`<option value="Superpomme">Superpomme - `+compare_completed_real("Superpomme")+`</option>
+<option value="SynkkäMaan">SynkkäMaan - `+compare_completed_real("SynkkäMaan")+`</option>
+<option value="Sheskabab">Sheskabab - `+compare_completed_real("Sheskabab")+`</option>
+<option value="Temp">Temp (locally stored) - `+compare_completed()+`</option>`
 
 }
 
@@ -702,7 +703,7 @@ function bosstunes_menu(inputname) {
 function download_config() {
 
     console.log(newsongs)
-    downloadToFile(JSON.stringify(newsongs, null, 2), 'my-new-file.txt', 'text/plain');
+    downloadToFile(JSON.stringify(newsongs, null, 2), 'Custom_country_songlist.txt', 'text/plain');
 }
 
 
@@ -770,6 +771,11 @@ let Stored_userdict = {
         "user": "SynkkäMaan",
         "profile": "SynkkaMaan.js",
         "variable_name": "song_user_SynkkaMaan"
+    },
+    "Sheskabab": {
+        "user": "Sheskabab",
+        "profile": "Sheskabab.js",
+        "variable_name": "song_user_Sheskabab"
     }
 
 }
@@ -793,7 +799,8 @@ if (localStorage.getItem("current_username") != null) {
         if (localStorage.getItem("song_user_temp") != null) {
             localstorage("load")
         } else {
-            newsongs = window["song_user_superpomme"]
+            //newsongs = window["song_user_superpomme"]
+			newsongs={}
             localstorage("save")
 
         }
@@ -839,6 +846,48 @@ var geojson = L.geoJson(statesData, {
 function save_song() {
 
 
+
+		if (document.getElementById("Rating").value == ""){
+			let text = "You did not set a rating. That's fine, but the colour is based on the rating. \n \n Without this the country will still look blank.";
+		
+			if (confirm(text) == true) {
+				console.log("You pressed OK!")
+	 
+
+			} else {
+
+				console.log("You cancelled!")
+				return("cancelled")
+			}
+		}	
+		
+		
+		
+
+	if (document.getElementById("usernames").value!="Temp")
+	{
+		let text = "Are you definitely sure? This will overwrite your current song list with currently set profile. \n\n You should probably change your user to 'Temp' instead, before saving to avoid accidentally overwriting (unless you are  trying to clone a user).";
+        if (confirm(text) == true) {
+            console.log("You pressed OK!")
+
+            }
+ 
+
+         else {
+
+            console.log("You cancelled!")
+			return("you cancelled")
+        }
+		
+	}
+
+
+
+
+
+
+
+
     let countrycode = document.getElementById("country_select").value
     console.log(countrycode)
 
@@ -880,9 +929,21 @@ function save_song() {
 
     localstorage("save")
 	rob_wipe_thenrefresh()
+	
+	
+	let thecurrentuser=document.getElementById("usernames").value
+	set_up_user_dropdown()
+	document.getElementById("usernames").value=thecurrentuser
+	
+	
 }
 
 function ask_for_conf(menu_in_question) {
+
+
+
+
+
 
 
     if (menu_in_question == "wipe_countries") {
@@ -892,7 +953,7 @@ function ask_for_conf(menu_in_question) {
             console.log("You pressed OK!")
             newsongs = {}
             newsongs = {
-                "ACTIVE": "yes"
+                //"ACTIVE": "yes"
             }
             localstorage("save")
 			rob_wipe_thenrefresh()
@@ -1027,14 +1088,71 @@ function import_user()
   fr.readAsText(files.item(0));
 	
 	
+	
+	
+		let thecurrentuser=document.getElementById("usernames").value
+	set_up_user_dropdown()
+	document.getElementById("usernames").value=thecurrentuser
+	
+	
 }
 
-function compare_completed(username)
+//this currently just does it for local
+
+function compare_completed()
 {
-		console.log(Object.keys(newsongs).length+" / "+statesData["features"].length + " Countries")
 	
+	try{
+		let templength=Object.keys ( JSON.parse(localStorage.getItem("song_user_temp")) ).length
 	
+        JSON.parse(localStorage.getItem("song_user_temp")	)
+	
+		//console.log(Object.keys(newsongs).length+" / "+statesData["features"].length + " Countries")
+		console.log(templength+" / "+statesData["features"].length + " Countries")
+		
+		
+		
+		
+		//return (Object.keys(newsongs).length)
+		return (templength)
+	}
+	catch{
+		return 0
+		
+	}
 	
 }
+
+function compare_completed_real(username)
+{
+		console.log((Object.keys(username).length)+" / "+statesData["features"].length + " Countries")
+	
+	
+	let value=Stored_userdict[username]["variable_name"]
+	
+	console.log(value)
+	console.log(value)
+	//console.log(song_user_superpomme)
+	//console.log((Object.keys(song_user_superpomme)))
+	console.log(         (Object.keys(eval(value)))          )
+	console.log(         Object.keys((Object.keys(eval(value)))).length          )
+	
+	
+	return Object.keys((Object.keys(eval(value)))).length
+	
+}
+compare_completed_real("Superpomme")
+
+
 
 compare_completed("Superpomme")
+
+
+function robzoomToFeature(e) {
+    //map.fitBounds(e.target.getBounds());
+
+    console.log("--------------------")
+    console.log(e.target)
+    const layer = e.target;
+    console.log(layer.feature.properties)
+}

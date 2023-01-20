@@ -22,7 +22,7 @@
 		
 	<!--Leaflet - external map showing library-->
 	<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
-	<!--Showing the map. I believe from https://geojson-maps.ash.ms/-->
+	<!--Showing the map. https://exploratory.io/map MIT licence-->
 	<script type="text/javascript" src="js/map/world.geojson.js"></script>
 	<!--Chroma - external js library for setting the colour ranges-->
 	<script type="text/javascript" src="js/chroma/chroma.min.js"></script>	  
@@ -30,6 +30,7 @@
 	<!--Saved profiles-->
 	<script src="profiles/superpomme.js" ></script>
 	<script src="profiles/SynkkaMaan.js" ></script>
+	<script src="profiles/Sheskabab.js" ></script>
 
 	<!--Notes: menu from https://www.w3docs.com/tools/code-editor/2714 dropdown menu< -->
 	<!--Notes: Font from https://www.fontspace.com/scripto-font-f84791  -->
@@ -89,11 +90,13 @@
 			</select> 
 		</center><br>
 
-		<center> Bio something something </center>
+		<center> Select Temp from the menu above to create your own </center><BR><BR>
+		<!--
 		Change user - select user<br>
 		Enable Editing | Disable editing | status<BR>
 		create user <BR>
 		clone to user <BR>
+		-->
 		<button onclick="ask_for_conf('remove_saved_user')"> Revert local save to Superpomme (default)</button><br>
 		<br>
 		<button onclick="ask_for_conf('wipe_countries')"> Wipe all countries to blank (new user)</button><br>
@@ -165,8 +168,8 @@
 			<input type="text" id="Honourable2" name="Honourable2" placeholder="" />
 		</inputdiv>
 		<inputdiv>
-			<newlabel for="Rating">Rating</newlabel>
-			<input type="number" id="Rating" name="Rating" placeholder="" />
+			<newlabel for="Rating">Rating (0-10)</newlabel>
+			<input type="number" id="Rating"  name="Rating" placeholder="" />
 		</inputdiv>
 
 		<div id="songedit_suggestion-button-4" onclick="hideallmenus('suggestionholder')" > 

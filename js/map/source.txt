@@ -1,0 +1,2 @@
+https://exploratory.io/map
+License: MIT

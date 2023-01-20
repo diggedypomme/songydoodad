@@ -1,6 +1,5 @@
  
  var song_user_superpomme={
-
   "AO": {
     "link": "https://youtu.be/2ehUY2uyovg",
     "Band": "Maró Riba",
@@ -328,7 +327,7 @@
     "MusicStyle": "Stoner Metal",
     "Honourable": "",
     "Honourable2": "",
-    "Rating": 7
+    "Rating": "7"
   },
   "RU": {
     "link": "https://youtu.be/BaP1wDvkA6E",
@@ -618,7 +617,7 @@
     "Honourable2": "",
     "Rating": "6"
   },
-    "EC": {
+  "EC": {
     "CountryName": "Ecuador",
     "Band": "Swing Original Monks",
     "Track": "Caminito",
@@ -667,6 +666,15 @@
     "Honourable": "",
     "Honourable2": "",
     "Rating": "6"
+  },
+  "PR": {
+    "CountryName": "Puerto Rico",
+    "Band": "Gomba Jahbari ",
+    "Track": "Vengo Buscando",
+    "MusicStyle": "reggae",
+    "link": "https://youtu.be/GJ4ilkN-Z-Y",
+    "Honourable": "Gomba Jahbari - Acho Puñeta https://youtu.be/naDFtp_X2E4?",
+    "Honourable2": "",
+    "Rating": "7"
   }
-
 }

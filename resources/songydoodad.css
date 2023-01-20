@@ -313,7 +313,21 @@
     text-align: center;
 }
  #usernames{
+	     width:auto;
+    height: 35px;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #999;
+    background: #eee;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
+
  #suggestionholder{
     position: absolute;
     top: 50%;
@@ -330,7 +344,9 @@
      max-width: 500px;
     //height: 500;
     display:none;
+	max-height: 50%;
     aspect-ratio: 1 / 1;
+	
     
 }
  #suggestionholder_x-button{

@@ -27,6 +27,16 @@ function change_country()
 	let chosen_country=document.getElementById("suggestion_country_select").value
 	console.log(chosen_country)
 	suggestion_build_styles(chosen_country)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	suggestion_build_suggestions()
 }
 
@@ -159,8 +169,27 @@ function suggestion_build_styles(chosen_country)
 			el.textContent = style_name+" : "+count_suggestions;
 			el.value = opt;
 			document.getElementById("suggestion_style_select").appendChild(el);
+			//document.getElementById("suggestion_style_select").insertBefore(el, document.getElementById("suggestion_style_select").children[0]);
+			//document.getElementById("suggestion_style_select").insertBefore(el,document.getElementById("suggestion_style_select"));
+			//document.getElementById("suggestion_style_select").value='User Favourites';
+			
 		}
+		else{
+			//document.getElementById("suggestion_style_select").value=document.getElementById("suggestion_style_select").children[0]
+		}
+		
+	
+		
 	}
+		
+		console.log( Object.keys(song_recommendations[chosen_country]) )
+		if ( Object.keys(song_recommendations[chosen_country]).includes("User Favourites") ){
+			console.log(Object.keys(song_recommendations[chosen_country])) 
+			document.getElementById("suggestion_style_select").value='User Favourites';
+		}
+		else{
+			console.log("it was not in there")
+		}
 }
 
 
