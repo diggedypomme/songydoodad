@@ -135,25 +135,140 @@ function getColor(d) {
         d > 1 ? '#bae3f5' : '#ffe9e0';
 }
 
+
+let use_key_colours=false
+
 function style(feature) {
-	//console.log(feature)
-    rating = -1
-    try {
-        //console.log(newsongs[feature.properties.ISO_A2]["Rating"])
-        rating = newsongs[feature.properties.ISO_A2]["Rating"]
-    } catch {
-        //console.log("missing")
-    }
+	
+	
+	if (use_key_colours==false){
+	
+		//console.log(feature)
+		rating = -1
+		try {
+			//console.log(newsongs[feature.properties.ISO_A2]["Rating"])
+			rating = newsongs[feature.properties.ISO_A2]["Rating"]
+					//console.log("HERE HERE")
+					//console.log(getColor(rating))
+		} catch {
+			//console.log("missing")
+		}
 
 
-    return {
-        weight: 4,
-        opacity: 1,
-        color: 'white',
-        //dashArray: '3',
-        fillOpacity: 0.7,
-        fillColor: getColor(rating)
-    };
+		return {
+			weight: 4,
+			opacity: 1,
+			color: 'white',
+			//dashArray: '3',
+			fillOpacity: 0.7,
+			fillColor: getColor(rating)
+		};
+	
+	}
+	
+	else{
+		
+		
+		if (get_styles_list_combined_bool==true)
+		{
+			
+			try{
+			//console.log("HERE HERE")
+			//console.log(newsongs[feature.properties.ISO_A2]["MusicStyle"])
+			//console.log(global_style_dict)
+			
+			let testfail=global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()] // this is so it tests it then fails over if it doesnt have it
+			//console.log(global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()])
+			return {
+				weight: 4,
+				opacity: 1,
+				color: 'white',
+				//dashArray: '3',
+				fillOpacity: 0.7,
+				//fillColor: getColor(9)
+				fillColor: global_style_dict[check_grouped_key(newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase())]
+				//fillColor: global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()]
+			};				
+		}
+		catch{
+			return {
+				weight: 4,
+				opacity: 1,
+				color: 'white',
+				//dashArray: '3',
+				fillOpacity: 0.7,
+				//fillColor: getColor(9)
+				fillColor: getColor(0)
+			};			
+			
+		}
+			
+			
+			
+			
+			
+			
+		}
+		else{
+		
+		
+		
+		//global_style_dict={}
+		//global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"]]
+		//console.log(feature.properties)
+		//console.log(feature.properties.ISO_A2)
+		try{
+			//console.log("HERE HERE")
+			//console.log(newsongs[feature.properties.ISO_A2]["MusicStyle"])
+			//console.log(global_style_dict)
+			
+			let testfail=global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()]
+			//console.log(global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()])
+			return {
+				weight: 4,
+				opacity: 1,
+				color: 'white',
+				//dashArray: '3',
+				fillOpacity: 0.7,
+				//fillColor: getColor(9)
+				fillColor: global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"].toLowerCase()]
+			};				
+		}
+		catch{
+			return {
+				weight: 4,
+				opacity: 1,
+				color: 'white',
+				//dashArray: '3',
+				fillOpacity: 0.7,
+				//fillColor: getColor(9)
+				fillColor: getColor(0)
+			};			
+			
+		}
+		
+		}
+		
+		
+		
+		
+		
+		//console.log(global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"]])
+		//console.log(global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"]])
+		
+		return {
+			weight: 4,
+			opacity: 1,
+			color: 'white',
+			//dashArray: '3',
+			fillOpacity: 0.7,
+			//fillColor: getColor(9)
+			fillColor: global_style_dict[newsongs[feature.properties.ISO_A2]["MusicStyle"]]
+		};
+		
+		
+		
+	}
 }
 
 
@@ -347,35 +462,7 @@ legend.onAdd = function (map) {
 	return div;
 };
 
-//legend.addTo(map);
 
-
-//
-//
-//
-//
-//
-//const legend2 = L.control({position: 'bottomleft'});
-//
-//legend2.onAdd = function (map) {
-//
-//	const div = L.DomUtil.create('div', 'info legend');
-//	const grades = [0, 10, 20, 50, 100, 200, 500, 1000];
-//	const labels = [];
-//	let from, to;
-//
-//	for (let i = 0; i < grades.length; i++) {
-//		from = grades[i];
-//		to = grades[i + 1];
-//
-//		labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
-//	}
-//
-//	div.innerHTML = labels.join('<br>');
-//	return div;
-//};
-//
-//legend2.addTo(map);
 
 
 
@@ -905,7 +992,7 @@ function save_song() {
     newsongs[countrycode]["Band"] = document.getElementById("Band").value
     newsongs[countrycode]["Track"] = document.getElementById("Track").value
     newsongs[countrycode]["MusicStyle"] = document.getElementById("MusicStyle").value
-    newsongs[countrycode]["link"] = document.getElementById("link").value
+    newsongs[countrycode]["link"] = document.getElementById("link").value.replace("www.youtube.com/watch?v=","youtu.be/")
     newsongs[countrycode]["Honourable"] = document.getElementById("Honourable").value
     newsongs[countrycode]["Honourable2"] = document.getElementById("Honourable2").value
     newsongs[countrycode]["Rating"] = document.getElementById("Rating").value
@@ -1155,4 +1242,298 @@ function robzoomToFeature(e) {
     console.log(e.target)
     const layer = e.target;
     console.log(layer.feature.properties)
+}
+
+
+//Gets a list of the current styles for colour coding
+function get_styles_list()
+{
+	console.log(newsongs)
+	
+	let styles_list=[]
+	
+	let styles_country_countup=0
+	
+	while ( styles_country_countup <Object.keys(newsongs).length)
+		
+	
+	
+	//while ( styles_country_countup <10)
+	{
+		console.log("counting up")
+		
+		
+		
+		
+		if (Object.keys(newsongs)[styles_country_countup]!="ACTIVE")
+		{
+		
+		if ( styles_list.includes((newsongs[   Object.keys(newsongs)[styles_country_countup]    ]["MusicStyle"] ).toLowerCase()) == false){
+			styles_list.push(    newsongs[   Object.keys(newsongs)[styles_country_countup]    ]["MusicStyle"].toLowerCase()      )
+		}
+		
+		}
+		
+		
+		
+		styles_country_countup=styles_country_countup+1
+	}
+	console.log(styles_list)
+	
+	
+	
+	return(styles_list)
+	
+	
+}
+
+
+
+function get_styles_list_combined()
+{
+	console.log(newsongs)
+	
+	let styles_list=[]
+	
+	let styles_country_countup=0
+	
+	while ( styles_country_countup <Object.keys(newsongs).length)
+		
+	
+	
+	//while ( styles_country_countup <10)
+	{
+		console.log("counting up")
+		
+		
+		
+		
+		if (Object.keys(newsongs)[styles_country_countup]!="ACTIVE") // a fix for an old key that was being added and has since been removed
+		{
+		
+		if ( styles_list.includes(   check_grouped_key(    (newsongs[   Object.keys(newsongs)[styles_country_countup]    ]["MusicStyle"] ).toLowerCase()   )      ) == false){
+			
+			styles_list.push(  check_grouped_key(  newsongs[   Object.keys(newsongs)[styles_country_countup]    ]["MusicStyle"].toLowerCase()   )   )
+		}
+		
+		}
+		
+		
+		
+		styles_country_countup=styles_country_countup+1
+	}
+	console.log(styles_list)
+	
+	
+	
+	return(styles_list)
+	
+	
+}
+
+//function to merge some common ones together like dub and reggae?
+
+
+
+//legend.addTo(map);
+
+
+//
+//
+//
+//
+//
+
+
+
+
+
+//https://gist.github.com/mucar/3898821
+var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+		  '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+		  '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+		  '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+		  '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
+		  '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+		  '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
+		  '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
+		  '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
+		  '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
+
+
+
+
+
+let global_style_dict={}
+
+const legend2 = L.control({position: 'bottomleft'});
+
+legend2.onAdd = function (map,style_list) {
+
+	console.log(global_style_list)
+	const div = L.DomUtil.create('div', 'info legend');
+	//const grades = [0, 10, 20, 50, 100, 200, 500, 1000];
+	const grades = global_style_list;
+	const labels = [];
+	let from, to;
+
+	for (let i = 0; i < grades.length; i++) {
+		from = grades[i];
+		to = grades[i + 1];
+
+		labels.push(`<i style="background:${colorArray[i]}"></i> ${from}`);
+		global_style_dict[from]=colorArray[i]
+		
+	}
+
+	div.innerHTML = labels.join('<br>');
+	return div;
+};
+//
+//legend2.addTo(map);
+
+let global_style_list=[]
+
+let get_styles_list_combined_bool=true
+
+function set_key_styles()
+{
+	
+	let style_list=get_styles_list()
+	
+	if (get_styles_list_combined_bool==true){
+		style_list=get_styles_list_combined()
+	}
+	console.log("style list is")
+	console.log(style_list)
+	
+	//setTimeout("legend2.addTo(map,style_list)", 500);
+	global_style_list=style_list
+	
+	use_key_colours=true
+	
+	setTimeout(() => {
+		legend2.addTo(map,style_list)
+	}, 50);
+
+	setTimeout(() => {
+		console.log(global_style_dict)
+		
+
+	rob_wipe_thenrefresh_test()
+	//rob_refresh_colours_key()
+	
+		
+		
+	}, 100);
+	
+	
+	
+	
+}
+
+//function rob_refresh_colours_key()
+//{
+//	//rob_wipe_colours()
+//	
+//	 geojson2 = L.geoJson(statesData, {
+//		styletest,
+//		onEachFeature
+//	}).addTo(map);
+//	
+//}
+//
+// 
+//
+function rob_wipe_thenrefresh_test()
+{
+	rob_wipe_colours()
+	rob_refresh_colours2()
+}
+//
+function rob_refresh_colours2()
+{
+	//rob_wipe_colours()
+	
+	 geojson2 = L.geoJson(statesData, {
+		style,
+		onEachFeature
+	}).addTo(map);
+	
+}
+
+
+
+
+
+let grouped_key=true
+function check_grouped_key(songstyle)
+{
+
+
+
+if (grouped_key==true){
+
+
+
+	console.log(songstyle)
+	
+	
+	if ( songstyle.toLowerCase().includes("reggae") ){	return("reggae/dub") }
+	
+	else if ( songstyle.toLowerCase().includes("dub") ) {	return("reggae/dub") }
+
+
+	else if ( songstyle.toLowerCase().includes("metal") ) {	return("metal") }
+
+
+	else if ( songstyle.toLowerCase().includes("folk") ) {	return("folk") }
+
+	else if ( songstyle.toLowerCase().includes("rock") ) {	return("rock") }
+
+	else if ( songstyle.toLowerCase().includes("pop") ) {	return("pop") }
+
+	else if ( songstyle.toLowerCase().includes("jazz") ) {	return("jazz") }
+
+	else if ( songstyle.toLowerCase().includes("unknown") ) {	return("unknown") }
+
+	else if ( songstyle.toLowerCase().includes("no idea") ) {	return("unknown") }
+
+	else if ( songstyle.toLowerCase().includes("don't know") ) {	return("unknown") }
+
+
+	else if ( songstyle.toLowerCase() =="" ) {	return("unknown") }
+
+
+
+
+
+
+
+	else{ return(songstyle)}
+}
+
+	else{ return(songstyle)}
+	
+// to lower
+	
+//	"reggae/dub"	"reggae","dub"	
+//	"metal"			"metal"
+//	"folk"			"folk"
+//	"rock"			"rock"
+//	"pop"			"pop"
+//	"jazz"
+//	"unknown"		"no idea" , "unknown", ""
+
+
+
+
+//for each in dict[dict.keys]
+	
+
+// 	return songstyle	
+// 	else{
+//		return(songstyle)
+//	}
+
 }
