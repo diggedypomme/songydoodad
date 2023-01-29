@@ -35,7 +35,7 @@
     "CountryName": "Cape Verde",
     "Band": "Cesária Evora",
     "Track": "Petit pays",
-    "MusicStyle": "\"latin\" apparently",
+    "MusicStyle": "latin",
     "link": "https://youtu.be/DeLUGn7qYP8",
     "Honourable": "",
     "Honourable2": "",
@@ -377,7 +377,7 @@
     "MusicStyle": "Stoner Metal",
     "Honourable": "",
     "Honourable2": "",
-    "Rating": 8
+    "Rating": "8"
   },
   "US": {
     "link": "https://youtu.be/PXo1v8z7KL8",
@@ -539,13 +539,13 @@
   },
   "CI": {
     "CountryName": "Côte d'Ivoire",
-    "Band": "",
-    "Track": "",
-    "MusicStyle": "",
-    "link": "",
+    "Band": "MR RAOUL K ",
+    "Track": "Sene Kela",
+    "MusicStyle": "Dance/Electronic",
+    "link": "https://youtu.be/msn2dFSOk1g",
     "Honourable": "Mr Raoul K, but all of his songs are with non ivory coast peoiple",
     "Honourable2": "",
-    "Rating": ""
+    "Rating": "6"
   },
   "BJ": {
     "CountryName": "Benin",
@@ -662,7 +662,7 @@
     "Band": "Grand Kallé & L'African Jazz",
     "Track": " Table Ronde",
     "MusicStyle": "",
-    "link": "https://youtu.be/_HfWjAcLSdU",
+    "link": "https://youtu.be/5UkGjxTuOr4",
     "Honourable": "",
     "Honourable2": "",
     "Rating": "6"
@@ -676,5 +676,25 @@
     "Honourable": "Gomba Jahbari - Acho Puñeta https://youtu.be/naDFtp_X2E4?",
     "Honourable2": "",
     "Rating": "7"
+  },
+  "VE": {
+    "CountryName": "Venezuela",
+    "Band": "Los Satelites",
+    "Track": "Pensando En Ti",
+    "MusicStyle": "Latin",
+    "link": "https://youtu.be/xxrW11CR50w",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
+  },
+  "BZ": {
+    "CountryName": "Belize",
+    "Band": "Andy Palacio and the The Garifuna Collective",
+    "Track": "Ámuñegü",
+    "MusicStyle": "Punta",
+    "link": "https://youtu.be/UNjSz0152-A",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
   }
 }

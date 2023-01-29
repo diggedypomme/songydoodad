@@ -16,7 +16,14 @@ map.getPane('labels').style.zIndex = 650;
 // Layers in this pane are non-interactive and do not obscure mouse/touch events
 map.getPane('labels').style.pointerEvents = 'none';
 
+var southWest = L.latLng(-89.98155760646617, -180),
+northEast = L.latLng(89.99346179538875, 180);
+var bounds = L.latLngBounds(southWest, northEast);
 
+map.setMaxBounds(bounds);
+map.on('drag', function() {
+	map.panInsideBounds(bounds, { animate: false });
+});
 
 
 let cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://exploratory.io/map">exploratory.io</a>,&copy; <a href="https://carto.com/attribution">CARTO</a>,  <a href="https://gka.github.io/chroma.js/">chromaJS</a> ';
@@ -1463,6 +1470,45 @@ function rob_refresh_colours2()
 }
 
 
+function flag_incorrect_song(incoming_song_variables)
+{
+	console.log("flagging song")
+	console.log(incoming_song_variables)
+	
+	//--------
+	let tempflag_storage =[]
+	
+	if ( JSON.parse(localStorage.getItem("flagged_tracks")) != null)
+	{
+		
+	tempflag_storage=JSON.parse(localStorage.getItem("flagged_tracks"))
+	
+	}
+	else{
+		localStorage.setItem("flagged_tracks", [])
+		
+	}
+	
+	console.log("it got past the first bit")
+	
+//let tempflag_storage =JSON.parse(localStorage.getItem("flagged_tracks"))
+console.log(tempflag_storage)
+console.log(incoming_song_variables.includes(tempflag_storage))
+if (incoming_song_variables != null){
+	if (incoming_song_variables.includes(tempflag_storage)==false ){ // this is already returning false. maybe you have to loop to avoid duplicates
+	
+	tempflag_storage.push(incoming_song_variables)
+	}
+}
+console.log(tempflag_storage)
+localStorage.setItem("flagged_tracks", JSON.stringify(tempflag_storage))
+
+
+
+	//--------
+	
+}
+
 
 
 
@@ -1498,6 +1544,8 @@ if (grouped_key==true){
 	else if ( songstyle.toLowerCase().includes("unknown") ) {	return("unknown") }
 
 	else if ( songstyle.toLowerCase().includes("no idea") ) {	return("unknown") }
+	
+	else if ( songstyle.toLowerCase().includes("latin") ) {	return("latin") }
 
 	else if ( songstyle.toLowerCase().includes("don't know") ) {	return("unknown") }
 
@@ -1536,4 +1584,73 @@ if (grouped_key==true){
 //		return(songstyle)
 //	}
 
+}
+
+function prepare_playlists()
+{
+	
+let playlist_usercountup=0
+let playlist_array=[]
+let playlist_emptylink=0
+let playlist_duplicates=0
+while (playlist_usercountup < Object.keys(Stored_userdict).length)
+{
+	
+	let user_username=Object.keys(Stored_userdict)[playlist_usercountup] 
+	console.log("person "+playlist_usercountup)
+	console.log("person "+user_username)
+	let user_uservariable= Stored_userdict[ Object.keys(Stored_userdict)[playlist_usercountup] ]["variable_name"]  
+	console.log( user_uservariable    )
+	
+	 let songcountup=0
+	 console.log(window[user_uservariable])
+	 
+	 
+	 while (songcountup< window.Object.keys(window[user_uservariable]).length){
+	 
+	 //window[user_uservariable][window.Object.keys(window[user_uservariable])]
+	 
+	 	//console.log(window.Object.keys(window[user_uservariable]))
+		
+		console.log(          user_uservariable      )
+		console.log(          window[user_uservariable]     )
+		console.log(     window.Object.keys(window[user_uservariable])     )
+		console.log(     window.Object.keys(window[user_uservariable])[songcountup]    )//MX
+		
+		console.log(   window[user_uservariable][   window.Object.keys(window[user_uservariable])[songcountup]   ] )
+		console.log(   window[user_uservariable][   window.Object.keys(window[user_uservariable])[songcountup]   ] ["link"]) // lol what a mess
+		
+		let link_to_add_to_playlist=window[user_uservariable][   window.Object.keys(window[user_uservariable])[songcountup]   ] ["link"]
+		
+		if (  playlist_array.includes(link_to_add_to_playlist)==false ){
+			if (  link_to_add_to_playlist != "" ){
+		
+				playlist_array.push(window[user_uservariable][   window.Object.keys(window[user_uservariable])[songcountup]   ] ["link"])
+			}
+			else
+			{
+				playlist_emptylink=playlist_emptylink+1
+			}
+			
+		}
+		else
+		{
+			playlist_duplicates=playlist_duplicates+1
+		}
+		
+	 	//console.log(window[user_uservariable][])
+	 	console.log("song "+songcountup)
+	 	songcountup=songcountup+1
+	 }
+	playlist_usercountup=playlist_usercountup+1
+	
+	console.log("finished adding the list:")
+	console.log(playlist_array)
+	console.log("duplicates  : "+playlist_duplicates)
+	console.log("empty links : "+playlist_emptylink)
+	console.log("Total remaining : "+playlist_array.length)
+	
+	// could be epanded to show the people who tagged it
+}
+	
 }

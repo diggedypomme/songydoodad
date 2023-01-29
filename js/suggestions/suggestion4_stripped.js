@@ -223,21 +223,25 @@ function build_suggestion_html(song_suggestions)
 	
 }
 
-
 function build_a_song(song_variables)
 {
 	
 	
 	let previewsource=""
+	
+	let chosen_country=document.getElementById("suggestion_country_select").value
+	let chosen_style=document.getElementById("suggestion_style_select").value
+	
 	try{
 		previewsource=song_variables[5].replace("https://youtu.be/","https://www.youtube.com/embed/")
 	}
 	catch{
 	}
-	//console.log(song_variables)
+	console.log(song_variables)
 	return `<B><br>`+song_variables[0]+` - `+song_variables[1]+`</B><BR>`
 	
 	+artist_origins[song_variables[0]]+`<BR>`
+	+`	<div style="   border-style: outset; font-weight: bold;  width: fit-content; " onclick="flag_incorrect_song(['`+song_variables[0]+`','`+song_variables[1]+`','`+chosen_country+`','`+chosen_style+`'])">Flag track as incorrect country</div><BR>`
 	+`<a href="`+song_variables[2]+`" target="_blank">Lastfm - `+song_variables[0]+`</a><BR>`
 	+`<a href="`+song_variables[3]+`" target="_blank">Youtube search : `+song_variables[0]+` - `+song_variables[1]+`</a><BR>`
 	+`<a href="`+song_variables[5]+`" target="_blank">Youtube feeling lucky : `+song_variables[0]+` - `+song_variables[1]+`</a><BR>`
@@ -246,12 +250,12 @@ function build_a_song(song_variables)
 	+`<div style="   border-style: outset; font-weight: bold;
     width: fit-content; " onclick=
 	"document.getElementById('song_iframe').src='`+previewsource+`';hideallmenus('iframeholder')"
+	>Preview</div>    
 	
 
-
-	>Preview</div><BR>`
-	
-	
+<hr>
+<BR>
+	`
 }
 
 function run_main_suggestions()
