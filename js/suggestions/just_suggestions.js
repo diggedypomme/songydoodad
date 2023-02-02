@@ -7108,15 +7108,15 @@ song_recommendations={
     "Chile": {
         "reggae": [
             [
-                "Los Tres (2)",
+                "Los Tres",
                 "Sudapara",
                 "https://www.last.fm/music/Los+Tres+(2)/_/Sudapara",
                 "https://www.youtube.com/results?search_query=Los%20Tres%20(2)%20Sudapara",
-                "https://musicbrainz.org/search?query=Los Tres (2)&type=artist",
+                "https://musicbrainz.org/search?query=Los Tres&type=artist",
                 "https://youtu.be/701pDZzjmVQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CL"
             ],
             [
                 "Gondwana (4)",
@@ -7187,15 +7187,15 @@ song_recommendations={
                 "CL"
             ],
             [
-                "Los Tres (2)",
+                "Los Tres",
                 "Sudapara",
                 "https://www.last.fm/music/Los+Tres+(2)/_/Sudapara",
                 "https://www.youtube.com/results?search_query=Los%20Tres%20(2)%20Sudapara",
-                "https://musicbrainz.org/search?query=Los Tres (2)&type=artist",
+                "https://musicbrainz.org/search?query=Los Tres&type=artist",
                 "https://youtu.be/701pDZzjmVQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CL"
             ],
             [
                 "Aguaturbia",
@@ -7279,15 +7279,15 @@ song_recommendations={
                 "CL"
             ],
             [
-                "Los Tres (2)",
+                "Los Tres",
                 "Sudapara",
                 "https://www.last.fm/music/Los+Tres+(2)/_/Sudapara",
                 "https://www.youtube.com/results?search_query=Los%20Tres%20(2)%20Sudapara",
-                "https://musicbrainz.org/search?query=Los Tres (2)&type=artist",
+                "https://musicbrainz.org/search?query=Los Tres&type=artist",
                 "https://youtu.be/701pDZzjmVQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CL"
             ]
         ],
         "pop": [
@@ -7776,15 +7776,15 @@ song_recommendations={
         ],
         "acoustic": [
             [
-                "Los Tres (2)",
+                "Los Tres",
                 "Sudapara",
                 "https://www.last.fm/music/Los+Tres+(2)/_/Sudapara",
                 "https://www.youtube.com/results?search_query=Los%20Tres%20(2)%20Sudapara",
-                "https://musicbrainz.org/search?query=Los Tres (2)&type=artist",
+                "https://musicbrainz.org/search?query=Los Tres&type=artist",
                 "https://youtu.be/701pDZzjmVQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CL"
             ],
             [
                 "Lucybell",
@@ -15815,17 +15815,6 @@ song_recommendations={
         ],
         "heavy metal": [
             [
-                "riha",
-                "Destinesia 2017: Hjemmesnekk",
-                "https://www.last.fm/music/riha/_/Destinesia+2017:+Hjemmesnekk",
-                "https://www.youtube.com/results?search_query=Riha%20Destinesia 2017: Hjemmesnekk",
-                "https://musicbrainz.org/search?query=riha&type=artist",
-                "https://youtu.be/uQuqFNNrT_I",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Rkinis Raindi",
                 "Look Behind",
                 "https://www.last.fm/music/Rkinis+Raindi/_/Look+Behind",
@@ -16012,19 +16001,7 @@ song_recommendations={
                 "GE"
             ]
         ],
-        "Psychedelic Rock": [
-            [
-                "riha",
-                "Destinesia 2017: Hjemmesnekk",
-                "https://www.last.fm/music/riha/_/Destinesia+2017:+Hjemmesnekk",
-                "https://www.youtube.com/results?search_query=Riha%20Destinesia 2017: Hjemmesnekk",
-                "https://musicbrainz.org/search?query=riha&type=artist",
-                "https://youtu.be/uQuqFNNrT_I",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "Psychedelic Rock": [],
         "cumbia": [],
         "hip hop": [
             [
@@ -16108,17 +16085,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "riha",
-                "Destinesia 2017: Hjemmesnekk",
-                "https://www.last.fm/music/riha/_/Destinesia+2017:+Hjemmesnekk",
-                "https://www.youtube.com/results?search_query=Riha%20Destinesia 2017: Hjemmesnekk",
-                "https://musicbrainz.org/search?query=riha&type=artist",
-                "https://youtu.be/uQuqFNNrT_I",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
             ]
         ],
         "punk": [
@@ -16175,17 +16141,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=Milkoholic%20Smell of Linden Trees - Breakdown - Shift",
                 "https://musicbrainz.org/search?query=Milkoholic&type=artist",
                 "",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "riha",
-                "Destinesia 2017: Hjemmesnekk",
-                "https://www.last.fm/music/riha/_/Destinesia+2017:+Hjemmesnekk",
-                "https://www.youtube.com/results?search_query=Riha%20Destinesia 2017: Hjemmesnekk",
-                "https://musicbrainz.org/search?query=riha&type=artist",
-                "https://youtu.be/uQuqFNNrT_I",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -27629,7 +27584,7 @@ song_recommendations={
                 "https://youtu.be/WT-VE9OyAJk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "MX"
+                "CL"
             ],
             [
                 "Sonido Gallo Negro",
@@ -36097,53 +36052,18 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Wales"
-            ],
-            [
-                "Cronkite Satellite",
-                "Awfully Good",
-                "https://www.last.fm/music/Cronkite+Satellite/_/Awfully+Good",
-                "https://www.youtube.com/results?search_query=Cronkite%20Satellite%20Awfully Good",
-                "https://musicbrainz.org/search?query=Cronkite Satellite&type=artist",
-                "https://youtu.be/OkRt0Nxh0vc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
             ]
         ],
         "heavy metal": [],
         "folk": [],
-        "pop": [
-            [
-                "Cronkite Satellite",
-                "Awfully Good",
-                "https://www.last.fm/music/Cronkite+Satellite/_/Awfully+Good",
-                "https://www.youtube.com/results?search_query=Cronkite%20Satellite%20Awfully Good",
-                "https://musicbrainz.org/search?query=Cronkite Satellite&type=artist",
-                "https://youtu.be/OkRt0Nxh0vc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "pop": [],
         "black metal": [],
         "death metal": [],
         "dub": [],
         "Psychedelic Rock": [],
         "cumbia": [],
         "hip hop": [],
-        "Rap": [
-            [
-                "Cronkite Satellite",
-                "Awfully Good",
-                "https://www.last.fm/music/Cronkite+Satellite/_/Awfully+Good",
-                "https://www.youtube.com/results?search_query=Cronkite%20Satellite%20Awfully Good",
-                "https://musicbrainz.org/search?query=Cronkite Satellite&type=artist",
-                "https://youtu.be/OkRt0Nxh0vc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "Rap": [],
         "indie": [
             [
                 "Jets to Zurich",
@@ -36155,34 +36075,11 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Wales"
-            ],
-            [
-                "Cronkite Satellite",
-                "Awfully Good",
-                "https://www.last.fm/music/Cronkite+Satellite/_/Awfully+Good",
-                "https://www.youtube.com/results?search_query=Cronkite%20Satellite%20Awfully Good",
-                "https://musicbrainz.org/search?query=Cronkite Satellite&type=artist",
-                "https://youtu.be/OkRt0Nxh0vc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
             ]
         ],
         "jazz": [],
         "punk": [],
-        "acoustic": [
-            [
-                "Cronkite Satellite",
-                "Awfully Good",
-                "https://www.last.fm/music/Cronkite+Satellite/_/Awfully+Good",
-                "https://www.youtube.com/results?search_query=Cronkite%20Satellite%20Awfully Good",
-                "https://musicbrainz.org/search?query=Cronkite Satellite&type=artist",
-                "https://youtu.be/OkRt0Nxh0vc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "acoustic": [],
         "dance": []
     },
     "Romania": {
@@ -36788,7 +36685,25 @@ song_recommendations={
         "jazz": [],
         "punk": [],
         "acoustic": [],
-        "dance": []
+        "dance": [],
+        "User Favourites": [
+            [
+                "Arkona",
+                "Slavsia, Rus",
+                "https://www.last.fm/music/Arkona/_/Slavsia, Rus",
+                "https://www.youtube.com/results?search_query=Arkona%20(2)%20Slavsia, Rus",
+                "https://musicbrainz.org/search?query=Arkona&type=artist",
+                "https://youtu.be/BaP1wDvkA6E"
+            ],
+            [
+                "Kino",
+                "Kukushka",
+                "https://www.last.fm/music/Kino/_/Kukushka",
+                "https://www.youtube.com/results?search_query=Kino%20(2)%20Kukushka",
+                "https://musicbrainz.org/search?query=Kino&type=artist",
+                "https://youtu.be/FJn0MWJPRMY"
+            ]
+        ]
     },
     "Rwanda": {
         "reggae": [],
