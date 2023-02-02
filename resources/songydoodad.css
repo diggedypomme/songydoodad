@@ -292,6 +292,30 @@
     display: none;
     
 }
+
+.default_pop_menu
+{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 50%;
+    width: 80%;
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 1000;
+    max-width: 500px;
+    height: 200;
+    display: block;	
+	//text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+	
+}
+
+
+
  #trackinfo_info{
 }
  #bosstunes_x-button{

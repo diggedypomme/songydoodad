@@ -51,6 +51,11 @@
 		Songydoodad
 	</div>
 
+
+
+
+
+
 	<div id="discord" onclick="window.open('https://discord.gg/yeFk8dUutj')">
 		Discord Hub
 	</div>
@@ -80,6 +85,18 @@
 	</div>
 
 
+
+
+
+	<div id="userstuff" class="default_pop_menu" onclick="hideallmenus('userstuff')">
+		Songydoodad
+	</div>
+
+
+
+
+
+
 	<div id="bosstunes_menu">
 		<div id="trackinfo_info"></div>
 		<div id="bosstunes_x-button" onclick="bosstunes_menu('hide')">X</div>
@@ -103,12 +120,12 @@
 		<br>
 		<button onclick="ask_for_conf('wipe_countries')"> Wipe all countries to blank (new user)</button><br>
 		<br>
-		<button onclick="download_config()">Download user file</button><br>
+		<button onclick="download_config()">Download user songmap</button>  <button onclick="download_config_full()">Download user profile</button><br>
 		<BR>
 		<button onclick="set_diff()"> Check current local save against Superpomme (default)</button><br>
 		<br>
 		<input type="file" id="selectFiles" value="Import" />
-		<button id="import" onclick="import_user()">Upload Local Profile</button>
+		<button id="import" onclick="import_user()">Upload Local songmap</button>
 		 <br>
 		 <br>
 		 <button onclick="get_styles_list_combined_bool=false;set_key_styles()">Show key</button>`   ` 

@@ -811,6 +811,97 @@ function download_config() {
 }
 
 
+function download_config_full() {
+/*
+
+//username
+//user flagged_tracks
+//user extra suggestions
+//user bio
+//songydoodad version number
+//generated date
+
+
+//dont allow namme if already taken
+//user default colour scheme
+
+
+
+
+*/
+
+
+    console.log(newsongs)
+    downloadToFile(JSON.stringify(newsongs, null, 2), 'Custom_country_songlist.txt', 'text/plain');
+}
+
+/*
+
+
+You are currrently viewing the profile of []
+
+
+[h1] (select to change)
+
+Bio:
+
+-------------------------
+
+This user has [x] songs
+Their most common genre is []
+
+-------------------------
+
+
+[Make my own map!]
+
+
+Your profile is currently locally saved. This means that it is only visibile on this one computer. If you would like this to be visible for others too, download your profile below, then pop on over to the discord server at [store this in a variable so there is only one place to update if needed] and I will get it added. I will not accept any offensive names/ bios, so please keep it civil, thanks.
+
+
+Configuration:
+
+View sorted by:
+
+=======================================
+
+
+Locally Stored Profile
+
+Your profile is currently locally saved. This means that it is only visibile on this one computer. If you would like this to be visible for others too, download your profile below, then pop on over to the discord server at [store this in a variable so there is only one place to update if needed] and I will get it added. I will not accept any offensive names/ bios, so please keep it civil, thanks.
+
+Note that you can only have one locally stored profile (let me know if that's a problem and I will add in the ability to have multiple)
+
+
+Name: (This will be the name used to identify your locally stored user, as well as the username used if this is shared publicly)
+[]
+
+Bio: (A bit of information about yourself. This is not necessasry, but will be listed on the profile should you upload it to the discord server.)
+[]
+
+Tools:
+[Wipe the map to blank] (Note that this is not revertable, so take a copy of your local profile before you do this)
+
+[Clone user] [usernames from profiles] (This will take a copy of a user of your choice. Useful if you are moving to another device, or want to base yous on an existing map)
+
+[Download user profile]
+[Download just the user map]
+
+[Uploading user profile/map]
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
 //https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js
 const downloadToFile = (content, filename, contentType) => {
     const a = document.createElement('a');

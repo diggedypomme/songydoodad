@@ -696,5 +696,25 @@
     "Honourable": "",
     "Honourable2": "",
     "Rating": "6"
+  },
+    "ST": {
+    "CountryName": "São Tomé and Principe",
+    "Band": "Africa Negra",
+    "Track": "Aninha",
+    "MusicStyle": "folk",
+    "link": "https://youtu.be/EcTyxVyfxEg",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
+  },
+  "AT": {
+    "CountryName": "Austria",
+    "Band": "Ellende",
+    "Track": "Ballade Auf Den Tod",
+    "MusicStyle": "Ambient Black Metal",
+    "link": "https://youtu.be/3rdGUFIha-w",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
   }
 }
