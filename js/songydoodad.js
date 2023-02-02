@@ -7,7 +7,17 @@
 //
 
 
-let map = L.map('map').setView([47, 9.6], 4);
+//let map = L.map('map').setView([47, 9.6], 4);
+
+var map = L.map('map', { 
+    zoomSnap: 0.5, // doesnt seem to be doing anything
+	   zoomDelta: 0.25,
+	    minZoom: 2,
+	    maxZoom: 8
+});
+
+map.setView([47, 9.6], 4)
+
 //const map = L.map('map').fitWorld();
 
 map.createPane('labels');
