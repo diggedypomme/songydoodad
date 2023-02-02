@@ -16286,17 +16286,6 @@ song_recommendations={
                 "No current notes",
                 "unknown"
             ],
-            [
-                "Ofege",
-                "It's Not Easy",
-                "https://www.last.fm/music/Ofege/_/It%27s+Not+Easy",
-                "https://www.youtube.com/results?search_query=Ofege%20It's Not Easy",
-                "https://musicbrainz.org/search?query=Ofege&type=artist",
-                "https://youtu.be/huryMOQhptk",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
         ],
         "heavy metal": [],
         "folk": [
@@ -16359,17 +16348,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=Wrinkar%20Experience%20Soundway",
                 "https://musicbrainz.org/search?query=Wrinkar Experience&type=artist",
                 "https://youtu.be/p8zksOIF4Dg",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Ofege",
-                "It's Not Easy",
-                "https://www.last.fm/music/Ofege/_/It%27s+Not+Easy",
-                "https://www.youtube.com/results?search_query=Ofege%20It's Not Easy",
-                "https://musicbrainz.org/search?query=Ofege&type=artist",
-                "https://youtu.be/huryMOQhptk",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -17739,17 +17717,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=RND%20Nova Santori (Josh Gabriel mix)",
                 "https://musicbrainz.org/search?query=RND&type=artist",
                 "https://youtu.be/ojbzMZqvQFI",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Jessica Jay",
-                "Casablanca",
-                "https://www.last.fm/music/Jessica+Jay/_/Casablanca",
-                "https://www.youtube.com/results?search_query=Jessica%20Jay%20Casablanca",
-                "https://musicbrainz.org/search?query=Jessica Jay&type=artist",
-                "https://youtu.be/YFlIGdis77U",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -29609,17 +29576,6 @@ song_recommendations={
     "Malaysia": {
         "reggae": [
             [
-                "Jessica Jay",
-                "Casablanca",
-                "https://www.last.fm/music/Jessica+Jay/_/Casablanca",
-                "https://www.youtube.com/results?search_query=Jessica%20Jay%20Casablanca",
-                "https://musicbrainz.org/search?query=Jessica Jay&type=artist",
-                "https://youtu.be/YFlIGdis77U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Tina Washington",
                 "Love Me",
                 "https://www.last.fm/music/Tina+Washington/_/Love+Me",
@@ -29961,7 +29917,7 @@ song_recommendations={
                 "https://youtu.be/huryMOQhptk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "NG"
             ],
             [
                 "The Lijadu Sisters",
@@ -30007,7 +29963,7 @@ song_recommendations={
                 "https://youtu.be/huryMOQhptk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "NG"
             ],
             [
                 "BLO",
@@ -30162,7 +30118,7 @@ song_recommendations={
                 "https://youtu.be/huryMOQhptk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "NG"
             ],
             [
                 "BLO",
@@ -37240,17 +37196,6 @@ song_recommendations={
     "Singapore": {
         "reggae": [
             [
-                "Jessica Jay",
-                "Casablanca",
-                "https://www.last.fm/music/Jessica+Jay/_/Casablanca",
-                "https://www.youtube.com/results?search_query=Jessica%20Jay%20Casablanca",
-                "https://musicbrainz.org/search?query=Jessica Jay&type=artist",
-                "https://youtu.be/YFlIGdis77U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Dreamhouse",
                 "Closer to Comfort",
                 "https://www.last.fm/music/Dreamhouse/_/Closer+to+Comfort",
@@ -40736,17 +40681,6 @@ song_recommendations={
     "Thailand": {
         "reggae": [
             [
-                "Jessica Jay",
-                "Casablanca",
-                "https://www.last.fm/music/Jessica+Jay/_/Casablanca",
-                "https://www.youtube.com/results?search_query=Jessica%20Jay%20Casablanca",
-                "https://musicbrainz.org/search?query=Jessica Jay&type=artist",
-                "https://youtu.be/YFlIGdis77U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Tina Washington",
                 "Love Me",
                 "https://www.last.fm/music/Tina+Washington/_/Love+Me",
@@ -40879,19 +40813,7 @@ song_recommendations={
             ]
         ],
         "acoustic": [],
-        "dance": [
-            [
-                "Jessica Jay",
-                "Casablanca",
-                "https://www.last.fm/music/Jessica+Jay/_/Casablanca",
-                "https://www.youtube.com/results?search_query=Jessica%20Jay%20Casablanca",
-                "https://musicbrainz.org/search?query=Jessica Jay&type=artist",
-                "https://youtu.be/YFlIGdis77U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ]
+        "dance": [        ]
     },
     "Tajikistan": {
         "reggae": [],

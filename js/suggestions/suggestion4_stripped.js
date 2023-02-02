@@ -57,6 +57,55 @@ console.log(newDict)
 
 
 
+function new_helper_2() // this will give you a ranked list of the most common artists that have it set to unknown
+{
+const newDict = {};
+const frequency = {};
+
+Object.keys(song_recommendations).forEach(country => {
+  Object.keys(song_recommendations[country]).forEach(musicStyle => {
+    if (song_recommendations[country][musicStyle].length > 0) {
+      song_recommendations[country][musicStyle].forEach(artistArray => {
+        if (artistArray[8] === "unknown") {
+          newDict[artistArray[0]] = artistArray;
+          if (frequency[artistArray[0]]) {
+            frequency[artistArray[0]]++;
+          } else {
+            frequency[artistArray[0]] = 1;
+          }
+        }
+      });
+    }
+  });
+});
+
+const frequencyList = Object.entries(frequency).sort((a, b) => b[1] - a[1]);
+
+console.log(frequencyList);
+	
+	
+}
+
+
+function artist_removal(remove_artist, except_country)
+{
+	
+
+  Object.keys(song_recommendations).forEach(c => {
+    if (c !== except_country) {
+      Object.keys(song_recommendations[c]).forEach(musicStyle => {
+        song_recommendations[c][musicStyle] = song_recommendations[c][musicStyle].filter(
+          artistArray => artistArray[0] !== remove_artist
+        );
+      });
+    }
+  });
+
+console.log(song_recommendations)
+	
+}
+
+
 
 
 let country_array=[]
