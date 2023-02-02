@@ -309,7 +309,7 @@
     z-index: 1000;
     max-width: 500px;
     height: 200;
-    display: block;	
+    display: none;	
 	//text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 	
 }

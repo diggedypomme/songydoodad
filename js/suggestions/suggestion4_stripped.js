@@ -87,7 +87,7 @@ console.log(frequencyList);
 }
 
 
-function artist_removal(remove_artist, except_country)
+function artist_removal(remove_artist, except_country) //pass this the artist name and the correct country and it will remove the extras
 {
 	
 
@@ -99,7 +99,30 @@ function artist_removal(remove_artist, except_country)
         );
       });
     }
+	
   });
+  
+  
+  Object.keys(song_recommendations).forEach(c => {
+    if (c === except_country) {
+      Object.keys(song_recommendations[c]).forEach(musicStyle => {
+        song_recommendations[c][musicStyle].forEach(artistArray => {
+          if (artistArray[8] == "unknown") {
+			  
+			if (artistArray[0]==remove_artist)  {
+				artistArray[8] = country_to_code[except_country];
+			}
+			
+          }
+        });
+      });
+    }
+  });
+  
+  
+  
+  
+  
 
 console.log(song_recommendations)
 	

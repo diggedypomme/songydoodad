@@ -16285,7 +16285,7 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
+            ]
         ],
         "heavy metal": [],
         "folk": [
@@ -32882,19 +32882,7 @@ song_recommendations={
                 "PA"
             ]
         ],
-        "hip hop": [
-            [
-                "Perucho Conde",
-                "La Cotorra Criolla",
-                "https://www.last.fm/music/Perucho+Conde/_/La+Cotorra+Criolla",
-                "https://www.youtube.com/results?search_query=Perucho%20Conde%20La Cotorra Criolla",
-                "https://musicbrainz.org/search?query=Perucho Conde&type=artist",
-                "https://youtu.be/U9YyqFF_m0Q",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "hip hop": [],
         "Rap": [],
         "indie": [
             [
@@ -33433,17 +33421,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "PE"
-            ],
-            [
-                "Perucho Conde",
-                "La Cotorra Criolla",
-                "https://www.last.fm/music/Perucho+Conde/_/La+Cotorra+Criolla",
-                "https://www.youtube.com/results?search_query=Perucho%20Conde%20La Cotorra Criolla",
-                "https://musicbrainz.org/search?query=Perucho Conde&type=artist",
-                "https://youtu.be/U9YyqFF_m0Q",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
             ]
         ],
         "Rap": [],
@@ -35079,17 +35056,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "PR"
-            ],
-            [
-                "Perucho Conde",
-                "La Cotorra Criolla",
-                "https://www.last.fm/music/Perucho+Conde/_/La+Cotorra+Criolla",
-                "https://www.youtube.com/results?search_query=Perucho%20Conde%20La Cotorra Criolla",
-                "https://musicbrainz.org/search?query=Perucho Conde&type=artist",
-                "https://youtu.be/U9YyqFF_m0Q",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
             ]
         ],
         "indie": [
@@ -40813,7 +40779,7 @@ song_recommendations={
             ]
         ],
         "acoustic": [],
-        "dance": [        ]
+        "dance": []
     },
     "Tajikistan": {
         "reggae": [],
@@ -43721,7 +43687,7 @@ song_recommendations={
                 "https://youtu.be/U9YyqFF_m0Q",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "VE"
             ]
         ],
         "Rap": [
@@ -43734,7 +43700,7 @@ song_recommendations={
                 "https://youtu.be/U9YyqFF_m0Q",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "VE"
             ]
         ],
         "indie": [
