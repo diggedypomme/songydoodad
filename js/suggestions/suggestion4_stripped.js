@@ -214,7 +214,7 @@ else {
     Object.keys(song_recommendations[c]).forEach(musicStyle => {
       song_recommendations[c][musicStyle].forEach(artistArray => {
         if (artistArray[8] === town_name) {
-          artistArray[8] = country_to_code[country];
+          artistArray[8] = country_to_code[except_country];
         }
       });
     });  
@@ -423,6 +423,7 @@ function suggestion_build_styles(chosen_country)
 
 function suggestion_build_suggestions()
 {
+	suggestion_for_add_to_song=[]
 	
 	console.log("bulding suggestions")
 	let chosen_country=document.getElementById("suggestion_country_select").value
@@ -430,16 +431,21 @@ function suggestion_build_suggestions()
 	let song_suggestions=song_recommendations[chosen_country][chosen_style]
 	//console.log(song_suggestions)
 	build_suggestion_html(song_suggestions)
+	
+	
+	console.log(suggestion_for_add_to_song)
 }
+
+
+let suggestion_for_add_to_song=[]
 
 function build_suggestion_html(song_suggestions)
 {
 	let suggestion_html="----------------------------<BR>"
-	
-	
+
 	if (song_suggestions){
 		for(var i = 0; i < song_suggestions.length; i++) {
-			suggestion_html=suggestion_html+build_a_song(song_suggestions[i])
+			suggestion_html=suggestion_html+build_a_song(song_suggestions[i],i)
 		}
 		document.getElementById("suggestion_output").innerHTML=suggestion_html
 	}
@@ -447,11 +453,11 @@ function build_suggestion_html(song_suggestions)
 		document.getElementById("suggestion_output").innerHTML="Country not found <BR><BR> It probably means it is down under another name, as with russia"
 	}
 	
-
+	
 	
 }
 
-function build_a_song(song_variables)
+function build_a_song(song_variables,song_index_i)
 {
 	
 	
@@ -466,6 +472,19 @@ function build_a_song(song_variables)
 	catch{
 	}
 	console.log(song_variables)
+	
+	
+	
+		let suggestion_pass_variables=[   song_variables[0],song_variables[1], song_variables[5] ,chosen_style                        ]
+	suggestion_for_add_to_song.push(  suggestion_pass_variables                         )
+	console.log("here---------------------"+suggestion_for_add_to_song)
+	
+	
+	
+	
+	
+	
+	
 	return `<B><br>`+song_variables[0]+` - `+song_variables[1]+`</B><BR>`
 	
 	+artist_origins[song_variables[0]]+`<BR>`
@@ -478,13 +497,32 @@ function build_a_song(song_variables)
 	+`<div style="   border-style: outset; font-weight: bold;
     width: fit-content; " onclick=
 	"document.getElementById('song_iframe').src='`+previewsource+`';hideallmenus('iframeholder')"
-	>Preview</div>    
+	>Preview</div>` 
+
+	+`<div style="   border-style: outset; font-weight: bold;    width: fit-content; " onclick=	"set_edit_from_suggestion(`+song_index_i+`)"
+	>Set this to favourite</div>
+	
 	
 
 <hr>
 <BR>
 	`
+	
+
 }
+
+function set_edit_from_suggestion(index_i)
+{
+	hideallmenus('editholder')
+	document.getElementById("Band").value=suggestion_for_add_to_song[index_i][0]
+	document.getElementById("Track").value=suggestion_for_add_to_song[index_i][1]
+	document.getElementById("link").value=suggestion_for_add_to_song[index_i][2]
+	document.getElementById("MusicStyle").value=suggestion_for_add_to_song[index_i][3]
+	document.getElementById("Rating").value=""
+	
+}
+
+
 
 function run_main_suggestions()
 {

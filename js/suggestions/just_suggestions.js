@@ -1199,17 +1199,6 @@ song_recommendations={
                 "AU"
             ],
             [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
-            ],
-            [
                 "Bestial Warlust",
                 "Bestial Warlust",
                 "https://www.last.fm/music/Bestial+Warlust/_/Bestial+Warlust",
@@ -1230,17 +1219,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "AU"
-            ],
-            [
-                "Abigail (3)",
-                "Satanik Metal Fucking Hell!",
-                "https://www.last.fm/music/Abigail+(3)/_/Satanik+Metal+Fucking+Hell%21",
-                "https://www.youtube.com/results?search_query=Abigail%20(3)%20Satanik Metal Fucking Hell!",
-                "https://musicbrainz.org/search?query=Abigail (3)&type=artist",
-                "https://youtu.be/VTAkPEpY1GY",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
             ]
         ],
         "death metal": [
@@ -1265,17 +1243,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "AU"
-            ],
-            [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
             ],
             [
                 "Portal (6)",
@@ -1435,7 +1402,7 @@ song_recommendations={
                 "https://youtu.be/ovCxc9hB-oQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Melbourne"
+                "AU"
             ],
             [
                 "Los Wawanco",
@@ -1541,7 +1508,7 @@ song_recommendations={
                 "https://youtu.be/nB5FS6c7218",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Melbourne"
+                "AU"
             ]
         ],
         "punk": [
@@ -1967,17 +1934,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "AT"
-            ],
-            [
-                "K.I.Z.",
-                "Spasst",
-                "https://www.last.fm/music/K.I.Z./_/Spasst",
-                "https://www.youtube.com/results?search_query=KIZ%20Spasst",
-                "https://musicbrainz.org/search?query=K.I.Z.&type=artist",
-                "https://youtu.be/effqopL8SnM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ]
         ],
         "Rap": [
@@ -2102,7 +2058,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ],
             [
                 "PYRAWEED",
@@ -2139,7 +2095,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ],
             [
                 "Aygun Kazimova",
@@ -2198,7 +2154,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ]
         ],
         "death metal": [
@@ -2233,7 +2189,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ],
             [
                 "Goat Ripper",
@@ -2297,7 +2253,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ]
         ],
         "jazz": [
@@ -2321,7 +2277,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ],
             [
                 "Rain Sultanov",
@@ -2367,7 +2323,7 @@ song_recommendations={
                 "https://youtu.be/Cs39Qp75qtM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bakı"
+                "AZ"
             ]
         ],
         "acoustic": [],
@@ -3361,17 +3317,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "BG"
-            ],
-            [
-                "Timewarp inc.",
-                "Yuil Disco Breaks - Soundsystem version",
-                "https://www.last.fm/music/Timewarp+inc./_/Yuil+Disco+Breaks+-+Soundsystem+version",
-                "https://www.youtube.com/results?search_query=Timewarp%20inc.%20Yuil Disco Breaks - Soundsystem version",
-                "https://musicbrainz.org/search?query=Timewarp inc.&type=artist",
-                "https://youtu.be/ylB-8POV1Qo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Athens"
             ],
             [
                 "Mytrip",
@@ -4767,19 +4712,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "rock": [
-            [
-                "Oldblood",
-                "Kuebiko",
-                "https://www.last.fm/music/Oldblood/_/Kuebiko",
-                "https://www.youtube.com/results?search_query=Oldblood%20Kuebiko",
-                "https://musicbrainz.org/search?query=Oldblood&type=artist",
-                "https://youtu.be/PFG6x2lXv3o",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
-            ]
-        ],
+        "rock": [],
         "heavy metal": [
             [
                 "Voltax",
@@ -4874,17 +4807,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "BO"
-            ],
-            [
-                "Oldblood",
-                "Kuebiko",
-                "https://www.last.fm/music/Oldblood/_/Kuebiko",
-                "https://www.youtube.com/results?search_query=Oldblood%20Kuebiko",
-                "https://musicbrainz.org/search?query=Oldblood&type=artist",
-                "https://youtu.be/PFG6x2lXv3o",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ]
         ],
         "death metal": [],
@@ -5097,17 +5019,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "BR"
-            ],
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
             ],
             [
                 "Lô Borges",
@@ -5660,17 +5571,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "BR"
-            ],
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
             ],
             [
                 "Titãs",
@@ -6432,17 +6332,6 @@ song_recommendations={
         ],
         "death metal": [
             [
-                "Fear Factory",
-                "Linchpin",
-                "https://www.last.fm/music/Fear+Factory/_/Linchpin",
-                "https://www.youtube.com/results?search_query=Fear%20Factory%20Linchpin",
-                "https://musicbrainz.org/search?query=Fear Factory&type=artist",
-                "https://youtu.be/MuDxo-fbW9c",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ],
-            [
                 "Tomb Mold",
                 "Beg for Life",
                 "https://www.last.fm/music/Tomb+Mold/_/Beg+for+Life",
@@ -6836,7 +6725,7 @@ song_recommendations={
                 "https://youtu.be/BXkP4WS8Y_Y",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zurich"
+                "CH"
             ],
             [
                 "Ungfell",
@@ -6847,7 +6736,7 @@ song_recommendations={
                 "https://youtu.be/fzB-Mol6I1g",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zurich"
+                "CH"
             ]
         ],
         "death metal": [
@@ -6875,17 +6764,6 @@ song_recommendations={
             ]
         ],
         "dub": [
-            [
-                "K.I.Z.",
-                "Spasst",
-                "https://www.last.fm/music/K.I.Z./_/Spasst",
-                "https://www.youtube.com/results?search_query=KIZ%20Spasst",
-                "https://musicbrainz.org/search?query=K.I.Z.&type=artist",
-                "https://youtu.be/effqopL8SnM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ],
             [
                 "Idealist",
                 "Flow",
@@ -6968,17 +6846,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "CH"
-            ],
-            [
-                "K.I.Z.",
-                "Spasst",
-                "https://www.last.fm/music/K.I.Z./_/Spasst",
-                "https://www.youtube.com/results?search_query=KIZ%20Spasst",
-                "https://musicbrainz.org/search?query=K.I.Z.&type=artist",
-                "https://youtu.be/effqopL8SnM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ]
         ],
         "Rap": [],
@@ -6993,17 +6860,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Wien"
-            ],
-            [
-                "Ásgeir",
-                "King and Cross",
-                "https://www.last.fm/music/%C3%81sgeir/_/King+and+Cross",
-                "https://www.youtube.com/results?search_query=Asgeir%20King and Cross",
-                "https://musicbrainz.org/search?query=Ásgeir&type=artist",
-                "https://youtu.be/D-dHIkF_lO4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Reykjavík"
             ]
         ],
         "jazz": [
@@ -7326,17 +7182,6 @@ song_recommendations={
         ],
         "death metal": [
             [
-                "Necros Christos",
-                "Baal of Ekron",
-                "https://www.last.fm/music/Necros+Christos/_/Baal+of+Ekron",
-                "https://www.youtube.com/results?search_query=Necros%20Christos%20Baal of Ekron",
-                "https://musicbrainz.org/search?query=Necros Christos&type=artist",
-                "https://youtu.be/xYWb0kSfNgU",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ],
-            [
                 "Unaussprechlichen Kulten",
                 "The Hooded Baphomet Bleated",
                 "https://www.last.fm/music/Unaussprechlichen+Kulten/_/The+Hooded+Baphomet+Bleated",
@@ -7635,17 +7480,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "CL"
-            ],
-            [
-                "Chicago (2)",
-                "Hard Habit To Break",
-                "https://www.last.fm/music/Chicago+(2)/_/Hard+Habit+To+Break",
-                "https://www.youtube.com/results?search_query=Chicago%20(2)%20Hard Habit To Break",
-                "https://musicbrainz.org/search?query=Chicago (2)&type=artist",
-                "https://youtu.be/_aCAZNcTVeo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
             ],
             [
                 "Fulano",
@@ -8482,17 +8316,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Bogotá"
-            ],
-            [
-                "Chicago (2)",
-                "Hard Habit To Break",
-                "https://www.last.fm/music/Chicago+(2)/_/Hard+Habit+To+Break",
-                "https://www.youtube.com/results?search_query=Chicago%20(2)%20Hard Habit To Break",
-                "https://musicbrainz.org/search?query=Chicago (2)&type=artist",
-                "https://youtu.be/_aCAZNcTVeo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
             ]
         ],
         "punk": [
@@ -9286,19 +9109,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "dub": [
-            [
-                "Ariwo",
-                "To Earth - Radio Edit",
-                "https://www.last.fm/music/Ariwo/_/To+Earth+-+Radio+Edit",
-                "https://www.youtube.com/results?search_query=Ariwo%20To Earth - Radio Edit",
-                "https://musicbrainz.org/search?query=Ariwo&type=artist",
-                "https://youtu.be/DGKCvACF0yM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
-            ]
-        ],
+        "dub": [],
         "Psychedelic Rock": [
             [
                 "Grupo de Experimentación Sonora del ICAIC",
@@ -9427,19 +9238,7 @@ song_recommendations={
             ]
         ],
         "Rap": [],
-        "indie": [
-            [
-                "The Last",
-                "She Don't Know Why I'm Here",
-                "https://www.last.fm/music/The+Last/_/She+Don%27t+Know+Why+I%27m+Here",
-                "https://www.youtube.com/results?search_query=The%20Last%20She Don't Know Why I'm Here",
-                "https://musicbrainz.org/search?query=The Last&type=artist",
-                "https://youtu.be/kdLOlNG3BVI",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ]
-        ],
+        "indie": [],
         "jazz": [
             [
                 "Irakere",
@@ -9678,28 +9477,6 @@ song_recommendations={
         ],
         "black metal": [],
         "death metal": [
-            [
-                "Septicflesh",
-                "Anubis",
-                "https://www.last.fm/music/Septicflesh/_/Anubis",
-                "https://www.youtube.com/results?search_query=Septic%20Flesh%20Anubis",
-                "https://musicbrainz.org/search?query=Septicflesh&type=artist",
-                "https://youtu.be/qFkkSDIkA4Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Athens"
-            ],
-            [
-                "Septicflesh",
-                "Anubis",
-                "https://www.last.fm/music/Septicflesh/_/Anubis",
-                "https://www.youtube.com/results?search_query=Septicflesh%20Anubis",
-                "https://musicbrainz.org/search?query=Septicflesh&type=artist",
-                "https://youtu.be/qFkkSDIkA4Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Athens"
-            ],
             [
                 "Sabbah Navahthani",
                 "Warfangs",
@@ -10236,7 +10013,7 @@ song_recommendations={
                 "https://youtu.be/16y1AkoZkmQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bonn"
+                "DE"
             ],
             [
                 "Supermax",
@@ -10309,19 +10086,7 @@ song_recommendations={
                 "DE"
             ]
         ],
-        "folk": [
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
-            ]
-        ],
+        "folk": [],
         "pop": [
             [
                 "Kraftwerk",
@@ -10365,7 +10130,7 @@ song_recommendations={
                 "https://youtu.be/16y1AkoZkmQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Bonn"
+                "DE"
             ]
         ],
         "black metal": [],
@@ -10475,17 +10240,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "DE"
-            ],
-            [
-                "20 Fingers feat. Roula",
-                "Lick it",
-                "https://www.last.fm/music/20+Fingers+feat.+Roula/_/Lick+it",
-                "https://www.youtube.com/results?search_query=20%20Fingers%20Feat.%20Roula%20Lick it",
-                "https://musicbrainz.org/search?query=20 Fingers feat. Roula&type=artist",
-                "https://youtu.be/nieIXEtVZyo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
             ],
             [
                 "Freundeskreis",
@@ -10617,17 +10371,6 @@ song_recommendations={
             ]
         ],
         "acoustic": [
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
-            ],
             [
                 "Marius Müller-Westernhagen",
                 "Sexy",
@@ -12132,19 +11875,7 @@ song_recommendations={
         ]
     },
     "Ecuador": {
-        "reggae": [
-            [
-                "Boney M.",
-                "Rasputin",
-                "https://www.last.fm/music/Boney+M./_/Rasputin",
-                "https://www.youtube.com/results?search_query=Boney%20M.%20Rasputin",
-                "https://musicbrainz.org/search?query=Boney M.&type=artist",
-                "https://youtu.be/16y1AkoZkmQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Bonn"
-            ]
-        ],
+        "reggae": [],
         "rock": [
             [
                 "Descontrolados",
@@ -12567,17 +12298,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "ES"
-            ],
-            [
-                "DJ Vadim",
-                "Call Me",
-                "https://www.last.fm/music/DJ+Vadim/_/Call+Me",
-                "https://www.youtube.com/results?search_query=DJ%20Vadim%20Call Me",
-                "https://musicbrainz.org/search?query=DJ Vadim&type=artist",
-                "https://youtu.be/lFUdznpFtqc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ]
         ],
         "rock": [
@@ -12873,17 +12593,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Palafrugell"
-            ],
-            [
-                "DJ Vadim",
-                "Call Me",
-                "https://www.last.fm/music/DJ+Vadim/_/Call+Me",
-                "https://www.youtube.com/results?search_query=DJ%20Vadim%20Call Me",
-                "https://musicbrainz.org/search?query=DJ Vadim&type=artist",
-                "https://youtu.be/lFUdznpFtqc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ]
         ],
         "Rap": [
@@ -14499,17 +14208,6 @@ song_recommendations={
                 "FI"
             ],
             [
-                "Ana",
-                "We Are",
-                "https://www.last.fm/music/Ana/_/We+Are",
-                "https://www.youtube.com/results?search_query=Ana%20We Are",
-                "https://musicbrainz.org/search?query=Ana&type=artist",
-                "https://youtu.be/yG94KyjFlpg",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ],
-            [
                 "Suuri Suomalainen Cumbia-Orkesteri",
                 "Viini, laulu sekä naiset",
                 "https://www.last.fm/music/Suuri+Suomalainen+Cumbia-Orkesteri/_/Viini,+laulu+sek%C3%A4+naiset",
@@ -15899,17 +15597,6 @@ song_recommendations={
         ],
         "dub": [
             [
-                "Dadub",
-                "Truth",
-                "https://www.last.fm/music/Dadub/_/Truth",
-                "https://www.youtube.com/results?search_query=Dadub%20Truth",
-                "https://musicbrainz.org/search?query=Dadub&type=artist",
-                "https://youtu.be/VLrXtEE2uWs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ],
-            [
                 "Boyd Schidt",
                 "Tropical Boosts - Original Mix",
                 "https://www.last.fm/music/Boyd+Schidt/_/Tropical+Boosts+-+Original+Mix",
@@ -16274,17 +15961,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "M3NSA",
-                "S.D.I",
-                "https://www.last.fm/music/M3NSA/_/S.D.I",
-                "https://www.youtube.com/results?search_query=M3NSA%20S.D.I",
-                "https://musicbrainz.org/search?query=M3NSA&type=artist",
-                "https://youtu.be/Jbk0WfXfknU",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ],
             [
                 "Wanlov the Kubolor",
@@ -16662,7 +16338,7 @@ song_recommendations={
                 "https://youtu.be/r5zr33LaHeE",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Athens"
+                "GR"
             ],
             [
                 "Rotting Christ",
@@ -16779,7 +16455,7 @@ song_recommendations={
                 "https://youtu.be/PABxiyehNgU",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Athens"
+                "GR"
             ],
             [
                 "Terror X Crew",
@@ -16801,7 +16477,7 @@ song_recommendations={
                 "https://youtu.be/f49psIwAiUc",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Athens"
+                "GR"
             ]
         ],
         "Rap": [],
@@ -17718,19 +17394,7 @@ song_recommendations={
                 "HN"
             ]
         ],
-        "rock": [
-            [
-                "Chicago (2)",
-                "Hard Habit To Break",
-                "https://www.last.fm/music/Chicago+(2)/_/Hard+Habit+To+Break",
-                "https://www.youtube.com/results?search_query=Chicago%20(2)%20Hard Habit To Break",
-                "https://musicbrainz.org/search?query=Chicago (2)&type=artist",
-                "https://youtu.be/_aCAZNcTVeo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
-            ]
-        ],
+        "rock": [],
         "heavy metal": [
             [
                 "Tsidkenu",
@@ -17757,19 +17421,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "pop": [
-            [
-                "Chicago (2)",
-                "Hard Habit To Break",
-                "https://www.last.fm/music/Chicago+(2)/_/Hard+Habit+To+Break",
-                "https://www.youtube.com/results?search_query=Chicago%20(2)%20Hard Habit To Break",
-                "https://musicbrainz.org/search?query=Chicago (2)&type=artist",
-                "https://youtu.be/_aCAZNcTVeo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
-            ]
-        ],
+        "pop": [],
         "black metal": [],
         "death metal": [
             [
@@ -17836,19 +17488,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "jazz": [
-            [
-                "Chicago (2)",
-                "Hard Habit To Break",
-                "https://www.last.fm/music/Chicago+(2)/_/Hard+Habit+To+Break",
-                "https://www.youtube.com/results?search_query=Chicago%20(2)%20Hard Habit To Break",
-                "https://musicbrainz.org/search?query=Chicago (2)&type=artist",
-                "https://youtu.be/_aCAZNcTVeo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
-            ]
-        ],
+        "jazz": [],
         "punk": [],
         "acoustic": [],
         "dance": [
@@ -17887,7 +17527,7 @@ song_recommendations={
                 "https://youtu.be/xQcbjI5rMg4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ]
         ],
         "rock": [
@@ -17935,7 +17575,7 @@ song_recommendations={
                 "https://youtu.be/_A54kOc9aUQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ],
             [
                 "Zele",
@@ -18029,7 +17669,7 @@ song_recommendations={
                 "https://youtu.be/ALIWDE0f6y8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ],
             [
                 "Ashen Chalice",
@@ -18110,7 +17750,7 @@ song_recommendations={
                 "https://youtu.be/xQcbjI5rMg4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ]
         ],
         "Psychedelic Rock": [
@@ -18145,7 +17785,7 @@ song_recommendations={
                 "https://youtu.be/hOSBxWcHD58",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ],
             [
                 "Stonebride",
@@ -18240,7 +17880,7 @@ song_recommendations={
                 "https://youtu.be/Ga7lddJc1eE",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ]
         ],
         "jazz": [
@@ -18275,7 +17915,7 @@ song_recommendations={
                 "https://youtu.be/MlzUaIA6IGQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ]
         ],
         "punk": [
@@ -18323,7 +17963,7 @@ song_recommendations={
                 "https://youtu.be/hOSBxWcHD58",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Zagreb"
+                "HR"
             ],
             [
                 "Rade Serbedzija, Miroslav Tadic",
@@ -18931,17 +18571,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "HU"
-            ],
-            [
-                "Afriqua",
-                "Go Tell It",
-                "https://www.last.fm/music/Afriqua/_/Go+Tell+It",
-                "https://www.youtube.com/results?search_query=Afriqua%20Go Tell It",
-                "https://musicbrainz.org/search?query=Afriqua&type=artist",
-                "https://youtu.be/Pc9oVcQx034",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ]
         ],
         "Psychedelic Rock": [
@@ -20078,17 +19707,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "IE"
-            ],
-            [
-                "Glen Hansard And Marketa Irglova, The Swell Season",
-                "Drown Out",
-                "https://www.last.fm/music/Glen+Hansard+And+Marketa+Irglova,+The+Swell+Season/_/Drown+Out",
-                "https://www.youtube.com/results?search_query=Glen%20Hansard%20And%20Marketa%20Irglova,%20The%20Swell%20Season%20Drown Out",
-                "https://musicbrainz.org/search?query=Glen Hansard And Marketa Irglova, The Swell Season&type=artist",
-                "https://youtu.be/Suhy0fx1BEs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Reykjavík"
             ]
         ],
         "pop": [
@@ -20105,17 +19723,6 @@ song_recommendations={
             ]
         ],
         "black metal": [
-            [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
-            ],
             [
                 "Diocletian",
                 "Wretched Sons",
@@ -20162,17 +19769,6 @@ song_recommendations={
             ]
         ],
         "death metal": [
-            [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
-            ],
             [
                 "Diocletian",
                 "Wretched Sons",
@@ -20264,17 +19860,6 @@ song_recommendations={
             ]
         ],
         "acoustic": [
-            [
-                "Glen Hansard And Marketa Irglova, The Swell Season",
-                "Drown Out",
-                "https://www.last.fm/music/Glen+Hansard+And+Marketa+Irglova,+The+Swell+Season/_/Drown+Out",
-                "https://www.youtube.com/results?search_query=Glen%20Hansard%20And%20Marketa%20Irglova,%20The%20Swell%20Season%20Drown Out",
-                "https://musicbrainz.org/search?query=Glen Hansard And Marketa Irglova, The Swell Season&type=artist",
-                "https://youtu.be/Suhy0fx1BEs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Reykjavík"
-            ],
             [
                 "Rory Gallagher",
                 "Bad Penny",
@@ -20534,17 +20119,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "XE"
-            ],
-            [
-                "Kasra 4k7",
-                "Magical",
-                "https://www.last.fm/music/Kasra+4k7/_/Magical",
-                "https://www.youtube.com/results?search_query=Kasra%204k7%20Magical",
-                "https://musicbrainz.org/search?query=Kasra 4k7&type=artist",
-                "https://youtu.be/YMEuj3dB8fw",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ]
         ],
         "Psychedelic Rock": [
@@ -20884,7 +20458,7 @@ song_recommendations={
                 "https://youtu.be/D-dHIkF_lO4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ]
         ],
         "heavy metal": [
@@ -20898,17 +20472,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "Minus",
-                "Romantic Exorcism",
-                "https://www.last.fm/music/Minus/_/Romantic+Exorcism",
-                "https://www.youtube.com/results?search_query=Minus%20Romantic Exorcism",
-                "https://musicbrainz.org/search?query=Minus&type=artist",
-                "https://youtu.be/yChyzUW7-LQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
             ],
             [
                 "Drysill",
@@ -21000,7 +20563,7 @@ song_recommendations={
                 "https://youtu.be/D-dHIkF_lO4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "Apparat Organ Quartet",
@@ -21125,7 +20688,7 @@ song_recommendations={
                 "",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ]
         ],
         "dub": [
@@ -21266,7 +20829,7 @@ song_recommendations={
                 "https://youtu.be/Pzxo66k84Ow",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "XXX Rottweiler Hundar",
@@ -21323,7 +20886,7 @@ song_recommendations={
                 "https://youtu.be/D-dHIkF_lO4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "Sigur Rós",
@@ -21346,17 +20909,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "IS"
-            ],
-            [
-                "Minus",
-                "Romantic Exorcism",
-                "https://www.last.fm/music/Minus/_/Romantic+Exorcism",
-                "https://www.youtube.com/results?search_query=Minus%20Romantic Exorcism",
-                "https://musicbrainz.org/search?query=Minus&type=artist",
-                "https://youtu.be/yChyzUW7-LQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
             ]
         ],
         "jazz": [
@@ -21407,17 +20959,6 @@ song_recommendations={
                 "IS"
             ],
             [
-                "Ţeyr",
-                "Rúdolf",
-                "https://www.last.fm/music/%C3%9Eeyr/_/R%C3%BAdolf",
-                "https://www.youtube.com/results?search_query=Theyr%20Rúdolf",
-                "https://musicbrainz.org/search?query=Ţeyr&type=artist",
-                "",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
-            ],
-            [
                 "Tappi Tíkarrass",
                 "Miranda",
                 "https://www.last.fm/music/Tappi+T%C3%ADkarrass/_/Miranda",
@@ -21450,7 +20991,7 @@ song_recommendations={
                 "https://youtu.be/D-dHIkF_lO4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "Eivřr Pálsdóttir",
@@ -21461,7 +21002,7 @@ song_recommendations={
                 "",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "Pascal Pinon",
@@ -21472,7 +21013,7 @@ song_recommendations={
                 "",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Reykjavík"
+                "IS"
             ],
             [
                 "Bubbi",
@@ -21509,17 +21050,6 @@ song_recommendations={
             ]
         ],
         "dance": [
-            [
-                "Lyra Pramuk",
-                "Tendril",
-                "https://www.last.fm/music/Lyra+Pramuk/_/Tendril",
-                "https://www.youtube.com/results?search_query=Lyra%20Pramuk%20Tendril",
-                "https://musicbrainz.org/search?query=Lyra Pramuk&type=artist",
-                "https://youtu.be/Y_N-Fm24ERA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ],
             [
                 "Páll Óskar",
                 "Minn Hinsti Dans",
@@ -22066,17 +21596,6 @@ song_recommendations={
             ]
         ],
         "cumbia": [
-            [
-                "G.L. And Band",
-                "La Colegiala",
-                "https://www.last.fm/music/G.L.+And+Band/_/La+Colegiala",
-                "https://www.youtube.com/results?search_query=G.L.%20And%20Band%20La Colegiala",
-                "https://musicbrainz.org/search?query=G.L. And Band&type=artist",
-                "https://youtu.be/-WcCGqsoTiI",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Melbourne"
-            ],
             [
                 "Tre allegri ragazzi morti",
                 "Il mondo prima",
@@ -24471,17 +23990,6 @@ song_recommendations={
         ],
         "jazz": [
             [
-                "Richard Elliot",
-                "Crush",
-                "https://www.last.fm/music/Richard+Elliot/_/Crush",
-                "https://www.youtube.com/results?search_query=Richard%20Elliot%20Crush",
-                "https://musicbrainz.org/search?query=Richard Elliot&type=artist",
-                "https://youtu.be/Z4lGdKTQuAA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ],
-            [
                 "Feras Arrabi",
                 "Long Way",
                 "https://www.last.fm/music/Feras+Arrabi/_/Long+Way",
@@ -25833,19 +25341,7 @@ song_recommendations={
         ],
         "rock": [],
         "heavy metal": [],
-        "folk": [
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
-            ]
-        ],
+        "folk": [],
         "pop": [],
         "black metal": [
             [
@@ -26246,17 +25742,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "Juuk",
-                "Skleroze",
-                "https://www.last.fm/music/Juuk/_/Skleroze",
-                "https://www.youtube.com/results?search_query=Juuk%20Skleroze",
-                "https://musicbrainz.org/search?query=Juuk&type=artist",
-                "https://youtu.be/i1ubnDM75Z4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ]
         ],
         "cumbia": [],
@@ -26738,19 +26223,7 @@ song_recommendations={
                 "MD"
             ]
         ],
-        "heavy metal": [
-            [
-                "Ozzy Osbourne",
-                "Crazy Train",
-                "https://www.last.fm/music/Ozzy+Osbourne/_/Crazy+Train",
-                "https://www.youtube.com/results?search_query=Ozzy%20Osbourne%20Crazy Train",
-                "https://musicbrainz.org/search?query=Ozzy Osbourne&type=artist",
-                "https://youtu.be/tMDFv5m18Pw",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ]
-        ],
+        "heavy metal": [],
         "folk": [
             [
                 "Harmasar",
@@ -27300,17 +26773,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Houston"
-            ],
-            [
-                "Driftmachine",
-                "Radiations",
-                "https://www.last.fm/music/Driftmachine/_/Radiations",
-                "https://www.youtube.com/results?search_query=Driftmachine%20Radiations",
-                "https://musicbrainz.org/search?query=Driftmachine&type=artist",
-                "https://youtu.be/Pigk8skftGM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ],
             [
                 "Panteón Rococó",
@@ -28637,19 +28099,7 @@ song_recommendations={
                 "YU"
             ]
         ],
-        "dance": [
-            [
-                "Goca Trzan",
-                "Zagrli",
-                "https://www.last.fm/music/Goca+Trzan/_/Zagrli",
-                "https://www.youtube.com/results?search_query=Goca%20Trzan%20Zagrli",
-                "https://musicbrainz.org/search?query=Goca Trzan&type=artist",
-                "https://youtu.be/MmzmbrZSQT8",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Beograd"
-            ]
-        ]
+        "dance": []
     },
     "Mongolia": {
         "reggae": [
@@ -28798,19 +28248,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "dub": [
-            [
-                "Dreamlogicc",
-                "Diffusion of Crowds",
-                "https://www.last.fm/music/Dreamlogicc/_/Diffusion+of+Crowds",
-                "https://www.youtube.com/results?search_query=Dreamlogicc%20Diffusion of Crowds",
-                "https://musicbrainz.org/search?query=Dreamlogicc&type=artist",
-                "https://youtu.be/eZGEj_4l2sU",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Chicago"
-            ]
-        ],
+        "dub": [],
         "Psychedelic Rock": [
             [
                 "Bayan Mongol",
@@ -29281,19 +28719,7 @@ song_recommendations={
         "dance": []
     },
     "Malaysia": {
-        "reggae": [
-            [
-                "Boney M.",
-                "Rasputin",
-                "https://www.last.fm/music/Boney+M./_/Rasputin",
-                "https://www.youtube.com/results?search_query=Boney%20M.%20Rasputin",
-                "https://musicbrainz.org/search?query=Boney M.&type=artist",
-                "https://youtu.be/16y1AkoZkmQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Bonn"
-            ]
-        ],
+        "reggae": [],
         "rock": [],
         "heavy metal": [],
         "folk": [],
@@ -31613,17 +31039,6 @@ song_recommendations={
                 "NP"
             ],
             [
-                "Discord",
-                "Glass of water",
-                "https://www.last.fm/music/Discord/_/Glass+of+water",
-                "https://www.youtube.com/results?search_query=Discord%20Glass of water",
-                "https://musicbrainz.org/search?query=Discord&type=artist",
-                "https://youtu.be/mtsle9CeEQA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Beijing"
-            ],
-            [
                 "Tank Girl",
                 "Bjork - Army of Me",
                 "https://www.last.fm/music/Tank+Girl/_/Bjork+-+Army+of+Me",
@@ -31749,28 +31164,6 @@ song_recommendations={
         "pop": [],
         "black metal": [
             [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
-            ],
-            [
-                "Abigail (3)",
-                "Satanik Metal Fucking Hell!",
-                "https://www.last.fm/music/Abigail+(3)/_/Satanik+Metal+Fucking+Hell%21",
-                "https://www.youtube.com/results?search_query=Abigail%20(3)%20Satanik Metal Fucking Hell!",
-                "https://musicbrainz.org/search?query=Abigail (3)&type=artist",
-                "https://youtu.be/VTAkPEpY1GY",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
-            ],
-            [
                 "Det Hedenske Folk / Abyssic Hate",
                 "true northern",
                 "https://www.last.fm/music/Det+Hedenske+Folk+%2F+Abyssic+Hate/_/true+northern",
@@ -31783,17 +31176,6 @@ song_recommendations={
             ]
         ],
         "death metal": [
-            [
-                "Bölzer",
-                "Entranced By The Wolfshook",
-                "https://www.last.fm/music/B%C3%B6lzer/_/Entranced+By+The+Wolfshook",
-                "https://www.youtube.com/results?search_query=Bolzer%20Entranced By The Wolfshook",
-                "https://musicbrainz.org/search?query=Bölzer&type=artist",
-                "https://youtu.be/BXkP4WS8Y_Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Zurich"
-            ],
             [
                 "Organectomy",
                 "Severed from Humanity",
@@ -31815,17 +31197,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "NZ"
-            ],
-            [
-                "Cemetery Urn",
-                "Forging Deviant Beasts",
-                "https://www.last.fm/music/Cemetery+Urn/_/Forging+Deviant+Beasts",
-                "https://www.youtube.com/results?search_query=Cemetery%20Urn%20Forging Deviant Beasts",
-                "https://musicbrainz.org/search?query=Cemetery Urn&type=artist",
-                "https://youtu.be/PDMHq2RM2vk",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Melbourne"
             ]
         ],
         "dub": [
@@ -31896,17 +31267,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Dunedin"
-            ],
-            [
-                "Toy (18)",
-                "Motoring",
-                "https://www.last.fm/music/Toy+(18)/_/Motoring",
-                "https://www.youtube.com/results?search_query=TOY%20(18)%20Motoring",
-                "https://musicbrainz.org/search?query=Toy (18)&type=artist",
-                "https://youtu.be/JGb2g6n4ghs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
             ]
         ],
         "cumbia": [],
@@ -31985,17 +31345,6 @@ song_recommendations={
             ]
         ],
         "punk": [
-            [
-                "Toy (18)",
-                "Motoring",
-                "https://www.last.fm/music/Toy+(18)/_/Motoring",
-                "https://www.youtube.com/results?search_query=TOY%20(18)%20Motoring",
-                "https://musicbrainz.org/search?query=Toy (18)&type=artist",
-                "https://youtu.be/JGb2g6n4ghs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ],
             [
                 "The D4",
                 "Come On!",
@@ -32448,17 +31797,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "PA"
-            ],
-            [
-                "Abigail (3)",
-                "Satanik Metal Fucking Hell!",
-                "https://www.last.fm/music/Abigail+(3)/_/Satanik+Metal+Fucking+Hell%21",
-                "https://www.youtube.com/results?search_query=Abigail%20(3)%20Satanik Metal Fucking Hell!",
-                "https://musicbrainz.org/search?query=Abigail (3)&type=artist",
-                "https://youtu.be/VTAkPEpY1GY",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
             ]
         ],
         "death metal": [
@@ -35261,17 +34599,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "PT"
-            ],
-            [
-                "Boney M.",
-                "Rasputin",
-                "https://www.last.fm/music/Boney+M./_/Rasputin",
-                "https://www.youtube.com/results?search_query=Boney%20M.%20Rasputin",
-                "https://musicbrainz.org/search?query=Boney M.&type=artist",
-                "https://youtu.be/16y1AkoZkmQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Bonn"
             ]
         ]
     },
@@ -35795,17 +35122,6 @@ song_recommendations={
             ]
         ],
         "heavy metal": [
-            [
-                "Iris (16)",
-                "Baby",
-                "https://www.last.fm/music/Iris+(16)/_/Baby",
-                "https://www.youtube.com/results?search_query=Iris%20(16)%20Baby",
-                "https://musicbrainz.org/search?query=Iris (16)&type=artist",
-                "https://youtu.be/3DEe7POns_k",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ],
             [
                 "Krypton (9)",
                 "Inima Mea",
@@ -36797,17 +36113,6 @@ song_recommendations={
         ],
         "death metal": [
             [
-                "Dead Congregation",
-                "Only Ashes Remain",
-                "https://www.last.fm/music/Dead+Congregation/_/Only+Ashes+Remain",
-                "https://www.youtube.com/results?search_query=Dead%20Congregation%20Only Ashes Remain",
-                "https://musicbrainz.org/search?query=Dead Congregation&type=artist",
-                "https://youtu.be/r5zr33LaHeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Athens"
-            ],
-            [
                 "Morbus Chron",
                 "Chains",
                 "https://www.last.fm/music/Morbus+Chron/_/Chains",
@@ -36894,17 +36199,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "SG"
-            ],
-            [
-                "Fastkill",
-                "kill for pleasure",
-                "https://www.last.fm/music/Fastkill/_/kill+for+pleasure",
-                "https://www.youtube.com/results?search_query=Fastkill%20kill for pleasure",
-                "https://musicbrainz.org/search?query=Fastkill&type=artist",
-                "https://youtu.be/q0tj4Y64JJ0",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
             ],
             [
                 "Life Lock",
@@ -37314,7 +36608,7 @@ song_recommendations={
                 "https://youtu.be/ElGaF9xAr54",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ],
             [
                 "Artan Lili",
@@ -37325,7 +36619,7 @@ song_recommendations={
                 "https://youtu.be/45b3DaXp2lY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ],
             [
                 "Bijelo Dugme",
@@ -37452,7 +36746,7 @@ song_recommendations={
                 "https://youtu.be/HYX7WTEvP_Y",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ]
         ],
         "black metal": [
@@ -37629,7 +36923,7 @@ song_recommendations={
                 "https://youtu.be/gAgievLY0YA",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ]
         ],
         "Rap": [
@@ -37688,7 +36982,7 @@ song_recommendations={
                 "https://youtu.be/45b3DaXp2lY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ],
             [
                 "VVHILE",
@@ -37699,7 +36993,7 @@ song_recommendations={
                 "https://youtu.be/HYX7WTEvP_Y",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ],
             [
                 "Boye",
@@ -37872,7 +37166,7 @@ song_recommendations={
                 "https://youtu.be/MmzmbrZSQT8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Beograd"
+                "RS"
             ],
             [
                 "Tanja Savic",
@@ -38224,17 +37518,6 @@ song_recommendations={
         ],
         "dub": [
             [
-                "Kaya Project",
-                "Walking Through",
-                "https://www.last.fm/music/Kaya+Project/_/Walking+Through",
-                "https://www.youtube.com/results?search_query=Kaya%20Project%20Walking Through",
-                "https://musicbrainz.org/search?query=Kaya Project&type=artist",
-                "https://youtu.be/GTBKX9GXyZw",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
-            ],
-            [
                 "Scannt",
                 "Urban Void",
                 "https://www.last.fm/music/Scannt/_/Urban+Void",
@@ -38244,17 +37527,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "Soela",
-                "Berlin",
-                "https://www.last.fm/music/Soela/_/Berlin",
-                "https://www.youtube.com/results?search_query=Soela%20Berlin",
-                "https://musicbrainz.org/search?query=Soela&type=artist",
-                "https://youtu.be/gjxAUzrhpb8",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
             ],
             [
                 "Puding Pani Elvisovej",
@@ -38559,19 +37831,7 @@ song_recommendations={
                 "SK"
             ]
         ],
-        "dance": [
-            [
-                "Amnesia Scanner",
-                "AS Too Wrong",
-                "https://www.last.fm/music/Amnesia+Scanner/_/AS+Too+Wrong",
-                "https://www.youtube.com/results?search_query=Amnesia%20Scanner%20AS Too Wrong",
-                "https://musicbrainz.org/search?query=Amnesia Scanner&type=artist",
-                "https://youtu.be/U8Kk3nD2Bh8",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Berlin"
-            ]
-        ]
+        "dance": []
     },
     "Slovenia": {
         "reggae": [
@@ -38718,17 +37978,6 @@ song_recommendations={
         ],
         "black metal": [
             [
-                "13th Moon",
-                "The Rite as Sinister as Old",
-                "https://www.last.fm/music/13th+Moon/_/The+Rite+as+Sinister+as+Old",
-                "https://www.youtube.com/results?search_query=13th%20Moon%20The Rite as Sinister as Old",
-                "https://musicbrainz.org/search?query=13th Moon&type=artist",
-                "https://youtu.be/s9VMNha2_0M",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
-            ],
-            [
                 "Veldes",
                 "Woe Eater",
                 "https://www.last.fm/music/Veldes/_/Woe+Eater",
@@ -38763,17 +38012,6 @@ song_recommendations={
             ]
         ],
         "death metal": [
-            [
-                "13th Moon",
-                "The Rite as Sinister as Old",
-                "https://www.last.fm/music/13th+Moon/_/The+Rite+as+Sinister+as+Old",
-                "https://www.youtube.com/results?search_query=13th%20Moon%20The Rite as Sinister as Old",
-                "https://musicbrainz.org/search?query=13th Moon&type=artist",
-                "https://youtu.be/s9VMNha2_0M",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
-            ],
             [
                 "Within Destruction",
                 "No Way Out",
@@ -38843,17 +38081,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
-            ],
-            [
-                "KoiKoi",
-                "Ogledalo je zrcalo",
-                "https://www.last.fm/music/KoiKoi/_/Ogledalo+je+zrcalo",
-                "https://www.youtube.com/results?search_query=KOIKOI%20Ogledalo je zrcalo",
-                "https://musicbrainz.org/search?query=KoiKoi&type=artist",
-                "https://youtu.be/KFISIFp3wnE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Beograd"
             ]
         ],
         "cumbia": [],
@@ -39198,17 +38425,6 @@ song_recommendations={
                 "SE"
             ],
             [
-                "Oz (15)",
-                "Runnin' The Line",
-                "https://www.last.fm/music/Oz+(15)/_/Runnin%27+The+Line",
-                "https://www.youtube.com/results?search_query=Oz%20(15)%20Runnin' The Line",
-                "https://musicbrainz.org/search?query=Oz (15)&type=artist",
-                "https://youtu.be/QqMX5CXPle8",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Tokyo"
-            ],
-            [
                 "Dark Funeral",
                 "My Dark Desires",
                 "https://www.last.fm/music/Dark+Funeral/_/My+Dark+Desires",
@@ -39439,17 +38655,6 @@ song_recommendations={
                 "SE"
             ],
             [
-                "Studio",
-                "West Side",
-                "https://www.last.fm/music/Studio/_/West+Side",
-                "https://www.youtube.com/results?search_query=Studio%20(2)%20West Side",
-                "https://musicbrainz.org/search?query=Studio&type=artist",
-                "https://youtu.be/po8e8nftgqI",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Reykjavík"
-            ],
-            [
                 "Dorisburg",
                 "Votiv",
                 "https://www.last.fm/music/Dorisburg/_/Votiv",
@@ -39610,17 +38815,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "SE"
-            ],
-            [
-                "ECCO2k",
-                "Western Union",
-                "https://www.last.fm/music/ECCO2k/_/Western+Union",
-                "https://www.youtube.com/results?search_query=Ecco2K%20Western Union",
-                "https://musicbrainz.org/search?query=ECCO2k&type=artist",
-                "https://youtu.be/CoEfQSoXodY",
-                "Automated suggestion trawler",
-                "No current notes",
-                "London"
             ],
             [
                 "Svullo Med Electric Boys",
@@ -40032,19 +39226,7 @@ song_recommendations={
     "Syria": {
         "reggae": [],
         "rock": [],
-        "heavy metal": [
-            [
-                "The Hourglass",
-                "B.B. King Medley",
-                "https://www.last.fm/music/The+Hourglass/_/B.B.+King+Medley",
-                "https://www.youtube.com/results?search_query=The%20Hourglass%20B.B. King Medley",
-                "https://musicbrainz.org/search?query=The Hourglass&type=artist",
-                "https://youtu.be/g1h8M1ChlL4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Los Angeles"
-            ]
-        ],
+        "heavy metal": [],
         "folk": [],
         "pop": [],
         "black metal": [
@@ -40633,17 +39815,6 @@ song_recommendations={
     },
     "Turkey": {
         "reggae": [
-            [
-                "Boney M.",
-                "Rasputin",
-                "https://www.last.fm/music/Boney+M./_/Rasputin",
-                "https://www.youtube.com/results?search_query=Boney%20M.%20Rasputin",
-                "https://musicbrainz.org/search?query=Boney M.&type=artist",
-                "https://youtu.be/16y1AkoZkmQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Bonn"
-            ],
             [
                 "Mustafa Sandal",
                 "Aya Benzer",
@@ -42722,19 +41893,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "black metal": [
-            [
-                "Dry Lakes",
-                "Iskandar",
-                "https://www.last.fm/music/Dry+Lakes/_/Iskandar",
-                "https://www.youtube.com/results?search_query=Dry%20Lakes%20Iskandar",
-                "https://musicbrainz.org/search?query=Dry Lakes&type=artist",
-                "https://youtu.be/vCD5LoRRrwA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Melbourne"
-            ]
-        ],
+        "black metal": [],
         "death metal": [
             [
                 "Dave Huev",
@@ -43003,19 +42162,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "pop": [
-            [
-                "Elton John with the Melbourne Symphony Orchestra",
-                "Tiny Dancer",
-                "https://www.last.fm/music/Elton+John+with+the+Melbourne+Symphony+Orchestra/_/Tiny+Dancer",
-                "https://www.youtube.com/results?search_query=Elton%20John%20With%20The%20Melbourne%20Symphony%20Orchestra%20Tiny Dancer",
-                "https://musicbrainz.org/search?query=Elton John with the Melbourne Symphony Orchestra&type=artist",
-                "https://youtu.be/_dBlO2UWHUo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Melbourne"
-            ]
-        ],
+        "pop": [],
         "black metal": [
             [
                 "Baphometh",
@@ -43357,17 +42504,7 @@ song_recommendations={
         ],
         "pop": [],
         "black metal": [
-            [
-                "Cold Void",
-                "Cold Void",
-                "https://www.last.fm/music/Cold+Void/_/Cold+Void",
-                "https://www.youtube.com/results?search_query=Cold%20Void%20Cold Void",
-                "https://musicbrainz.org/search?query=Cold Void&type=artist",
-                "https://youtu.be/eTVXO3eL3A8",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Torino"
-            ],
+
             [
                 "GIANG",
                 "Diablo",
@@ -43598,17 +42735,7 @@ song_recommendations={
             ]
         ],
         "dance": [
-            [
-                "Son Tuyen, Tuan Vu, Thien Trang",
-                "Lien Khuc 3 - Son Tuyen, Tuan Vu, Thien Trang",
-                "https://www.last.fm/music/Son+Tuyen,+Tuan+Vu,+Thien+Trang/_/Lien+Khuc+3+-+Son+Tuyen,+Tuan+Vu,+Thien+Trang",
-                "https://www.youtube.com/results?search_query=Son%20Tuyen,%20Tuan%20Vu,%20Thien%20Trang%20Lien Khuc 3 - Son Tuyen, Tuan Vu, Thien Trang",
-                "https://musicbrainz.org/search?query=Son Tuyen, Tuan Vu, Thien Trang&type=artist",
-                "https://youtu.be/RYpUsNZiA5Y",
-                "Automated suggestion trawler",
-                "No current notes",
-                "California"
-            ],
+           
             [
                 "Hoŕng Thůy Linh",
                 "Em Day Chang Phai Thuy Kieu",
@@ -43673,7 +42800,7 @@ song_recommendations={
                 "https://youtu.be/770EGICY4Ow",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Ibb"
+                "YE"
             ]
         ],
         "Rap": [],
@@ -43837,18 +42964,7 @@ song_recommendations={
                 "No current notes",
                 "unknown"
             ],
-            [
-                "Obeisance",
-                "Caligula",
-                "https://www.last.fm/music/Obeisance/_/Caligula",
-                "https://www.youtube.com/results?search_query=Obeisance%20Caligula",
-                "https://musicbrainz.org/search?query=Obeisance&type=artist",
-                "https://youtu.be/U391iHCKJqk",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Texas"
-            ],
-            [
+             [
                 "Crystal Dawn",
                 "Full Circle To Nothingness",
                 "https://www.last.fm/music/Crystal+Dawn/_/Full+Circle+To+Nothingness",
@@ -43857,7 +42973,7 @@ song_recommendations={
                 "https://youtu.be/4hg1K0HD5Xo",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Johannesburg"
+                "ZA"
             ]
         ],
         "death metal": [
@@ -44096,17 +43212,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "ZA"
-            ],
-            [
-                "Van Morrison",
-                "Brown Eyed Girl",
-                "https://www.last.fm/music/Van+Morrison/_/Brown+Eyed+Girl",
-                "https://www.youtube.com/results?search_query=Van%20Morrison%20Brown Eyed Girl",
-                "https://musicbrainz.org/search?query=Van Morrison&type=artist",
-                "https://youtu.be/UfmkgQRmmeE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Northern Ireland"
             ]
         ],
         "dance": [
@@ -44522,19 +43627,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "punk": [
-            [
-                "Moist Babies and the No U's",
-                "its past my bedtime (6pm)",
-                "https://www.last.fm/music/Moist+Babies+and+the+No+U%27s/_/its+past+my+bedtime+(6pm)",
-                "https://www.youtube.com/results?search_query=Moist%20Babies%20And%20The%20No%20U's%20its past my bedtime (6pm)",
-                "https://musicbrainz.org/search?query=Moist Babies and the No U's&type=artist",
-                "https://youtu.be/AVykB8eUXgc",
-                "Automated suggestion trawler",
-                "No current notes",
-                "Oakland"
-            ]
-        ],
+        "punk": [ ],
         "acoustic": [],
         "dance": [
             [
@@ -44592,7 +43685,7 @@ song_recommendations={
                 "https://youtu.be/AaZbJuH6uPM",
                 "Automated suggestion trawler",
                 "No current notes",
-                "Roma"
+                "SM"
             ]
         ],
         "jazz": [],
