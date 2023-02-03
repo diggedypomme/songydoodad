@@ -1542,17 +1542,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "Melbourne"
-            ],
-            [
-                "Steely Dan",
-                "Do It Again",
-                "https://www.last.fm/music/Steely+Dan/_/Do+It+Again",
-                "https://www.youtube.com/results?search_query=Steely%20Dan%20Do It Again",
-                "https://musicbrainz.org/search?query=Steely Dan&type=artist",
-                "https://youtu.be/aQnW-MxAU6U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
             ]
         ],
         "punk": [
@@ -6476,19 +6465,7 @@ song_recommendations={
                 "CA"
             ]
         ],
-        "dub": [
-            [
-                "Tackhead Tape Time",
-                "Mind at the End of the Tether",
-                "https://www.last.fm/music/Tackhead+Tape+Time/_/Mind+at+the+End+of+the+Tether",
-                "https://www.youtube.com/results?search_query=Tackhead%20Tape%20Time%20Mind at the End of the Tether",
-                "https://musicbrainz.org/search?query=Tackhead Tape Time&type=artist",
-                "https://youtu.be/DG2Q-JORcYs",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ]
-        ],
+        "dub": [],
         "Psychedelic Rock": [
             [
                 "Klaatu",
@@ -12336,17 +12313,6 @@ song_recommendations={
             ]
         ],
         "Psychedelic Rock": [
-            [
-                "Bodega",
-                "How Did This Happen?!",
-                "https://www.last.fm/music/Bodega/_/How+Did+This+Happen%3F%21",
-                "https://www.youtube.com/results?search_query=Boddega%20How Did This Happen?!",
-                "https://musicbrainz.org/search?query=Bodega&type=artist",
-                "https://youtu.be/TKAzK41-YHM",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
             [
                 "Los Corvets",
                 "Aprietame mas",
@@ -19932,17 +19898,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "IN"
-            ],
-            [
-                "Steely Dan",
-                "Do It Again",
-                "https://www.last.fm/music/Steely+Dan/_/Do+It+Again",
-                "https://www.youtube.com/results?search_query=Steely%20Dan%20Do It Again",
-                "https://musicbrainz.org/search?query=Steely Dan&type=artist",
-                "https://youtu.be/aQnW-MxAU6U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
             ]
         ],
         "punk": [
@@ -22215,17 +22170,6 @@ song_recommendations={
         ],
         "Rap": [
             [
-                "Natasha",
-                "Sidekick",
-                "https://www.last.fm/music/Natasha/_/Sidekick",
-                "https://www.youtube.com/results?search_query=Natasha%20Sidekick",
-                "https://musicbrainz.org/search?query=Natasha&type=artist",
-                "https://youtu.be/3Wm_Wx279jU",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
-            [
                 "Jovanotti",
                 "A Te",
                 "https://www.last.fm/music/Jovanotti/_/A+Te",
@@ -24206,19 +24150,7 @@ song_recommendations={
                 "KH"
             ]
         ],
-        "dub": [
-            [
-                "Audio Mainline",
-                "Red Ocean",
-                "https://www.last.fm/music/Audio+Mainline/_/Red+Ocean",
-                "https://www.youtube.com/results?search_query=Audio%20Mainline%20Red Ocean",
-                "https://musicbrainz.org/search?query=Audio Mainline&type=artist",
-                "https://youtu.be/4NBXqbJGSlY",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ]
-        ],
+        "dub": [],
         "Psychedelic Rock": [
             [
                 "Ros Serey Sothea, Sinn Sisamouth",
@@ -26865,17 +26797,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "MD"
-            ],
-            [
-                "Dan Balan",
-                "Chica Bomb",
-                "https://www.last.fm/music/Dan+Balan/_/Chica+Bomb",
-                "https://www.youtube.com/results?search_query=Dan%20Balan%20Chica Bomb",
-                "https://musicbrainz.org/search?query=Dan Balan&type=artist",
-                "https://youtu.be/16N8Zhhhins",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
             ]
         ],
         "black metal": [
@@ -27040,17 +26961,6 @@ song_recommendations={
             ]
         ],
         "dance": [
-            [
-                "Dan Balan",
-                "Chica Bomb",
-                "https://www.last.fm/music/Dan+Balan/_/Chica+Bomb",
-                "https://www.youtube.com/results?search_query=Dan%20Balan%20Chica Bomb",
-                "https://musicbrainz.org/search?query=Dan Balan&type=artist",
-                "https://youtu.be/16N8Zhhhins",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
             [
                 "Graieste Moldoveneste",
                 "Gheaghea vanea",
@@ -32730,19 +32640,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "acoustic": [
-            [
-                "Over A Crying Sun",
-                "It Seems Like A Life Into An Iron Lung",
-                "https://www.last.fm/music/Over+A+Crying+Sun/_/It+Seems+Like+A+Life+Into+An+Iron+Lung",
-                "https://www.youtube.com/results?search_query=Over%20A%20Crying%20Sun%20It Seems Like A Life Into An Iron Lung",
-                "https://musicbrainz.org/search?query=Over A Crying Sun&type=artist",
-                "https://youtu.be/4oebwf0CLWo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ]
-        ],
+        "acoustic": [],
         "dance": [
             [
                 "Banzaii",
@@ -33631,17 +33529,6 @@ song_recommendations={
                 "PH"
             ],
             [
-                "Steely Dan",
-                "Do It Again",
-                "https://www.last.fm/music/Steely+Dan/_/Do+It+Again",
-                "https://www.youtube.com/results?search_query=Steely%20Dan%20Do It Again",
-                "https://musicbrainz.org/search?query=Steely Dan&type=artist",
-                "https://youtu.be/aQnW-MxAU6U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
-            [
                 "Eddie Munji III",
                 "Doon Po Sa Amin",
                 "https://www.last.fm/music/Eddie+Munji+III/_/Doon+Po+Sa+Amin",
@@ -34472,17 +34359,6 @@ song_recommendations={
                 "PR"
             ],
             [
-                "Buscabulla",
-                "NTE",
-                "https://www.last.fm/music/Buscabulla/_/NTE",
-                "https://www.youtube.com/results?search_query=Buscabulla%20NTE",
-                "https://musicbrainz.org/search?query=Buscabulla&type=artist",
-                "https://youtu.be/AWeYGNXZ_2E",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
-            [
                 "Los Vigilantes",
                 "Ven Vamos",
                 "https://www.last.fm/music/Los+Vigilantes/_/Ven+Vamos",
@@ -34598,17 +34474,6 @@ song_recommendations={
             ]
         ],
         "pop": [
-            [
-                "Buscabulla",
-                "NTE",
-                "https://www.last.fm/music/Buscabulla/_/NTE",
-                "https://www.youtube.com/results?search_query=Buscabulla%20NTE",
-                "https://musicbrainz.org/search?query=Buscabulla&type=artist",
-                "https://youtu.be/AWeYGNXZ_2E",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
             [
                 "Vico C, Jossie Esteban",
                 "Me Acuerdo",
@@ -34845,17 +34710,6 @@ song_recommendations={
             ]
         ],
         "indie": [
-            [
-                "Buscabulla",
-                "NTE",
-                "https://www.last.fm/music/Buscabulla/_/NTE",
-                "https://www.youtube.com/results?search_query=Buscabulla%20NTE",
-                "https://musicbrainz.org/search?query=Buscabulla&type=artist",
-                "https://youtu.be/AWeYGNXZ_2E",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
             [
                 "Campo-Formio",
                 "Lord of the Obstacles",
@@ -35337,17 +35191,6 @@ song_recommendations={
             ]
         ],
         "jazz": [
-            [
-                "Steely Dan",
-                "Do It Again",
-                "https://www.last.fm/music/Steely+Dan/_/Do+It+Again",
-                "https://www.youtube.com/results?search_query=Steely%20Dan%20Do It Again",
-                "https://musicbrainz.org/search?query=Steely Dan&type=artist",
-                "https://youtu.be/aQnW-MxAU6U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ],
             [
                 "Dead Combo (2)",
                 "Esse Olhar Que Era Só Teu",
@@ -37039,19 +36882,7 @@ song_recommendations={
         ],
         "Rap": [],
         "indie": [],
-        "jazz": [
-            [
-                "Steely Dan",
-                "Do It Again",
-                "https://www.last.fm/music/Steely+Dan/_/Do+It+Again",
-                "https://www.youtube.com/results?search_query=Steely%20Dan%20Do It Again",
-                "https://musicbrainz.org/search?query=Steely Dan&type=artist",
-                "https://youtu.be/aQnW-MxAU6U",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ]
-        ],
+        "jazz": [],
         "punk": [
             [
                 "Daily Ritual",
@@ -40965,17 +40796,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "İzmir"
-            ],
-            [
-                "Gokbori",
-                "Ulu Daglar, Atalar",
-                "https://www.last.fm/music/Gokbori/_/Ulu+Daglar,+Atalar",
-                "https://www.youtube.com/results?search_query=Gokbori%20Ulu Daglar, Atalar",
-                "https://musicbrainz.org/search?query=Gokbori&type=artist",
-                "https://youtu.be/fAinFLG45W4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
             ]
         ],
         "death metal": [
@@ -41312,17 +41132,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "TR"
-            ],
-            [
-                "Gokbori",
-                "Ulu Daglar, Atalar",
-                "https://www.last.fm/music/Gokbori/_/Ulu+Daglar,+Atalar",
-                "https://www.youtube.com/results?search_query=Gokbori%20Ulu Daglar, Atalar",
-                "https://musicbrainz.org/search?query=Gokbori&type=artist",
-                "https://youtu.be/fAinFLG45W4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
             ]
         ],
         "acoustic": [
@@ -41389,19 +41198,7 @@ song_recommendations={
                 "TW"
             ]
         ],
-        "heavy metal": [
-            [
-                "Dream Theater",
-                "Pull Me Under",
-                "https://www.last.fm/music/Dream+Theater/_/Pull+Me+Under",
-                "https://www.youtube.com/results?search_query=Dream%20Theater%20Pull Me Under",
-                "https://musicbrainz.org/search?query=Dream Theater&type=artist",
-                "https://youtu.be/SGRgAULYgWE",
-                "Automated suggestion trawler",
-                "No current notes",
-                "New York"
-            ]
-        ],
+        "heavy metal": [],
         "folk": [
             [
                 "Chthonic",
