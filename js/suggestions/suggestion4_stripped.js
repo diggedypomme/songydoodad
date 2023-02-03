@@ -57,6 +57,8 @@ console.log(newDict)
 
 
 
+
+
 function new_helper_2() // this will give you a ranked list of the most common artists that have it set to unknown
 {
 const newDict = {};
@@ -84,7 +86,75 @@ const frequencyList = Object.entries(frequency).sort((a, b) => b[1] - a[1]);
 console.log(frequencyList);
 	
 	
+
+	
+	
 }
+
+function new_helper_3()
+{ // this will give you a ranked list of the most common placenames that arent 2 letters
+const newDict = {};
+const frequency = {};
+
+Object.keys(song_recommendations).forEach(country => {
+  Object.keys(song_recommendations[country]).forEach(musicStyle => {
+    if (song_recommendations[country][musicStyle].length > 0) {
+      song_recommendations[country][musicStyle].forEach(artistArray => {
+		  
+		try  {
+		  //console.log(artistArray[8])
+		  //console.log(artistArray[8].length)
+        if (artistArray[8].length>2) {
+          newDict[artistArray[8]] = "?";
+          if (frequency[artistArray[8]]) {
+            frequency[artistArray[8]]++;
+          } else {
+            frequency[artistArray[8]] = 1;
+          }
+        }
+		}
+		catch{console.log("soemthing went wrong in "+artistArray)}
+		
+		
+      });
+    }
+  });
+});
+
+const frequencyList = Object.entries(frequency).sort((a, b) => b[1] - a[1]);
+
+console.log(frequencyList);
+	
+	
+
+	
+	
+}
+
+
+
+function new_helper_4()
+{ // whoops, you are including user favourites. you need to remove these
+
+//song_recommendations
+
+const countries = Object.keys(song_recommendations);
+
+for (let i = 0; i < countries.length; i++) {
+  if (song_recommendations[countries[i]].hasOwnProperty("User Favourites")) {
+    delete song_recommendations[countries[i]]["User Favourites"];
+  }
+}
+
+console.log(song_recommendations)
+return song_recommendations
+
+
+
+
+}
+
+
 
 
 function artist_removal(remove_artist, except_country) //pass this the artist name and the correct country and it will remove the extras
@@ -124,10 +194,43 @@ function artist_removal(remove_artist, except_country) //pass this the artist na
   
   
 
-console.log(song_recommendations)
-	
+//console.log(song_recommendations)
+	new_helper_4()//remove the user favs then print
 }
 
+
+function remove_locations(town_name, except_country) //robhelper5
+{
+Object.keys(song_recommendations).forEach(c => {
+  if (c !== except_country) {
+    Object.keys(song_recommendations[c]).forEach(musicStyle => {
+      song_recommendations[c][musicStyle] = song_recommendations[c][musicStyle].filter(
+        artistArray => artistArray[8] !== town_name
+      );
+    });
+  }
+  
+else {
+    Object.keys(song_recommendations[c]).forEach(musicStyle => {
+      song_recommendations[c][musicStyle].forEach(artistArray => {
+        if (artistArray[8] === town_name) {
+          artistArray[8] = country_to_code[country];
+        }
+      });
+    });  
+}
+  
+  
+});
+
+
+
+
+
+
+new_helper_4() //removing user favourites then printing
+
+}
 
 
 

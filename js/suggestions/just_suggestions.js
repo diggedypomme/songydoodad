@@ -5720,31 +5720,8 @@ song_recommendations={
         "dance": []
     },
     "Barbados": {
-        "reggae": [
-            [
-                "Tim Chandell",
-                "Welcome Back",
-                "https://www.last.fm/music/Tim+Chandell/_/Welcome+Back",
-                "https://www.youtube.com/results?search_query=Tim%20Chandell%20Welcome Back",
-                "https://musicbrainz.org/search?query=Tim Chandell&type=artist",
-                "https://youtu.be/bkiAJksSLig",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "reggae": [],
         "rock": [
-            [
-                "Tim Chandell",
-                "Welcome Back",
-                "https://www.last.fm/music/Tim+Chandell/_/Welcome+Back",
-                "https://www.youtube.com/results?search_query=Tim%20Chandell%20Welcome Back",
-                "https://musicbrainz.org/search?query=Tim Chandell&type=artist",
-                "https://youtu.be/bkiAJksSLig",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
             [
                 "The Sandpebbles of Barbados",
                 "Suntan - Re-edit",
@@ -5782,19 +5759,7 @@ song_recommendations={
                 "unknown"
             ]
         ],
-        "pop": [
-            [
-                "Tim Chandell",
-                "Welcome Back",
-                "https://www.last.fm/music/Tim+Chandell/_/Welcome+Back",
-                "https://www.youtube.com/results?search_query=Tim%20Chandell%20Welcome Back",
-                "https://musicbrainz.org/search?query=Tim Chandell&type=artist",
-                "https://youtu.be/bkiAJksSLig",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "pop": [],
         "black metal": [],
         "death metal": [],
         "dub": [],
@@ -8135,17 +8100,6 @@ song_recommendations={
         "indie": [],
         "jazz": [
             [
-                "batat",
-                "ITALY.EXE (WAR THUNDER)",
-                "https://www.last.fm/music/batat/_/ITALY.EXE+(WAR+THUNDER)",
-                "https://www.youtube.com/results?search_query=Batat%20ITALY.EXE (WAR THUNDER)",
-                "https://musicbrainz.org/search?query=batat&type=artist",
-                "https://youtu.be/yh_Jrv15_Os",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Charlotte Dipanda",
                 "Coucou",
                 "https://www.last.fm/music/Charlotte+Dipanda/_/Coucou",
@@ -8683,7 +8637,7 @@ song_recommendations={
                 "https://youtu.be/A56BQQJTbvk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CV"
             ]
         ],
         "black metal": [],
@@ -8713,7 +8667,7 @@ song_recommendations={
                 "https://youtu.be/A56BQQJTbvk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CV"
             ]
         ],
         "Rap": [
@@ -8726,7 +8680,7 @@ song_recommendations={
                 "https://youtu.be/A56BQQJTbvk",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "CV"
             ]
         ],
         "indie": [],
@@ -16505,38 +16459,14 @@ song_recommendations={
                 "GN"
             ]
         ],
-        "pop": [
-            [
-                "Dadiigii",
-                "Mi No Biksot Yet",
-                "https://www.last.fm/music/Dadiigii/_/Mi+No+Biksot+Yet",
-                "https://www.youtube.com/results?search_query=Dadiigii%20Mi No Biksot Yet",
-                "https://musicbrainz.org/search?query=Dadiigii&type=artist",
-                "https://youtu.be/NHmU6_0yydQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "pop": [],
         "black metal": [],
         "death metal": [],
         "dub": [],
         "Psychedelic Rock": [],
         "cumbia": [],
         "hip hop": [],
-        "Rap": [
-            [
-                "Dadiigii",
-                "Mi No Biksot Yet",
-                "https://www.last.fm/music/Dadiigii/_/Mi+No+Biksot+Yet",
-                "https://www.youtube.com/results?search_query=Dadiigii%20Mi No Biksot Yet",
-                "https://musicbrainz.org/search?query=Dadiigii&type=artist",
-                "https://youtu.be/NHmU6_0yydQ",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ]
-        ],
+        "Rap": [],
         "indie": [],
         "jazz": [
             [
@@ -17683,17 +17613,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=Dreamhouse%20Closer to Comfort",
                 "https://musicbrainz.org/search?query=Dreamhouse&type=artist",
                 "https://youtu.be/FEw4-oFXGzA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Tina Washington",
-                "Love Me",
-                "https://www.last.fm/music/Tina+Washington/_/Love+Me",
-                "https://www.youtube.com/results?search_query=Tina%20Washington%20Love Me",
-                "https://musicbrainz.org/search?query=Tina Washington&type=artist",
-                "https://youtu.be/0wS1x5GwCs4",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -20841,26 +20760,6 @@ song_recommendations={
                 "No current notes",
                 "unknown"
             ]
-        ],
-        "User Favourites": [
-            [
-                "Kourosh Yaghmaei",
-                "Gole Yakh",
-                "https://www.last.fm/music/Kourosh Yaghmaei/_/Gole Yakh",
-                "https://www.youtube.com/results?search_query=Kourosh Yaghmaei%20(2)%20Gole Yakh",
-                "https://musicbrainz.org/search?query=Kourosh Yaghmaei&type=artist",
-                "https://youtu.be/EmhqVPXOKo4",
-                null
-            ],
-            [
-                "Kulkid",
-                "Spin",
-                "https://www.last.fm/music/Kulkid/_/Spin",
-                "https://www.youtube.com/results?search_query=Kulkid%20(2)%20Spin",
-                "https://musicbrainz.org/search?query=Kulkid&type=artist",
-                "https://youtu.be/earhTF7TGGs",
-                null
-            ]
         ]
     },
     "Iraq": {
@@ -21215,12 +21114,6 @@ song_recommendations={
                 "Automated suggestion trawler",
                 "No current notes",
                 "IS"
-            ],
-            [
-                "https://www.youtube.com/results?search_query=0%20Spur 1",
-                "Automated suggestion trawler",
-                "No current notes",
-                null
             ]
         ],
         "death metal": [
@@ -25067,14 +24960,7 @@ song_recommendations={
         "reggae": [],
         "rock": [],
         "heavy metal": [],
-        "folk": [
-            [
-                "https://youtu.be/uSB6_oQxpEc",
-                "Automated suggestion trawler",
-                "No current notes",
-                null
-            ]
-        ],
+        "folk": [],
         "pop": [],
         "black metal": [],
         "death metal": [],
@@ -26589,7 +26475,7 @@ song_recommendations={
                 "https://youtu.be/Lk6m0klZyo8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "MA"
             ],
             [
                 "Bob Jalil",
@@ -26658,7 +26544,7 @@ song_recommendations={
                 "https://youtu.be/Lk6m0klZyo8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "MA"
             ]
         ],
         "pop": [
@@ -26682,7 +26568,7 @@ song_recommendations={
                 "https://youtu.be/Lk6m0klZyo8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "MA"
             ],
             [
                 "OUM",
@@ -26744,7 +26630,7 @@ song_recommendations={
                 "https://youtu.be/Lk6m0klZyo8",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "MA"
             ],
             [
                 "Izanzaren",
@@ -29311,17 +29197,6 @@ song_recommendations={
                 "unknown"
             ],
             [
-                "Clarel Betsy",
-                "Ti frčre",
-                "https://www.last.fm/music/Clarel+Betsy/_/Ti+fr%C3%A8re",
-                "https://www.youtube.com/results?search_query=Clarel%20Betsy%20Ti frčre",
-                "https://musicbrainz.org/search?query=Clarel Betsy&type=artist",
-                "https://youtu.be/kdXFtP0DLhw",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "Features of Life",
                 "Soul Sabattah",
                 "https://www.last.fm/music/Features+of+Life/_/Soul+Sabattah",
@@ -29335,17 +29210,6 @@ song_recommendations={
         ],
         "heavy metal": [],
         "folk": [
-            [
-                "Clarel Betsy",
-                "Ti frčre",
-                "https://www.last.fm/music/Clarel+Betsy/_/Ti+fr%C3%A8re",
-                "https://www.youtube.com/results?search_query=Clarel%20Betsy%20Ti frčre",
-                "https://musicbrainz.org/search?query=Clarel Betsy&type=artist",
-                "https://youtu.be/kdXFtP0DLhw",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
             [
                 "Micheline Virahsawmy",
                 "Mama papa",
@@ -29377,17 +29241,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=Ti%20L'Afrique%20Soul Sock Séga",
                 "https://musicbrainz.org/search?query=Ti L'Afrique&type=artist",
                 "https://youtu.be/6PKZUwGk9ZI",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Clarel Betsy",
-                "Ti frčre",
-                "https://www.last.fm/music/Clarel+Betsy/_/Ti+fr%C3%A8re",
-                "https://www.youtube.com/results?search_query=Clarel%20Betsy%20Ti frčre",
-                "https://musicbrainz.org/search?query=Clarel Betsy&type=artist",
-                "https://youtu.be/kdXFtP0DLhw",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -29438,17 +29291,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=The%20Features%20Of%20Life%20Soul Sabbath",
                 "https://musicbrainz.org/search?query=The Features of Life&type=artist",
                 "https://youtu.be/Xo1biusprKo",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Clarel Betsy",
-                "Ti frčre",
-                "https://www.last.fm/music/Clarel+Betsy/_/Ti+fr%C3%A8re",
-                "https://www.youtube.com/results?search_query=Clarel%20Betsy%20Ti frčre",
-                "https://musicbrainz.org/search?query=Clarel Betsy&type=artist",
-                "https://youtu.be/kdXFtP0DLhw",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -29530,17 +29372,6 @@ song_recommendations={
     },
     "Malaysia": {
         "reggae": [
-            [
-                "Tina Washington",
-                "Love Me",
-                "https://www.last.fm/music/Tina+Washington/_/Love+Me",
-                "https://www.youtube.com/results?search_query=Tina%20Washington%20Love Me",
-                "https://musicbrainz.org/search?query=Tina Washington&type=artist",
-                "https://youtu.be/0wS1x5GwCs4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
             [
                 "Boney M.",
                 "Rasputin",
@@ -33956,7 +33787,7 @@ song_recommendations={
                 "https://youtu.be/NHmU6_0yydQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "PG"
             ],
             [
                 "Dejays",
@@ -33986,7 +33817,7 @@ song_recommendations={
                 "https://youtu.be/NHmU6_0yydQ",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "PG"
             ]
         ],
         "indie": [],
@@ -36685,25 +36516,7 @@ song_recommendations={
         "jazz": [],
         "punk": [],
         "acoustic": [],
-        "dance": [],
-        "User Favourites": [
-            [
-                "Arkona",
-                "Slavsia, Rus",
-                "https://www.last.fm/music/Arkona/_/Slavsia, Rus",
-                "https://www.youtube.com/results?search_query=Arkona%20(2)%20Slavsia, Rus",
-                "https://musicbrainz.org/search?query=Arkona&type=artist",
-                "https://youtu.be/BaP1wDvkA6E"
-            ],
-            [
-                "Kino",
-                "Kukushka",
-                "https://www.last.fm/music/Kino/_/Kukushka",
-                "https://www.youtube.com/results?search_query=Kino%20(2)%20Kukushka",
-                "https://musicbrainz.org/search?query=Kino&type=artist",
-                "https://youtu.be/FJn0MWJPRMY"
-            ]
-        ]
+        "dance": []
     },
     "Rwanda": {
         "reggae": [],
@@ -37083,17 +36896,6 @@ song_recommendations={
                 "https://www.youtube.com/results?search_query=Dreamhouse%20Closer to Comfort",
                 "https://musicbrainz.org/search?query=Dreamhouse&type=artist",
                 "https://youtu.be/FEw4-oFXGzA",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
-                "Tina Washington",
-                "Love Me",
-                "https://www.last.fm/music/Tina+Washington/_/Love+Me",
-                "https://www.youtube.com/results?search_query=Tina%20Washington%20Love Me",
-                "https://musicbrainz.org/search?query=Tina Washington&type=artist",
-                "https://youtu.be/0wS1x5GwCs4",
                 "Automated suggestion trawler",
                 "No current notes",
                 "unknown"
@@ -40562,17 +40364,6 @@ song_recommendations={
     "Thailand": {
         "reggae": [
             [
-                "Tina Washington",
-                "Love Me",
-                "https://www.last.fm/music/Tina+Washington/_/Love+Me",
-                "https://www.youtube.com/results?search_query=Tina%20Washington%20Love Me",
-                "https://musicbrainz.org/search?query=Tina Washington&type=artist",
-                "https://youtu.be/0wS1x5GwCs4",
-                "Automated suggestion trawler",
-                "No current notes",
-                "unknown"
-            ],
-            [
                 "srirajah rockers",
                 "Thai Maphia",
                 "https://www.last.fm/music/srirajah+rockers/_/Thai+Maphia",
@@ -41047,15 +40838,15 @@ song_recommendations={
                 "TR"
             ],
             [
-                "Selda (2)",
+                "Selda Bağcan",
                 "Yaz gazteci yaz",
                 "https://www.last.fm/music/Selda+(2)/_/Yaz+gazteci+yaz",
                 "https://www.youtube.com/results?search_query=Selda%20(2)%20Yaz gazteci yaz",
-                "https://musicbrainz.org/search?query=Selda (2)&type=artist",
+                "https://musicbrainz.org/search?query=Selda Bağcan&type=artist",
                 "https://youtu.be/HaqegOt41Ro",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "TR"
             ],
             [
                 "Erkin Koray",
@@ -41106,15 +40897,15 @@ song_recommendations={
         ],
         "folk": [
             [
-                "Selda (2)",
+                "Selda Bağcan",
                 "Yaz gazteci yaz",
                 "https://www.last.fm/music/Selda+(2)/_/Yaz+gazteci+yaz",
                 "https://www.youtube.com/results?search_query=Selda%20(2)%20Yaz gazteci yaz",
-                "https://musicbrainz.org/search?query=Selda (2)&type=artist",
+                "https://musicbrainz.org/search?query=Selda Bağcan&type=artist",
                 "https://youtu.be/HaqegOt41Ro",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "TR"
             ],
             [
                 "insanlar",
@@ -41292,15 +41083,15 @@ song_recommendations={
                 "TR"
             ],
             [
-                "Selda (2)",
+                "Selda Bağcan",
                 "Yaz gazteci yaz",
                 "https://www.last.fm/music/Selda+(2)/_/Yaz+gazteci+yaz",
                 "https://www.youtube.com/results?search_query=Selda%20(2)%20Yaz gazteci yaz",
-                "https://musicbrainz.org/search?query=Selda (2)&type=artist",
+                "https://musicbrainz.org/search?query=Selda Bağcan&type=artist",
                 "https://youtu.be/HaqegOt41Ro",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "TR"
             ],
             [
                 "Erkin Koray",
@@ -41466,15 +41257,15 @@ song_recommendations={
                 "TR"
             ],
             [
-                "Selda (2)",
+                "Selda Bağcan",
                 "Yaz gazteci yaz",
                 "https://www.last.fm/music/Selda+(2)/_/Yaz+gazteci+yaz",
                 "https://www.youtube.com/results?search_query=Selda%20(2)%20Yaz gazteci yaz",
-                "https://musicbrainz.org/search?query=Selda (2)&type=artist",
+                "https://musicbrainz.org/search?query=Selda Bağcan&type=artist",
                 "https://youtu.be/HaqegOt41Ro",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "TR"
             ],
             [
                 "Okay Temiz / Johnny Dyani",
@@ -43058,7 +42849,7 @@ song_recommendations={
                 "https://youtu.be/J9RF300FuhY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "UZ"
             ]
         ],
         "rock": [
@@ -43170,7 +42961,7 @@ song_recommendations={
                 "https://youtu.be/J9RF300FuhY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "UZ"
             ],
             [
                 "Alex Greenhouse, Julia Cage",
@@ -43196,7 +42987,7 @@ song_recommendations={
                 "https://youtu.be/J9RF300FuhY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "UZ"
             ],
             [
                 "PAHS Foundation",
@@ -43231,7 +43022,7 @@ song_recommendations={
                 "https://youtu.be/J9RF300FuhY",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "UZ"
             ]
         ],
         "indie": [],
@@ -43839,7 +43630,7 @@ song_recommendations={
                 "https://youtu.be/o726-5fqmp4",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "VN"
             ]
         ],
         "cumbia": [],
@@ -44557,7 +44348,7 @@ song_recommendations={
                 "https://youtu.be/7BeP3HoT4fU",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "ZM"
             ],
             [
                 "Rikki Ililonga",
@@ -44568,7 +44359,7 @@ song_recommendations={
                 "https://youtu.be/7BeP3HoT4fU",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "ZM"
             ],
             [
                 "Dereck Moyo",
@@ -44684,7 +44475,7 @@ song_recommendations={
                 "https://youtu.be/7BeP3HoT4fU",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "ZM"
             ],
             [
                 "Harry Mwale Experience With Greg Miyanda",
@@ -44719,7 +44510,7 @@ song_recommendations={
                 "https://youtu.be/7BeP3HoT4fU",
                 "Automated suggestion trawler",
                 "No current notes",
-                "unknown"
+                "ZM"
             ],
             [
                 "Keith Mlevhu",
