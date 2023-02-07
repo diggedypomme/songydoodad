@@ -693,6 +693,7 @@ function set_up_user_dropdown() {
 `<option value="Superpomme">Superpomme - `+compare_completed_real("Superpomme")+`</option>
 <option value="SynkkäMaan">SynkkäMaan - `+compare_completed_real("SynkkäMaan")+`</option>
 <option value="Sheskabab">Sheskabab - `+compare_completed_real("Sheskabab")+`</option>
+<option value="TB_massiv">TB_massiv - `+compare_completed_real("TB_massiv")+`</option>
 <option value="Temp">Temp (locally stored) - `+compare_completed()+`</option>`
 
 }
@@ -971,6 +972,11 @@ let Stored_userdict = {
         "user": "Sheskabab",
         "profile": "Sheskabab.js",
         "variable_name": "song_user_Sheskabab"
+    },
+    "TB_massiv": {
+        "user": "TB_massiv",
+        "profile": "tbmassiv.js",
+        "variable_name": "song_user_TB_massiv"
     }
 
 }

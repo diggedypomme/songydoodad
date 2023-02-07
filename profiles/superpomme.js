@@ -716,5 +716,25 @@
     "Honourable": "",
     "Honourable2": "",
     "Rating": "6"
+  },
+    "KM": {
+    "CountryName": "Comoros",
+    "Band": "Nawal ",
+    "Track": "Leo Ni Leo",
+    "MusicStyle": "folk",
+    "link": "https://youtu.be/vOX_M55dpSQ",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
+  },
+  "MZ": {
+    "CountryName": "Mozambique",
+    "Band": "Wazimbo · Orchestra Marrabenta Star de Mocambique",
+    "Track": "Nwahulwana ",
+    "MusicStyle": "folk",
+    "link": "https://youtu.be/Fz9rj_H2NLo",
+    "Honourable": "",
+    "Honourable2": "",
+    "Rating": "6"
   }
 }
