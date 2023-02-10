@@ -1688,3 +1688,114 @@ while (playlist_usercountup < Object.keys(Stored_userdict).length)
 }
 	
 }
+
+
+
+
+function zoomToCountry(isoA2) {
+  for (var i = 0; i < statesData.features.length; i++) {
+    var feature = statesData.features[i];
+    if (feature.properties.ISO_A2 === isoA2) {
+      var coordinates = feature.geometry.coordinates;
+      var lngLats = [];
+      for (var j = 0; j < coordinates.length; j++) {
+        for (var k = 0; k < coordinates[j].length; k++) {
+          var lngLat = coordinates[j][k];
+          lngLats.push(L.latLng(lngLat[1], lngLat[0]));
+        }
+      }
+      console.log(lngLats);
+      var bounds = L.latLngBounds(lngLats);
+      map.fitBounds(bounds);
+      break;
+    }
+  }
+}
+
+//function centerCountry(isoA2) {
+//  for (var i = 0; i < statesData.features.length; i++) {
+//    var feature = statesData.features[i];
+//    if (feature.properties.ISO_A2 === isoA2) {
+//      var coordinates = feature.geometry.coordinates;
+//      var maxArea = -1;
+//      var maxSection = null;
+//      for (var j = 0; j < coordinates.length; j++) {
+//        var section = coordinates[j];
+//        var sectionArea = getArea(section);
+//        if (sectionArea > maxArea) {
+//          maxArea = sectionArea;
+//          maxSection = section;
+//        }
+//      }
+//      var lngLats = [];
+//      for (var k = 0; k < maxSection.length; k++) {
+//        var lngLat = maxSection[k];
+//        lngLats.push(L.latLng(lngLat[1], lngLat[0]));
+//      }
+//      var bounds = L.latLngBounds(lngLats);
+//      var center = bounds.getCenter();
+//      var text = feature.properties.name;
+//      L.marker(center).addTo(map)
+//        .bindPopup(text)
+//        .openPopup();
+//      break;
+//    }
+//  }
+//}
+//
+//function getArea(coordinates) {
+//  var area = 0;
+//  for (var i = 0; i < coordinates.length - 1; i++) {
+//    var point1 = coordinates[i];
+//    var point2 = coordinates[i + 1];
+//    area += point1[0] * point2[1] - point2[0] * point1[1];
+//  }
+//  return Math.abs(area / 2);
+//}
+
+//function centerCountry(isoA2) {
+//  for (var i = 0; i < statesData.features.length; i++) {
+//    var feature = statesData.features[i];
+//    if (feature.properties.ISO_A2 === isoA2) {
+//      var coordinates = feature.geometry.coordinates;
+//      var maxLength = -1;
+//      var maxSection = null;
+//      for (var j = 0; j < coordinates.length; j++) {
+//        var section = coordinates[j];
+//        if (section.length > maxLength) {
+//          maxLength = section.length;
+//          maxSection = section;
+//        }
+//      }
+//      var lngLats = [];
+//      for (var k = 0; k < maxSection.length; k++) {
+//        var lngLat = maxSection[k];
+//        lngLats.push(L.latLng(lngLat[1], lngLat[0]));
+//      }
+//      var bounds = L.latLngBounds(lngLats);
+//      var center = bounds.getCenter();
+//      var text = feature.properties.name;
+//      L.marker(center).addTo(map)
+//        .bindPopup(text)
+//        .openPopup();
+//      break;
+//    }
+//  }
+//}
+
+
+function centerCountry(isoA2) {
+  for (var i = 0; i < statesData.features.length; i++) {
+    var feature = statesData.features[i];
+    if (feature.properties.ISO_A2 === isoA2) {
+      var bounds = L.geoJSON(feature).getBounds();
+      var text = feature.properties.name;
+      map.fitBounds(bounds);
+      L.marker([(bounds.getNorth() + bounds.getSouth()) / 2, (bounds.getEast() + bounds.getWest()) / 2])
+        .addTo(map)
+        .bindPopup(text)
+        .openPopup();
+      break;
+    }
+  }
+}
