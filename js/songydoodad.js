@@ -1428,6 +1428,8 @@ legend2.onAdd = function (map,style_list) {
 	}
 
 	div.innerHTML = labels.join('<br>');
+	console.log(labels)
+	//div.parent.id="ROBROB"
 	return div;
 };
 //
