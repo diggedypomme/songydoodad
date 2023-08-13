@@ -1,5 +1,8 @@
 #songmap
-Map of the world with my favourite tracks
+Map of the world with my favourite tracks. You can customise it with your own map, and it stores it in local browser
+
+My instance of the site is running at:
+https://songydoodad.superpomme.co.uk/
 
 ![This is an image](songmap.png)
 
